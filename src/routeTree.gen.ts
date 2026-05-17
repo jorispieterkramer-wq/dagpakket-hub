@@ -9,9 +9,15 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as InpakkenRouteImport } from './routes/inpakken'
 import { Route as BoekingenRouteImport } from './routes/boekingen'
 import { Route as IndexRouteImport } from './routes/index'
 
+const InpakkenRoute = InpakkenRouteImport.update({
+  id: '/inpakken',
+  path: '/inpakken',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BoekingenRoute = BoekingenRouteImport.update({
   id: '/boekingen',
   path: '/boekingen',
@@ -26,31 +32,42 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/boekingen': typeof BoekingenRoute
+  '/inpakken': typeof InpakkenRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/boekingen': typeof BoekingenRoute
+  '/inpakken': typeof InpakkenRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/boekingen': typeof BoekingenRoute
+  '/inpakken': typeof InpakkenRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/boekingen'
+  fullPaths: '/' | '/boekingen' | '/inpakken'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/boekingen'
-  id: '__root__' | '/' | '/boekingen'
+  to: '/' | '/boekingen' | '/inpakken'
+  id: '__root__' | '/' | '/boekingen' | '/inpakken'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BoekingenRoute: typeof BoekingenRoute
+  InpakkenRoute: typeof InpakkenRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/inpakken': {
+      id: '/inpakken'
+      path: '/inpakken'
+      fullPath: '/inpakken'
+      preLoaderRoute: typeof InpakkenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/boekingen': {
       id: '/boekingen'
       path: '/boekingen'
@@ -71,6 +88,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BoekingenRoute: BoekingenRoute,
+  InpakkenRoute: InpakkenRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
