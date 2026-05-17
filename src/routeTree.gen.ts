@@ -9,10 +9,35 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as ProblemenRouteImport } from './routes/problemen'
+import { Route as NotificatiesRouteImport } from './routes/notificaties'
+import { Route as MaterialenRouteImport } from './routes/materialen'
+import { Route as KlantenRouteImport } from './routes/klanten'
 import { Route as InpakkenRouteImport } from './routes/inpakken'
 import { Route as BoekingenRouteImport } from './routes/boekingen'
+import { Route as BezorgingRouteImport } from './routes/bezorging'
 import { Route as IndexRouteImport } from './routes/index'
 
+const ProblemenRoute = ProblemenRouteImport.update({
+  id: '/problemen',
+  path: '/problemen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NotificatiesRoute = NotificatiesRouteImport.update({
+  id: '/notificaties',
+  path: '/notificaties',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MaterialenRoute = MaterialenRouteImport.update({
+  id: '/materialen',
+  path: '/materialen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KlantenRoute = KlantenRouteImport.update({
+  id: '/klanten',
+  path: '/klanten',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const InpakkenRoute = InpakkenRouteImport.update({
   id: '/inpakken',
   path: '/inpakken',
@@ -23,6 +48,11 @@ const BoekingenRoute = BoekingenRouteImport.update({
   path: '/boekingen',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BezorgingRoute = BezorgingRouteImport.update({
+  id: '/bezorging',
+  path: '/bezorging',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -31,36 +61,109 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/bezorging': typeof BezorgingRoute
   '/boekingen': typeof BoekingenRoute
   '/inpakken': typeof InpakkenRoute
+  '/klanten': typeof KlantenRoute
+  '/materialen': typeof MaterialenRoute
+  '/notificaties': typeof NotificatiesRoute
+  '/problemen': typeof ProblemenRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/bezorging': typeof BezorgingRoute
   '/boekingen': typeof BoekingenRoute
   '/inpakken': typeof InpakkenRoute
+  '/klanten': typeof KlantenRoute
+  '/materialen': typeof MaterialenRoute
+  '/notificaties': typeof NotificatiesRoute
+  '/problemen': typeof ProblemenRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/bezorging': typeof BezorgingRoute
   '/boekingen': typeof BoekingenRoute
   '/inpakken': typeof InpakkenRoute
+  '/klanten': typeof KlantenRoute
+  '/materialen': typeof MaterialenRoute
+  '/notificaties': typeof NotificatiesRoute
+  '/problemen': typeof ProblemenRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/boekingen' | '/inpakken'
+  fullPaths:
+    | '/'
+    | '/bezorging'
+    | '/boekingen'
+    | '/inpakken'
+    | '/klanten'
+    | '/materialen'
+    | '/notificaties'
+    | '/problemen'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/boekingen' | '/inpakken'
-  id: '__root__' | '/' | '/boekingen' | '/inpakken'
+  to:
+    | '/'
+    | '/bezorging'
+    | '/boekingen'
+    | '/inpakken'
+    | '/klanten'
+    | '/materialen'
+    | '/notificaties'
+    | '/problemen'
+  id:
+    | '__root__'
+    | '/'
+    | '/bezorging'
+    | '/boekingen'
+    | '/inpakken'
+    | '/klanten'
+    | '/materialen'
+    | '/notificaties'
+    | '/problemen'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BezorgingRoute: typeof BezorgingRoute
   BoekingenRoute: typeof BoekingenRoute
   InpakkenRoute: typeof InpakkenRoute
+  KlantenRoute: typeof KlantenRoute
+  MaterialenRoute: typeof MaterialenRoute
+  NotificatiesRoute: typeof NotificatiesRoute
+  ProblemenRoute: typeof ProblemenRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/problemen': {
+      id: '/problemen'
+      path: '/problemen'
+      fullPath: '/problemen'
+      preLoaderRoute: typeof ProblemenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/notificaties': {
+      id: '/notificaties'
+      path: '/notificaties'
+      fullPath: '/notificaties'
+      preLoaderRoute: typeof NotificatiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/materialen': {
+      id: '/materialen'
+      path: '/materialen'
+      fullPath: '/materialen'
+      preLoaderRoute: typeof MaterialenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/klanten': {
+      id: '/klanten'
+      path: '/klanten'
+      fullPath: '/klanten'
+      preLoaderRoute: typeof KlantenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/inpakken': {
       id: '/inpakken'
       path: '/inpakken'
@@ -75,6 +178,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BoekingenRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/bezorging': {
+      id: '/bezorging'
+      path: '/bezorging'
+      fullPath: '/bezorging'
+      preLoaderRoute: typeof BezorgingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -87,8 +197,13 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BezorgingRoute: BezorgingRoute,
   BoekingenRoute: BoekingenRoute,
   InpakkenRoute: InpakkenRoute,
+  KlantenRoute: KlantenRoute,
+  MaterialenRoute: MaterialenRoute,
+  NotificatiesRoute: NotificatiesRoute,
+  ProblemenRoute: ProblemenRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
