@@ -17,6 +17,7 @@ import { Route as TekortenRouteImport } from './routes/tekorten'
 import { Route as TakenRouteImport } from './routes/taken'
 import { Route as StatistiekenRouteImport } from './routes/statistieken'
 import { Route as ProblemenRouteImport } from './routes/problemen'
+import { Route as PlanningRouteImport } from './routes/planning'
 import { Route as NotificatiesRouteImport } from './routes/notificaties'
 import { Route as MedewerkersRouteImport } from './routes/medewerkers'
 import { Route as MaterialenRouteImport } from './routes/materialen'
@@ -66,6 +67,11 @@ const StatistiekenRoute = StatistiekenRouteImport.update({
 const ProblemenRoute = ProblemenRouteImport.update({
   id: '/problemen',
   path: '/problemen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlanningRoute = PlanningRouteImport.update({
+  id: '/planning',
+  path: '/planning',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NotificatiesRoute = NotificatiesRouteImport.update({
@@ -130,6 +136,7 @@ export interface FileRoutesByFullPath {
   '/materialen': typeof MaterialenRoute
   '/medewerkers': typeof MedewerkersRoute
   '/notificaties': typeof NotificatiesRoute
+  '/planning': typeof PlanningRoute
   '/problemen': typeof ProblemenRoute
   '/statistieken': typeof StatistiekenRoute
   '/taken': typeof TakenRoute
@@ -150,6 +157,7 @@ export interface FileRoutesByTo {
   '/materialen': typeof MaterialenRoute
   '/medewerkers': typeof MedewerkersRoute
   '/notificaties': typeof NotificatiesRoute
+  '/planning': typeof PlanningRoute
   '/problemen': typeof ProblemenRoute
   '/statistieken': typeof StatistiekenRoute
   '/taken': typeof TakenRoute
@@ -171,6 +179,7 @@ export interface FileRoutesById {
   '/materialen': typeof MaterialenRoute
   '/medewerkers': typeof MedewerkersRoute
   '/notificaties': typeof NotificatiesRoute
+  '/planning': typeof PlanningRoute
   '/problemen': typeof ProblemenRoute
   '/statistieken': typeof StatistiekenRoute
   '/taken': typeof TakenRoute
@@ -193,6 +202,7 @@ export interface FileRouteTypes {
     | '/materialen'
     | '/medewerkers'
     | '/notificaties'
+    | '/planning'
     | '/problemen'
     | '/statistieken'
     | '/taken'
@@ -213,6 +223,7 @@ export interface FileRouteTypes {
     | '/materialen'
     | '/medewerkers'
     | '/notificaties'
+    | '/planning'
     | '/problemen'
     | '/statistieken'
     | '/taken'
@@ -233,6 +244,7 @@ export interface FileRouteTypes {
     | '/materialen'
     | '/medewerkers'
     | '/notificaties'
+    | '/planning'
     | '/problemen'
     | '/statistieken'
     | '/taken'
@@ -254,6 +266,7 @@ export interface RootRouteChildren {
   MaterialenRoute: typeof MaterialenRoute
   MedewerkersRoute: typeof MedewerkersRoute
   NotificatiesRoute: typeof NotificatiesRoute
+  PlanningRoute: typeof PlanningRoute
   ProblemenRoute: typeof ProblemenRoute
   StatistiekenRoute: typeof StatistiekenRoute
   TakenRoute: typeof TakenRoute
@@ -320,6 +333,13 @@ declare module '@tanstack/react-router' {
       path: '/problemen'
       fullPath: '/problemen'
       preLoaderRoute: typeof ProblemenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/planning': {
+      id: '/planning'
+      path: '/planning'
+      fullPath: '/planning'
+      preLoaderRoute: typeof PlanningRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/notificaties': {
@@ -406,6 +426,7 @@ const rootRouteChildren: RootRouteChildren = {
   MaterialenRoute: MaterialenRoute,
   MedewerkersRoute: MedewerkersRoute,
   NotificatiesRoute: NotificatiesRoute,
+  PlanningRoute: PlanningRoute,
   ProblemenRoute: ProblemenRoute,
   StatistiekenRoute: StatistiekenRoute,
   TakenRoute: TakenRoute,
