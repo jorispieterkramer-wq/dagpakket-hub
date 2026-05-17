@@ -9,6 +9,7 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as TakenRouteImport } from './routes/taken'
 import { Route as ProblemenRouteImport } from './routes/problemen'
 import { Route as NotificatiesRouteImport } from './routes/notificaties'
 import { Route as MaterialenRouteImport } from './routes/materialen'
@@ -18,6 +19,11 @@ import { Route as BoekingenRouteImport } from './routes/boekingen'
 import { Route as BezorgingRouteImport } from './routes/bezorging'
 import { Route as IndexRouteImport } from './routes/index'
 
+const TakenRoute = TakenRouteImport.update({
+  id: '/taken',
+  path: '/taken',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ProblemenRoute = ProblemenRouteImport.update({
   id: '/problemen',
   path: '/problemen',
@@ -68,6 +74,7 @@ export interface FileRoutesByFullPath {
   '/materialen': typeof MaterialenRoute
   '/notificaties': typeof NotificatiesRoute
   '/problemen': typeof ProblemenRoute
+  '/taken': typeof TakenRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -78,6 +85,7 @@ export interface FileRoutesByTo {
   '/materialen': typeof MaterialenRoute
   '/notificaties': typeof NotificatiesRoute
   '/problemen': typeof ProblemenRoute
+  '/taken': typeof TakenRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -89,6 +97,7 @@ export interface FileRoutesById {
   '/materialen': typeof MaterialenRoute
   '/notificaties': typeof NotificatiesRoute
   '/problemen': typeof ProblemenRoute
+  '/taken': typeof TakenRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -101,6 +110,7 @@ export interface FileRouteTypes {
     | '/materialen'
     | '/notificaties'
     | '/problemen'
+    | '/taken'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -111,6 +121,7 @@ export interface FileRouteTypes {
     | '/materialen'
     | '/notificaties'
     | '/problemen'
+    | '/taken'
   id:
     | '__root__'
     | '/'
@@ -121,6 +132,7 @@ export interface FileRouteTypes {
     | '/materialen'
     | '/notificaties'
     | '/problemen'
+    | '/taken'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -132,10 +144,18 @@ export interface RootRouteChildren {
   MaterialenRoute: typeof MaterialenRoute
   NotificatiesRoute: typeof NotificatiesRoute
   ProblemenRoute: typeof ProblemenRoute
+  TakenRoute: typeof TakenRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/taken': {
+      id: '/taken'
+      path: '/taken'
+      fullPath: '/taken'
+      preLoaderRoute: typeof TakenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/problemen': {
       id: '/problemen'
       path: '/problemen'
@@ -204,6 +224,7 @@ const rootRouteChildren: RootRouteChildren = {
   MaterialenRoute: MaterialenRoute,
   NotificatiesRoute: NotificatiesRoute,
   ProblemenRoute: ProblemenRoute,
+  TakenRoute: TakenRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
