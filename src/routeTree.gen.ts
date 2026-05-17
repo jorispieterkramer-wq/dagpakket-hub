@@ -9,8 +9,158 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VoorraadtellingRouteImport } from './routes/voorraadtelling'
+import { Route as VoertuigenRouteImport } from './routes/voertuigen'
+import { Route as TvRouteImport } from './routes/tv'
+import { Route as TijdRouteImport } from './routes/tijd'
+import { Route as TekortenRouteImport } from './routes/tekorten'
+import { Route as TeKeurenRouteImport } from './routes/te-keuren'
+import { Route as TakenRouteImport } from './routes/taken'
+import { Route as StatistiekenRouteImport } from './routes/statistieken'
+import { Route as ReparatiesRouteImport } from './routes/reparaties'
+import { Route as ProblemenRouteImport } from './routes/problemen'
+import { Route as PlanningRouteImport } from './routes/planning'
+import { Route as PersoneelsplannerRouteImport } from './routes/personeelsplanner'
+import { Route as PaklijstenRouteImport } from './routes/paklijsten'
+import { Route as NotificatiesRouteImport } from './routes/notificaties'
+import { Route as MedewerkersRouteImport } from './routes/medewerkers'
+import { Route as MaterialenRouteImport } from './routes/materialen'
+import { Route as KwijtgeraaktRouteImport } from './routes/kwijtgeraakt'
+import { Route as KlantenRouteImport } from './routes/klanten'
+import { Route as KeuringenRouteImport } from './routes/keuringen'
+import { Route as InpakkenRouteImport } from './routes/inpakken'
+import { Route as HandleidingenRouteImport } from './routes/handleidingen'
+import { Route as GpsRouteImport } from './routes/gps'
+import { Route as FacturenRouteImport } from './routes/facturen'
+import { Route as BoekingenRouteImport } from './routes/boekingen'
+import { Route as BezorgingRouteImport } from './routes/bezorging'
 import { Route as IndexRouteImport } from './routes/index'
 
+const VoorraadtellingRoute = VoorraadtellingRouteImport.update({
+  id: '/voorraadtelling',
+  path: '/voorraadtelling',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VoertuigenRoute = VoertuigenRouteImport.update({
+  id: '/voertuigen',
+  path: '/voertuigen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TvRoute = TvRouteImport.update({
+  id: '/tv',
+  path: '/tv',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TijdRoute = TijdRouteImport.update({
+  id: '/tijd',
+  path: '/tijd',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TekortenRoute = TekortenRouteImport.update({
+  id: '/tekorten',
+  path: '/tekorten',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TeKeurenRoute = TeKeurenRouteImport.update({
+  id: '/te-keuren',
+  path: '/te-keuren',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TakenRoute = TakenRouteImport.update({
+  id: '/taken',
+  path: '/taken',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StatistiekenRoute = StatistiekenRouteImport.update({
+  id: '/statistieken',
+  path: '/statistieken',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ReparatiesRoute = ReparatiesRouteImport.update({
+  id: '/reparaties',
+  path: '/reparaties',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ProblemenRoute = ProblemenRouteImport.update({
+  id: '/problemen',
+  path: '/problemen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PlanningRoute = PlanningRouteImport.update({
+  id: '/planning',
+  path: '/planning',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PersoneelsplannerRoute = PersoneelsplannerRouteImport.update({
+  id: '/personeelsplanner',
+  path: '/personeelsplanner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaklijstenRoute = PaklijstenRouteImport.update({
+  id: '/paklijsten',
+  path: '/paklijsten',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NotificatiesRoute = NotificatiesRouteImport.update({
+  id: '/notificaties',
+  path: '/notificaties',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MedewerkersRoute = MedewerkersRouteImport.update({
+  id: '/medewerkers',
+  path: '/medewerkers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MaterialenRoute = MaterialenRouteImport.update({
+  id: '/materialen',
+  path: '/materialen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KwijtgeraaktRoute = KwijtgeraaktRouteImport.update({
+  id: '/kwijtgeraakt',
+  path: '/kwijtgeraakt',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KlantenRoute = KlantenRouteImport.update({
+  id: '/klanten',
+  path: '/klanten',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KeuringenRoute = KeuringenRouteImport.update({
+  id: '/keuringen',
+  path: '/keuringen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InpakkenRoute = InpakkenRouteImport.update({
+  id: '/inpakken',
+  path: '/inpakken',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HandleidingenRoute = HandleidingenRouteImport.update({
+  id: '/handleidingen',
+  path: '/handleidingen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GpsRoute = GpsRouteImport.update({
+  id: '/gps',
+  path: '/gps',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FacturenRoute = FacturenRouteImport.update({
+  id: '/facturen',
+  path: '/facturen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BoekingenRoute = BoekingenRouteImport.update({
+  id: '/boekingen',
+  path: '/boekingen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BezorgingRoute = BezorgingRouteImport.update({
+  id: '/bezorging',
+  path: '/bezorging',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -19,28 +169,382 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/bezorging': typeof BezorgingRoute
+  '/boekingen': typeof BoekingenRoute
+  '/facturen': typeof FacturenRoute
+  '/gps': typeof GpsRoute
+  '/handleidingen': typeof HandleidingenRoute
+  '/inpakken': typeof InpakkenRoute
+  '/keuringen': typeof KeuringenRoute
+  '/klanten': typeof KlantenRoute
+  '/kwijtgeraakt': typeof KwijtgeraaktRoute
+  '/materialen': typeof MaterialenRoute
+  '/medewerkers': typeof MedewerkersRoute
+  '/notificaties': typeof NotificatiesRoute
+  '/paklijsten': typeof PaklijstenRoute
+  '/personeelsplanner': typeof PersoneelsplannerRoute
+  '/planning': typeof PlanningRoute
+  '/problemen': typeof ProblemenRoute
+  '/reparaties': typeof ReparatiesRoute
+  '/statistieken': typeof StatistiekenRoute
+  '/taken': typeof TakenRoute
+  '/te-keuren': typeof TeKeurenRoute
+  '/tekorten': typeof TekortenRoute
+  '/tijd': typeof TijdRoute
+  '/tv': typeof TvRoute
+  '/voertuigen': typeof VoertuigenRoute
+  '/voorraadtelling': typeof VoorraadtellingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/bezorging': typeof BezorgingRoute
+  '/boekingen': typeof BoekingenRoute
+  '/facturen': typeof FacturenRoute
+  '/gps': typeof GpsRoute
+  '/handleidingen': typeof HandleidingenRoute
+  '/inpakken': typeof InpakkenRoute
+  '/keuringen': typeof KeuringenRoute
+  '/klanten': typeof KlantenRoute
+  '/kwijtgeraakt': typeof KwijtgeraaktRoute
+  '/materialen': typeof MaterialenRoute
+  '/medewerkers': typeof MedewerkersRoute
+  '/notificaties': typeof NotificatiesRoute
+  '/paklijsten': typeof PaklijstenRoute
+  '/personeelsplanner': typeof PersoneelsplannerRoute
+  '/planning': typeof PlanningRoute
+  '/problemen': typeof ProblemenRoute
+  '/reparaties': typeof ReparatiesRoute
+  '/statistieken': typeof StatistiekenRoute
+  '/taken': typeof TakenRoute
+  '/te-keuren': typeof TeKeurenRoute
+  '/tekorten': typeof TekortenRoute
+  '/tijd': typeof TijdRoute
+  '/tv': typeof TvRoute
+  '/voertuigen': typeof VoertuigenRoute
+  '/voorraadtelling': typeof VoorraadtellingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/bezorging': typeof BezorgingRoute
+  '/boekingen': typeof BoekingenRoute
+  '/facturen': typeof FacturenRoute
+  '/gps': typeof GpsRoute
+  '/handleidingen': typeof HandleidingenRoute
+  '/inpakken': typeof InpakkenRoute
+  '/keuringen': typeof KeuringenRoute
+  '/klanten': typeof KlantenRoute
+  '/kwijtgeraakt': typeof KwijtgeraaktRoute
+  '/materialen': typeof MaterialenRoute
+  '/medewerkers': typeof MedewerkersRoute
+  '/notificaties': typeof NotificatiesRoute
+  '/paklijsten': typeof PaklijstenRoute
+  '/personeelsplanner': typeof PersoneelsplannerRoute
+  '/planning': typeof PlanningRoute
+  '/problemen': typeof ProblemenRoute
+  '/reparaties': typeof ReparatiesRoute
+  '/statistieken': typeof StatistiekenRoute
+  '/taken': typeof TakenRoute
+  '/te-keuren': typeof TeKeurenRoute
+  '/tekorten': typeof TekortenRoute
+  '/tijd': typeof TijdRoute
+  '/tv': typeof TvRoute
+  '/voertuigen': typeof VoertuigenRoute
+  '/voorraadtelling': typeof VoorraadtellingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/bezorging'
+    | '/boekingen'
+    | '/facturen'
+    | '/gps'
+    | '/handleidingen'
+    | '/inpakken'
+    | '/keuringen'
+    | '/klanten'
+    | '/kwijtgeraakt'
+    | '/materialen'
+    | '/medewerkers'
+    | '/notificaties'
+    | '/paklijsten'
+    | '/personeelsplanner'
+    | '/planning'
+    | '/problemen'
+    | '/reparaties'
+    | '/statistieken'
+    | '/taken'
+    | '/te-keuren'
+    | '/tekorten'
+    | '/tijd'
+    | '/tv'
+    | '/voertuigen'
+    | '/voorraadtelling'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/bezorging'
+    | '/boekingen'
+    | '/facturen'
+    | '/gps'
+    | '/handleidingen'
+    | '/inpakken'
+    | '/keuringen'
+    | '/klanten'
+    | '/kwijtgeraakt'
+    | '/materialen'
+    | '/medewerkers'
+    | '/notificaties'
+    | '/paklijsten'
+    | '/personeelsplanner'
+    | '/planning'
+    | '/problemen'
+    | '/reparaties'
+    | '/statistieken'
+    | '/taken'
+    | '/te-keuren'
+    | '/tekorten'
+    | '/tijd'
+    | '/tv'
+    | '/voertuigen'
+    | '/voorraadtelling'
+  id:
+    | '__root__'
+    | '/'
+    | '/bezorging'
+    | '/boekingen'
+    | '/facturen'
+    | '/gps'
+    | '/handleidingen'
+    | '/inpakken'
+    | '/keuringen'
+    | '/klanten'
+    | '/kwijtgeraakt'
+    | '/materialen'
+    | '/medewerkers'
+    | '/notificaties'
+    | '/paklijsten'
+    | '/personeelsplanner'
+    | '/planning'
+    | '/problemen'
+    | '/reparaties'
+    | '/statistieken'
+    | '/taken'
+    | '/te-keuren'
+    | '/tekorten'
+    | '/tijd'
+    | '/tv'
+    | '/voertuigen'
+    | '/voorraadtelling'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BezorgingRoute: typeof BezorgingRoute
+  BoekingenRoute: typeof BoekingenRoute
+  FacturenRoute: typeof FacturenRoute
+  GpsRoute: typeof GpsRoute
+  HandleidingenRoute: typeof HandleidingenRoute
+  InpakkenRoute: typeof InpakkenRoute
+  KeuringenRoute: typeof KeuringenRoute
+  KlantenRoute: typeof KlantenRoute
+  KwijtgeraaktRoute: typeof KwijtgeraaktRoute
+  MaterialenRoute: typeof MaterialenRoute
+  MedewerkersRoute: typeof MedewerkersRoute
+  NotificatiesRoute: typeof NotificatiesRoute
+  PaklijstenRoute: typeof PaklijstenRoute
+  PersoneelsplannerRoute: typeof PersoneelsplannerRoute
+  PlanningRoute: typeof PlanningRoute
+  ProblemenRoute: typeof ProblemenRoute
+  ReparatiesRoute: typeof ReparatiesRoute
+  StatistiekenRoute: typeof StatistiekenRoute
+  TakenRoute: typeof TakenRoute
+  TeKeurenRoute: typeof TeKeurenRoute
+  TekortenRoute: typeof TekortenRoute
+  TijdRoute: typeof TijdRoute
+  TvRoute: typeof TvRoute
+  VoertuigenRoute: typeof VoertuigenRoute
+  VoorraadtellingRoute: typeof VoorraadtellingRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/voorraadtelling': {
+      id: '/voorraadtelling'
+      path: '/voorraadtelling'
+      fullPath: '/voorraadtelling'
+      preLoaderRoute: typeof VoorraadtellingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/voertuigen': {
+      id: '/voertuigen'
+      path: '/voertuigen'
+      fullPath: '/voertuigen'
+      preLoaderRoute: typeof VoertuigenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tv': {
+      id: '/tv'
+      path: '/tv'
+      fullPath: '/tv'
+      preLoaderRoute: typeof TvRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tijd': {
+      id: '/tijd'
+      path: '/tijd'
+      fullPath: '/tijd'
+      preLoaderRoute: typeof TijdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tekorten': {
+      id: '/tekorten'
+      path: '/tekorten'
+      fullPath: '/tekorten'
+      preLoaderRoute: typeof TekortenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/te-keuren': {
+      id: '/te-keuren'
+      path: '/te-keuren'
+      fullPath: '/te-keuren'
+      preLoaderRoute: typeof TeKeurenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/taken': {
+      id: '/taken'
+      path: '/taken'
+      fullPath: '/taken'
+      preLoaderRoute: typeof TakenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/statistieken': {
+      id: '/statistieken'
+      path: '/statistieken'
+      fullPath: '/statistieken'
+      preLoaderRoute: typeof StatistiekenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/reparaties': {
+      id: '/reparaties'
+      path: '/reparaties'
+      fullPath: '/reparaties'
+      preLoaderRoute: typeof ReparatiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/problemen': {
+      id: '/problemen'
+      path: '/problemen'
+      fullPath: '/problemen'
+      preLoaderRoute: typeof ProblemenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/planning': {
+      id: '/planning'
+      path: '/planning'
+      fullPath: '/planning'
+      preLoaderRoute: typeof PlanningRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/personeelsplanner': {
+      id: '/personeelsplanner'
+      path: '/personeelsplanner'
+      fullPath: '/personeelsplanner'
+      preLoaderRoute: typeof PersoneelsplannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/paklijsten': {
+      id: '/paklijsten'
+      path: '/paklijsten'
+      fullPath: '/paklijsten'
+      preLoaderRoute: typeof PaklijstenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/notificaties': {
+      id: '/notificaties'
+      path: '/notificaties'
+      fullPath: '/notificaties'
+      preLoaderRoute: typeof NotificatiesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/medewerkers': {
+      id: '/medewerkers'
+      path: '/medewerkers'
+      fullPath: '/medewerkers'
+      preLoaderRoute: typeof MedewerkersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/materialen': {
+      id: '/materialen'
+      path: '/materialen'
+      fullPath: '/materialen'
+      preLoaderRoute: typeof MaterialenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kwijtgeraakt': {
+      id: '/kwijtgeraakt'
+      path: '/kwijtgeraakt'
+      fullPath: '/kwijtgeraakt'
+      preLoaderRoute: typeof KwijtgeraaktRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/klanten': {
+      id: '/klanten'
+      path: '/klanten'
+      fullPath: '/klanten'
+      preLoaderRoute: typeof KlantenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/keuringen': {
+      id: '/keuringen'
+      path: '/keuringen'
+      fullPath: '/keuringen'
+      preLoaderRoute: typeof KeuringenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/inpakken': {
+      id: '/inpakken'
+      path: '/inpakken'
+      fullPath: '/inpakken'
+      preLoaderRoute: typeof InpakkenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/handleidingen': {
+      id: '/handleidingen'
+      path: '/handleidingen'
+      fullPath: '/handleidingen'
+      preLoaderRoute: typeof HandleidingenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gps': {
+      id: '/gps'
+      path: '/gps'
+      fullPath: '/gps'
+      preLoaderRoute: typeof GpsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/facturen': {
+      id: '/facturen'
+      path: '/facturen'
+      fullPath: '/facturen'
+      preLoaderRoute: typeof FacturenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/boekingen': {
+      id: '/boekingen'
+      path: '/boekingen'
+      fullPath: '/boekingen'
+      preLoaderRoute: typeof BoekingenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bezorging': {
+      id: '/bezorging'
+      path: '/bezorging'
+      fullPath: '/bezorging'
+      preLoaderRoute: typeof BezorgingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -53,6 +557,31 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BezorgingRoute: BezorgingRoute,
+  BoekingenRoute: BoekingenRoute,
+  FacturenRoute: FacturenRoute,
+  GpsRoute: GpsRoute,
+  HandleidingenRoute: HandleidingenRoute,
+  InpakkenRoute: InpakkenRoute,
+  KeuringenRoute: KeuringenRoute,
+  KlantenRoute: KlantenRoute,
+  KwijtgeraaktRoute: KwijtgeraaktRoute,
+  MaterialenRoute: MaterialenRoute,
+  MedewerkersRoute: MedewerkersRoute,
+  NotificatiesRoute: NotificatiesRoute,
+  PaklijstenRoute: PaklijstenRoute,
+  PersoneelsplannerRoute: PersoneelsplannerRoute,
+  PlanningRoute: PlanningRoute,
+  ProblemenRoute: ProblemenRoute,
+  ReparatiesRoute: ReparatiesRoute,
+  StatistiekenRoute: StatistiekenRoute,
+  TakenRoute: TakenRoute,
+  TeKeurenRoute: TeKeurenRoute,
+  TekortenRoute: TekortenRoute,
+  TijdRoute: TijdRoute,
+  TvRoute: TvRoute,
+  VoertuigenRoute: VoertuigenRoute,
+  VoorraadtellingRoute: VoorraadtellingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
