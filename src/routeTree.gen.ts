@@ -9,19 +9,58 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VoorraadtellingRouteImport } from './routes/voorraadtelling'
+import { Route as VoertuigenRouteImport } from './routes/voertuigen'
+import { Route as TvRouteImport } from './routes/tv'
+import { Route as TijdRouteImport } from './routes/tijd'
+import { Route as TekortenRouteImport } from './routes/tekorten'
 import { Route as TakenRouteImport } from './routes/taken'
+import { Route as StatistiekenRouteImport } from './routes/statistieken'
 import { Route as ProblemenRouteImport } from './routes/problemen'
 import { Route as NotificatiesRouteImport } from './routes/notificaties'
+import { Route as MedewerkersRouteImport } from './routes/medewerkers'
 import { Route as MaterialenRouteImport } from './routes/materialen'
+import { Route as KwijtgeraaktRouteImport } from './routes/kwijtgeraakt'
 import { Route as KlantenRouteImport } from './routes/klanten'
 import { Route as InpakkenRouteImport } from './routes/inpakken'
+import { Route as HandleidingenRouteImport } from './routes/handleidingen'
 import { Route as BoekingenRouteImport } from './routes/boekingen'
 import { Route as BezorgingRouteImport } from './routes/bezorging'
 import { Route as IndexRouteImport } from './routes/index'
 
+const VoorraadtellingRoute = VoorraadtellingRouteImport.update({
+  id: '/voorraadtelling',
+  path: '/voorraadtelling',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VoertuigenRoute = VoertuigenRouteImport.update({
+  id: '/voertuigen',
+  path: '/voertuigen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TvRoute = TvRouteImport.update({
+  id: '/tv',
+  path: '/tv',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TijdRoute = TijdRouteImport.update({
+  id: '/tijd',
+  path: '/tijd',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TekortenRoute = TekortenRouteImport.update({
+  id: '/tekorten',
+  path: '/tekorten',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const TakenRoute = TakenRouteImport.update({
   id: '/taken',
   path: '/taken',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StatistiekenRoute = StatistiekenRouteImport.update({
+  id: '/statistieken',
+  path: '/statistieken',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ProblemenRoute = ProblemenRouteImport.update({
@@ -34,9 +73,19 @@ const NotificatiesRoute = NotificatiesRouteImport.update({
   path: '/notificaties',
   getParentRoute: () => rootRouteImport,
 } as any)
+const MedewerkersRoute = MedewerkersRouteImport.update({
+  id: '/medewerkers',
+  path: '/medewerkers',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const MaterialenRoute = MaterialenRouteImport.update({
   id: '/materialen',
   path: '/materialen',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const KwijtgeraaktRoute = KwijtgeraaktRouteImport.update({
+  id: '/kwijtgeraakt',
+  path: '/kwijtgeraakt',
   getParentRoute: () => rootRouteImport,
 } as any)
 const KlantenRoute = KlantenRouteImport.update({
@@ -47,6 +96,11 @@ const KlantenRoute = KlantenRouteImport.update({
 const InpakkenRoute = InpakkenRouteImport.update({
   id: '/inpakken',
   path: '/inpakken',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HandleidingenRoute = HandleidingenRouteImport.update({
+  id: '/handleidingen',
+  path: '/handleidingen',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BoekingenRoute = BoekingenRouteImport.update({
@@ -69,35 +123,62 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/bezorging': typeof BezorgingRoute
   '/boekingen': typeof BoekingenRoute
+  '/handleidingen': typeof HandleidingenRoute
   '/inpakken': typeof InpakkenRoute
   '/klanten': typeof KlantenRoute
+  '/kwijtgeraakt': typeof KwijtgeraaktRoute
   '/materialen': typeof MaterialenRoute
+  '/medewerkers': typeof MedewerkersRoute
   '/notificaties': typeof NotificatiesRoute
   '/problemen': typeof ProblemenRoute
+  '/statistieken': typeof StatistiekenRoute
   '/taken': typeof TakenRoute
+  '/tekorten': typeof TekortenRoute
+  '/tijd': typeof TijdRoute
+  '/tv': typeof TvRoute
+  '/voertuigen': typeof VoertuigenRoute
+  '/voorraadtelling': typeof VoorraadtellingRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/bezorging': typeof BezorgingRoute
   '/boekingen': typeof BoekingenRoute
+  '/handleidingen': typeof HandleidingenRoute
   '/inpakken': typeof InpakkenRoute
   '/klanten': typeof KlantenRoute
+  '/kwijtgeraakt': typeof KwijtgeraaktRoute
   '/materialen': typeof MaterialenRoute
+  '/medewerkers': typeof MedewerkersRoute
   '/notificaties': typeof NotificatiesRoute
   '/problemen': typeof ProblemenRoute
+  '/statistieken': typeof StatistiekenRoute
   '/taken': typeof TakenRoute
+  '/tekorten': typeof TekortenRoute
+  '/tijd': typeof TijdRoute
+  '/tv': typeof TvRoute
+  '/voertuigen': typeof VoertuigenRoute
+  '/voorraadtelling': typeof VoorraadtellingRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/bezorging': typeof BezorgingRoute
   '/boekingen': typeof BoekingenRoute
+  '/handleidingen': typeof HandleidingenRoute
   '/inpakken': typeof InpakkenRoute
   '/klanten': typeof KlantenRoute
+  '/kwijtgeraakt': typeof KwijtgeraaktRoute
   '/materialen': typeof MaterialenRoute
+  '/medewerkers': typeof MedewerkersRoute
   '/notificaties': typeof NotificatiesRoute
   '/problemen': typeof ProblemenRoute
+  '/statistieken': typeof StatistiekenRoute
   '/taken': typeof TakenRoute
+  '/tekorten': typeof TekortenRoute
+  '/tijd': typeof TijdRoute
+  '/tv': typeof TvRoute
+  '/voertuigen': typeof VoertuigenRoute
+  '/voorraadtelling': typeof VoorraadtellingRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -105,55 +186,133 @@ export interface FileRouteTypes {
     | '/'
     | '/bezorging'
     | '/boekingen'
+    | '/handleidingen'
     | '/inpakken'
     | '/klanten'
+    | '/kwijtgeraakt'
     | '/materialen'
+    | '/medewerkers'
     | '/notificaties'
     | '/problemen'
+    | '/statistieken'
     | '/taken'
+    | '/tekorten'
+    | '/tijd'
+    | '/tv'
+    | '/voertuigen'
+    | '/voorraadtelling'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
     | '/bezorging'
     | '/boekingen'
+    | '/handleidingen'
     | '/inpakken'
     | '/klanten'
+    | '/kwijtgeraakt'
     | '/materialen'
+    | '/medewerkers'
     | '/notificaties'
     | '/problemen'
+    | '/statistieken'
     | '/taken'
+    | '/tekorten'
+    | '/tijd'
+    | '/tv'
+    | '/voertuigen'
+    | '/voorraadtelling'
   id:
     | '__root__'
     | '/'
     | '/bezorging'
     | '/boekingen'
+    | '/handleidingen'
     | '/inpakken'
     | '/klanten'
+    | '/kwijtgeraakt'
     | '/materialen'
+    | '/medewerkers'
     | '/notificaties'
     | '/problemen'
+    | '/statistieken'
     | '/taken'
+    | '/tekorten'
+    | '/tijd'
+    | '/tv'
+    | '/voertuigen'
+    | '/voorraadtelling'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   BezorgingRoute: typeof BezorgingRoute
   BoekingenRoute: typeof BoekingenRoute
+  HandleidingenRoute: typeof HandleidingenRoute
   InpakkenRoute: typeof InpakkenRoute
   KlantenRoute: typeof KlantenRoute
+  KwijtgeraaktRoute: typeof KwijtgeraaktRoute
   MaterialenRoute: typeof MaterialenRoute
+  MedewerkersRoute: typeof MedewerkersRoute
   NotificatiesRoute: typeof NotificatiesRoute
   ProblemenRoute: typeof ProblemenRoute
+  StatistiekenRoute: typeof StatistiekenRoute
   TakenRoute: typeof TakenRoute
+  TekortenRoute: typeof TekortenRoute
+  TijdRoute: typeof TijdRoute
+  TvRoute: typeof TvRoute
+  VoertuigenRoute: typeof VoertuigenRoute
+  VoorraadtellingRoute: typeof VoorraadtellingRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/voorraadtelling': {
+      id: '/voorraadtelling'
+      path: '/voorraadtelling'
+      fullPath: '/voorraadtelling'
+      preLoaderRoute: typeof VoorraadtellingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/voertuigen': {
+      id: '/voertuigen'
+      path: '/voertuigen'
+      fullPath: '/voertuigen'
+      preLoaderRoute: typeof VoertuigenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tv': {
+      id: '/tv'
+      path: '/tv'
+      fullPath: '/tv'
+      preLoaderRoute: typeof TvRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tijd': {
+      id: '/tijd'
+      path: '/tijd'
+      fullPath: '/tijd'
+      preLoaderRoute: typeof TijdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tekorten': {
+      id: '/tekorten'
+      path: '/tekorten'
+      fullPath: '/tekorten'
+      preLoaderRoute: typeof TekortenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/taken': {
       id: '/taken'
       path: '/taken'
       fullPath: '/taken'
       preLoaderRoute: typeof TakenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/statistieken': {
+      id: '/statistieken'
+      path: '/statistieken'
+      fullPath: '/statistieken'
+      preLoaderRoute: typeof StatistiekenRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/problemen': {
@@ -170,11 +329,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof NotificatiesRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/medewerkers': {
+      id: '/medewerkers'
+      path: '/medewerkers'
+      fullPath: '/medewerkers'
+      preLoaderRoute: typeof MedewerkersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/materialen': {
       id: '/materialen'
       path: '/materialen'
       fullPath: '/materialen'
       preLoaderRoute: typeof MaterialenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/kwijtgeraakt': {
+      id: '/kwijtgeraakt'
+      path: '/kwijtgeraakt'
+      fullPath: '/kwijtgeraakt'
+      preLoaderRoute: typeof KwijtgeraaktRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/klanten': {
@@ -189,6 +362,13 @@ declare module '@tanstack/react-router' {
       path: '/inpakken'
       fullPath: '/inpakken'
       preLoaderRoute: typeof InpakkenRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/handleidingen': {
+      id: '/handleidingen'
+      path: '/handleidingen'
+      fullPath: '/handleidingen'
+      preLoaderRoute: typeof HandleidingenRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/boekingen': {
@@ -219,12 +399,21 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   BezorgingRoute: BezorgingRoute,
   BoekingenRoute: BoekingenRoute,
+  HandleidingenRoute: HandleidingenRoute,
   InpakkenRoute: InpakkenRoute,
   KlantenRoute: KlantenRoute,
+  KwijtgeraaktRoute: KwijtgeraaktRoute,
   MaterialenRoute: MaterialenRoute,
+  MedewerkersRoute: MedewerkersRoute,
   NotificatiesRoute: NotificatiesRoute,
   ProblemenRoute: ProblemenRoute,
+  StatistiekenRoute: StatistiekenRoute,
   TakenRoute: TakenRoute,
+  TekortenRoute: TekortenRoute,
+  TijdRoute: TijdRoute,
+  TvRoute: TvRoute,
+  VoertuigenRoute: VoertuigenRoute,
+  VoorraadtellingRoute: VoorraadtellingRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
