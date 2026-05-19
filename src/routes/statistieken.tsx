@@ -1,9 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, useMemo } from "react";
 import { Page, Card, CardHeader, Loader } from "@/components/dashboard/Page";
-import { supabase, type Booking, type BookingItem } from "@/lib/supabase";
+import { supabase, type Booking, type BookingItem, type ProductStat } from "@/lib/supabase";
 import { BarChart, Bar, PieChart, Pie, Cell, ResponsiveContainer, XAxis, YAxis, Tooltip, CartesianGrid, Legend } from "recharts";
 import { parseISO, startOfYear } from "date-fns";
+import { fmtEUR } from "@/lib/audit";
 
 export const Route = createFileRoute("/statistieken")({ component: Stats });
 
@@ -13,16 +14,19 @@ const COLORS = ["var(--color-primary)", "var(--color-accent)", "var(--color-warn
 function Stats() {
   const [bookings, setBookings] = useState<Booking[]>([]);
   const [items, setItems] = useState<BookingItem[]>([]);
+  const [productStats, setProductStats] = useState<ProductStat[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     (async () => {
-      const [b, i] = await Promise.all([
+      const [b, i, ps] = await Promise.all([
         supabase.from("bookings").select("*").gte("event_start_date", startOfYear(new Date()).toISOString().slice(0, 10)),
         supabase.from("booking_items").select("*"),
+        supabase.from("product_stats").select("*").order("rental_count", { ascending: false }).limit(50),
       ]);
       setBookings((b.data ?? []) as Booking[]);
       setItems((i.data ?? []) as BookingItem[]);
+      setProductStats((ps.data ?? []) as ProductStat[]);
       setLoading(false);
     })();
   }, []);
@@ -90,6 +94,36 @@ function Stats() {
               </BarChart>
             </ResponsiveContainer>
           </div>
+        </Card>
+
+        <Card className="lg:col-span-2">
+          <CardHeader title="Verhuurstatistieken per product" />
+          {productStats.length === 0 ? (
+            <div className="p-8 text-center text-sm text-muted-foreground">Geen data — run de Fase 1 migratie om de product_stats view aan te maken.</div>
+          ) : (
+            <div className="overflow-x-auto">
+              <table className="w-full text-sm">
+                <thead className="bg-muted/50 text-xs uppercase text-muted-foreground">
+                  <tr>
+                    <th className="text-left px-5 py-3 font-medium">Product</th>
+                    <th className="text-right px-5 py-3 font-medium">Aantal boekingen</th>
+                    <th className="text-right px-5 py-3 font-medium">Stuks verhuurd</th>
+                    <th className="text-right px-5 py-3 font-medium">Totale omzet</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-border">
+                  {productStats.map((p) => (
+                    <tr key={p.product_key} className="hover:bg-muted/30">
+                      <td className="px-5 py-2.5 font-medium">{p.product_name}</td>
+                      <td className="px-5 py-2.5 text-right font-mono">{p.rental_count}</td>
+                      <td className="px-5 py-2.5 text-right font-mono">{p.units_rented}</td>
+                      <td className="px-5 py-2.5 text-right font-mono font-semibold">{fmtEUR(p.revenue_cents)}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
         </Card>
       </div>
     </Page>
