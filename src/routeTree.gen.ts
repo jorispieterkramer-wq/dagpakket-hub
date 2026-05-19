@@ -35,6 +35,7 @@ import { Route as FacturenRouteImport } from './routes/facturen'
 import { Route as BoekingenRouteImport } from './routes/boekingen'
 import { Route as BezorgingRouteImport } from './routes/bezorging'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as KlantenIdRouteImport } from './routes/klanten.$id'
 
 const VoorraadtellingRoute = VoorraadtellingRouteImport.update({
   id: '/voorraadtelling',
@@ -166,6 +167,11 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const KlantenIdRoute = KlantenIdRouteImport.update({
+  id: '/$id',
+  path: '/$id',
+  getParentRoute: () => KlantenRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -176,7 +182,7 @@ export interface FileRoutesByFullPath {
   '/handleidingen': typeof HandleidingenRoute
   '/inpakken': typeof InpakkenRoute
   '/keuringen': typeof KeuringenRoute
-  '/klanten': typeof KlantenRoute
+  '/klanten': typeof KlantenRouteWithChildren
   '/kwijtgeraakt': typeof KwijtgeraaktRoute
   '/materialen': typeof MaterialenRoute
   '/medewerkers': typeof MedewerkersRoute
@@ -194,6 +200,7 @@ export interface FileRoutesByFullPath {
   '/tv': typeof TvRoute
   '/voertuigen': typeof VoertuigenRoute
   '/voorraadtelling': typeof VoorraadtellingRoute
+  '/klanten/$id': typeof KlantenIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -204,7 +211,7 @@ export interface FileRoutesByTo {
   '/handleidingen': typeof HandleidingenRoute
   '/inpakken': typeof InpakkenRoute
   '/keuringen': typeof KeuringenRoute
-  '/klanten': typeof KlantenRoute
+  '/klanten': typeof KlantenRouteWithChildren
   '/kwijtgeraakt': typeof KwijtgeraaktRoute
   '/materialen': typeof MaterialenRoute
   '/medewerkers': typeof MedewerkersRoute
@@ -222,6 +229,7 @@ export interface FileRoutesByTo {
   '/tv': typeof TvRoute
   '/voertuigen': typeof VoertuigenRoute
   '/voorraadtelling': typeof VoorraadtellingRoute
+  '/klanten/$id': typeof KlantenIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -233,7 +241,7 @@ export interface FileRoutesById {
   '/handleidingen': typeof HandleidingenRoute
   '/inpakken': typeof InpakkenRoute
   '/keuringen': typeof KeuringenRoute
-  '/klanten': typeof KlantenRoute
+  '/klanten': typeof KlantenRouteWithChildren
   '/kwijtgeraakt': typeof KwijtgeraaktRoute
   '/materialen': typeof MaterialenRoute
   '/medewerkers': typeof MedewerkersRoute
@@ -251,6 +259,7 @@ export interface FileRoutesById {
   '/tv': typeof TvRoute
   '/voertuigen': typeof VoertuigenRoute
   '/voorraadtelling': typeof VoorraadtellingRoute
+  '/klanten/$id': typeof KlantenIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -281,6 +290,7 @@ export interface FileRouteTypes {
     | '/tv'
     | '/voertuigen'
     | '/voorraadtelling'
+    | '/klanten/$id'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -309,6 +319,7 @@ export interface FileRouteTypes {
     | '/tv'
     | '/voertuigen'
     | '/voorraadtelling'
+    | '/klanten/$id'
   id:
     | '__root__'
     | '/'
@@ -337,6 +348,7 @@ export interface FileRouteTypes {
     | '/tv'
     | '/voertuigen'
     | '/voorraadtelling'
+    | '/klanten/$id'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -348,7 +360,7 @@ export interface RootRouteChildren {
   HandleidingenRoute: typeof HandleidingenRoute
   InpakkenRoute: typeof InpakkenRoute
   KeuringenRoute: typeof KeuringenRoute
-  KlantenRoute: typeof KlantenRoute
+  KlantenRoute: typeof KlantenRouteWithChildren
   KwijtgeraaktRoute: typeof KwijtgeraaktRoute
   MaterialenRoute: typeof MaterialenRoute
   MedewerkersRoute: typeof MedewerkersRoute
@@ -552,8 +564,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/klanten/$id': {
+      id: '/klanten/$id'
+      path: '/$id'
+      fullPath: '/klanten/$id'
+      preLoaderRoute: typeof KlantenIdRouteImport
+      parentRoute: typeof KlantenRoute
+    }
   }
 }
+
+interface KlantenRouteChildren {
+  KlantenIdRoute: typeof KlantenIdRoute
+}
+
+const KlantenRouteChildren: KlantenRouteChildren = {
+  KlantenIdRoute: KlantenIdRoute,
+}
+
+const KlantenRouteWithChildren =
+  KlantenRoute._addFileChildren(KlantenRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
@@ -564,7 +594,7 @@ const rootRouteChildren: RootRouteChildren = {
   HandleidingenRoute: HandleidingenRoute,
   InpakkenRoute: InpakkenRoute,
   KeuringenRoute: KeuringenRoute,
-  KlantenRoute: KlantenRoute,
+  KlantenRoute: KlantenRouteWithChildren,
   KwijtgeraaktRoute: KwijtgeraaktRoute,
   MaterialenRoute: MaterialenRoute,
   MedewerkersRoute: MedewerkersRoute,
