@@ -1,65 +1,237 @@
-# DagPakketVerhuur — Volledig uitbouwplan
 
-Alles wat je hebt aangevinkt + jouw 2 extra wensen, opgedeeld in 6 fases. Elke fase is een afgerond stuk dat je kunt testen voordat we doorgaan. Ik werk **één fase per chatbeurt** af — anders wordt het te groot en gaan er dingen kapot.
+# DagPakketVerhuur Dashboard — Master Blueprint voor Claude
 
-## Eerst: Lovable Cloud aanzetten
-Je gebruikt nu losse Supabase. Om alle nieuwe tabellen (CRM-notities, schadefoto's, contracten, betalingen, suppressielijsten, audit log, rechten, etc.) netjes te beheren mét RLS, migrations en secrets, zetten we **Lovable Cloud** aan. Dat blijft Supabase onder de motorkap — je bestaande `bookings`/`products`/`booking_items` blijven werken — maar nieuwe tabellen, edge logic en secrets lopen via het Lovable project. WooCommerce blijft de bron voor boekingen.
+Dit document is bedoeld als 1-op-1 brief aan Claude. Bevat alle keuzes die zijn gemaakt, zodat Claude alleen nog hoeft te coderen.
 
-## WooCommerce koppeling (vervangt n8n waar mogelijk)
-Directe REST API koppeling: `consumer_key` + `consumer_secret` als secrets. Server function `syncWooBookings` haalt orders op en upsert naar `bookings`/`booking_items`. Webhook endpoint `/api/public/woo/order` voor realtime updates bij nieuwe/gewijzigde orders. Productenmaster synct ook (stock, prijs, BTW-tarief). n8n mag blijven voor wat hij nu extra doet, maar de orderflow gaat rechtstreeks.
+## 0. Tech stack & host (vastgelegd)
 
----
-
-## Fase 1 — Data fundering & CRM (1 chat)
-- Nieuwe tabellen: `customers` (auto-aggregatie uit bookings), `customer_notes`, `customer_tags`, `audit_log`, `product_stats` (view: aantal verhuurd + omzet per product), `user_roles` (admin/magazijn/chauffeur).
-- WooCommerce sync server function + webhook endpoint.
-- **Klantenpagina** volledig uitgewerkt: lijst, detailpagina met alle boekingen, notities, tags, totaalomzet per klant, contactgegevens.
-- **Statistieken per product**: aantal keer verhuurd, totaalomzet, utilisatiegraad, top 10.
-- Audit log helper (overal `logAction()` voor wijzigingen).
-
-## Fase 2 — Geld: offertes, facturen, betalingen, contracten (1 chat)
-- Tabellen: `quotes`, `invoices`, `payments`, `contracts`, `deposits`.
-- **Offerteflow**: website-boeking met type "offerte" landt in nieuwe pagina **Offertes pipeline** (nieuw → verstuurd → nagebeld → akkoord/afgewezen). Reminder na 3 dagen → taak "Nabellen offerte" automatisch aangemaakt. PDF-offerte generator (jsPDF) met logo, BTW 9/21%, geldig 14 dagen.
-- **Facturen**: PDF generator, automatische BTW-splitsing, factuurnummer-reeks, status (concept/verstuurd/betaald/herinnering).
-- **Mollie**: payment links voor aanbetaling, restbetaling, borg. Webhook `/api/public/mollie/webhook` update status.
-- **Borg-afhandeling**: bij retour kun je schadekosten invoeren → automatisch verrekend met borg → restitutie via Mollie refund.
-- **Digitaal contract**: bij ophalen/bezorgen handtekening op tablet (canvas signature pad), opgeslagen als PNG in storage + PDF.
-
-## Fase 3 — Magazijn pro: scan, beschikbaarheid, schade (1 chat)
-- Tabellen: `availability_calendar` (per product per dag), `damage_reports`, `scan_events`, `cleaning_status`.
-- **Beschikbaarheidskalender per artikel**: voorkomt dubbelboekingen, toont reservering vs. echt uit. Wordt automatisch berekend uit `booking_items`.
-- **Barcode/QR scan flow** (telefooncamera via `@zxing/browser`): bij inpakken scannen → bevestig in paklijst. Bij uitgifte: scannen → status "uit". Bij retour: scannen → status "terug" → schoonmaak-checklist.
-- **Schadefoto's**: bij uitgifte foto-upload (verplicht voor breekbare items), bij retour vergelijken. Storage bucket `damage-photos`.
-- **Retour/check-in pagina** apart van inpakken.
-
-## Fase 4 — Communicatie: e-mail + WhatsApp + klantportaal (1 chat)
-- **Lovable Emails** voor transactional: offerte-versturen, factuur, aanbetalingherinnering, leverafspraak, "wij komen morgen tussen X-Y".
-- **WhatsApp** via Twilio of MessageBird (kies bij start): templates "We zijn er vandaag rond 10:00", "We zijn nu onderweg", "We zijn er over 10 min". Knop in bezorgingspagina per stop.
-- **Automatische triggers**: T-2 dagen leverafspraak, T-1 dag herinnering, op leverdag "onderweg" knop, dag na evenement retour-bevestiging.
-- **Klantportaal** (publieke route `/portaal/<token>`): klant ziet eigen boekingen, kan wijzigen tot T-7, contracten downloaden, facturen zien, online betalen.
-
-## Fase 5 — Prijzen, rapportages, leveranciers, rechten (1 chat)
-- **Prijslijsten**: dagprijs/weekendprijs/weekprijs/pakketprijs per product, kortingscodes, automatische pakketkortingen.
-- **Rapportages dashboard**: omzet per product/categorie/maand, utilisatiegraad (% verhuurde dagen), DSO (gemiddelde dagen tot betaling), top klanten, voorspelling drukke weken.
-- **Leveranciers** tabel + koppeling aan reparaties en aankopen.
-- **Multi-user rechten**: `user_roles` met enum (admin/magazijn/chauffeur/finance), RLS-policies per tabel, UI verbergt menu-items per rol.
-
-## Fase 6 — Live-ready: auth, beveiliging, polish (1 chat)
-- **Login** (email + password, met optie Google). Auth-protected routes via `_authenticated` layout.
-- **RLS** aanzetten op alle tabellen.
-- **Security scan** + memory bijwerken.
-- **Backup-export** functie (CSV-dump alle tabellen).
-- Cron jobs: dagelijkse offerte-reminder check, facturen-herinnering, sync WooCommerce.
-- Final QA: alle stub-pagina's vervangen, alle modules getest, lege-states gepolijst.
+- React 19 + TanStack Start v1 + Vite 7 + Tailwind v4 (template draait al)
+- Supabase project `snjkmikrlkyalvjaadia` (bestaand, blijft)
+- Host: `dashboard.dagpakketverhuur.nl` (custom domain via Lovable publish)
+- WooCommerce site `dagpakketverhuur.nl` blijft de bron van boekingen
+- **n8n wordt uitgefaseerd** — Supabase ↔ Woo wordt directe REST koppeling + webhook
+- Boekhouding: **Moneybird** koppeling (facturen pushen)
+- Betalingen: alleen in-dashboard registratie, geen Mollie nu
+- WhatsApp: alleen via `wa.me` deeplink-knop, geen API
+- Mail: Lovable Emails (geen externe provider)
+- Klantportaal: **nee**, niet nu
+- Auth: 1 admin + 1–2 medewerkers, simpele rol (admin / medewerker)
 
 ---
 
-## Wat ik nu nodig heb om Fase 1 te starten:
+## 1. Modules in scope (alles in v1)
 
-1. **Lovable Cloud aanzetten** (ik doe dit als je akkoord bent).
-2. **WooCommerce gegevens** — heb je een staging site of mag ik op de live site? Ik ga je vragen om `WOO_URL`, `WOO_CONSUMER_KEY`, `WOO_CONSUMER_SECRET` als secrets toe te voegen wanneer we zover zijn.
-3. **Voor Fase 2 later**: heb je een **Moneybird** account dat je wilt koppelen, of houden we facturen volledig in het dashboard? En heb je een **Mollie** account?
-4. **Voor Fase 4 later**: voorkeur voor WhatsApp via **Twilio** of **MessageBird**? (Twilio is makkelijker, MessageBird is goedkoper in NL).
+1. Boekingen + Klanten + Statistieken
+2. Offertes + Facturen (Moneybird sync)
+3. Magazijn: paklijsten, barcode/QR scan, beschikbaarheidskalender, schadefoto's
+4. Communicatie: email triggers + WhatsApp deeplinks
 
-## Akkoord?
-Antwoord met **"start Fase 1"** dan zet ik Lovable Cloud aan en bouw ik fase 1 volledig uit (CRM + WooCommerce sync + statistieken per product + audit log). Of geef aan welke fase je liever eerst hebt — volgorde is flexibel, ik adviseer alleen Fase 1 als basis omdat de rest erop bouwt.
+Geen klantportaal, geen Mollie, geen Twilio.
+
+---
+
+## 2. Datamodel (volledige tabellenlijst)
+
+Bestaand (NIET aanraken): `bookings`, `booking_items`, `products`.
+
+Nieuw / uit te breiden:
+
+| Tabel | Doel |
+|---|---|
+| `customers` | Auto-aggregatie uit bookings (email = key) |
+| `customer_notes` | Vrije notities, pinned-flag |
+| `customer_tags` | Labels (VIP, slechte betaler, etc.) |
+| `user_roles` | enum: `admin`, `medewerker` |
+| `audit_log` | Wie deed wat, wanneer |
+| `product_stats` | View: aantal verhuurd + omzet per product |
+| `quotes` | Offertes (status: nieuw → verstuurd → akkoord/afgewezen) |
+| `quote_items` | Regels op offerte |
+| `invoices` | Facturen + Moneybird-id |
+| `invoice_items` | Regels op factuur |
+| `payments` | Handmatige betaalregistratie |
+| `deposits` | Borg per boeking + schadekosten |
+| `contracts` | Digitale handtekening (PNG + PDF) |
+| `availability_calendar` | Per product per dag (afgeleid uit booking_items) |
+| `damage_reports` | Schadefoto's bij uitgifte/retour |
+| `scan_events` | Barcode/QR scans (inpak/uit/retour) |
+| `cleaning_status` | Schoonmaak-checklist na retour |
+| `email_log` | Welke mail naar wie, wanneer, template |
+| `whatsapp_log` | Welke deeplink gegenereerd (niet verzonden) |
+
+Alle nieuwe tabellen krijgen RLS: admin = alles, medewerker = lezen + status-updates, geen delete.
+
+---
+
+## 3. WooCommerce koppeling (vervangt n8n)
+
+### Inkomend (Woo → Dashboard)
+- Webhook endpoint `src/routes/api/public/woo/order.ts`
+- Triggers: `order.created`, `order.updated`
+- HMAC signature check met `WOO_WEBHOOK_SECRET`
+- Upsert in `bookings` + `booking_items`
+- Aggregatie naar `customers` via trigger
+
+### Uitgaand (Dashboard → Woo)
+- Server fn `syncWooProducts` — haalt producten + stock op (cron 1×/uur)
+- Server fn `updateWooStock` — bij retour stock terugschrijven
+
+### Secrets nodig
+- `WOO_BASE_URL`
+- `WOO_CONSUMER_KEY`
+- `WOO_CONSUMER_SECRET`
+- `WOO_WEBHOOK_SECRET`
+
+---
+
+## 4. BTW & prijzen
+
+- **Default 21%** per product
+- **9%** voor categorie `consumpties` (popcorn, suikerspin, frisdrank, ingrediënten)
+- Per product override-veld `vat_rate` (21 | 9)
+- Facturen splitsen automatisch BTW-totalen per tarief
+
+---
+
+## 5. Offerte → Factuur flow
+
+```
+WooCommerce order type="offerte"
+   → bookings.booking_status = "offerte"
+   → verschijnt in /offertes pipeline
+   → status: nieuw → verstuurd → nagebeld → akkoord/afgewezen
+   → bij akkoord: knop "Maak factuur"
+   → factuur lokaal opgeslagen + gepusht naar Moneybird
+   → betaalstatus handmatig bijwerken (geen Mollie)
+```
+
+Reminder: na 3 dagen "verstuurd" zonder reactie → taak "Nabellen offerte".
+
+PDF generator: `jspdf` + logo, BTW-splitsing, geldig 14 dagen.
+
+---
+
+## 6. Moneybird koppeling
+
+- OAuth2 via Moneybird (eenmalig connect-knop in Instellingen)
+- Server fn `pushInvoiceToMoneybird` bij elke factuur-aanmaak
+- Contacts sync: klant zonder Moneybird-id wordt aangemaakt bij eerste factuur
+- Webhook `api/public/moneybird/webhook` voor betaalstatus terug
+- Secrets: `MONEYBIRD_CLIENT_ID`, `MONEYBIRD_CLIENT_SECRET`, `MONEYBIRD_ADMIN_ID`
+
+---
+
+## 7. Magazijn flow
+
+### Inpakken
+- `/inpakken` toont vandaag + morgen
+- Per boeking checklist `booking_items` met checkbox + scan-knop
+- Scan via telefooncamera (`@zxing/browser`) → matcht barcode op `products.barcode`
+- Klaar → `bookings.booking_status = "packed"`
+
+### Beschikbaarheidskalender
+- `/voorraad/<productId>` toont kalender 90 dagen vooruit
+- Gereserveerd (bookings status `processing`) vs Uit (status `packed`/`shipped`)
+- Waarschuwing rood als reserveringen > stock_total
+
+### Schade
+- Bij uitgifte: verplicht 1 foto voor breekbare items (`products.fragile = true`)
+- Bij retour: vergelijking, schade-knop → registreert in `damage_reports`
+- Schadekosten → automatisch in `deposits` verrekend
+
+### Retour
+- `/retour` aparte pagina van inpakken
+- Scan terug → `cleaning_status` checklist → klaar
+
+---
+
+## 8. Communicatie
+
+### Email triggers (Lovable Emails)
+| Trigger | Template |
+|---|---|
+| Offerte verstuurd | `quote-sent` |
+| Factuur verstuurd | `invoice-sent` |
+| Herinnering factuur (T+14) | `invoice-reminder` |
+| Leverafspraak T-2 | `delivery-reminder` |
+| Onderweg | `on-the-way` |
+| Retour bevestigd | `return-confirmed` |
+
+### WhatsApp (alleen deeplinks)
+- Knop per boeking: opent `https://wa.me/<phone>?text=<template>`
+- Templates: "Onderweg", "10 min", "Vandaag rond X uur"
+- Log naar `whatsapp_log` (wat verzonden, niet of gelezen)
+
+---
+
+## 9. Auth & rollen
+
+- Email/password login (Lovable Cloud auth)
+- Tabel `user_roles` met enum `admin` | `medewerker`
+- Security definer `has_role(user_id, role)` voor RLS
+- `_authenticated` layout beschermt alles behalve `/login`
+- Medewerker ziet niet: facturen, omzet-statistieken, klant-totalen
+- Admin ziet alles
+
+---
+
+## 10. Pagina-overzicht (definitief)
+
+```
+/                       Dashboard home (KPI's + vandaag)
+/boekingen              Lijst alle boekingen
+/boekingen/$id          Detail
+/klanten                Lijst
+/klanten/$id            Detail + notities + tags
+/offertes               Pipeline kanban
+/offertes/$id           Detail
+/facturen               Lijst
+/facturen/$id           Detail + Moneybird status
+/inpakken               Vandaag/morgen
+/retour                 Retour check-in
+/voorraad               Productenlijst
+/voorraad/$id           Kalender + schade-historie
+/statistieken           Omzet, top producten, utilisatie
+/taken                  Reminders (offerte nabellen, etc.)
+/instellingen           Moneybird connect, Woo secrets check, gebruikers
+/tv                     Magazijn TV-modus (bestaand)
+/login                  Auth
+```
+
+Verwijder de stub-pagina's die niet in deze lijst staan.
+
+---
+
+## 11. Bouwvolgorde voor Claude (technisch, geen prioriteit-keuze meer)
+
+1. **Fundering**: auth + rollen + `_authenticated` layout + migratie alle tabellen
+2. **Woo koppeling**: webhook + sync server fns + secrets opzetten
+3. **Klanten + Boekingen + Statistieken**: leesschermen op fundering
+4. **Magazijn**: inpakken + scan + kalender + schade + retour
+5. **Offertes + Facturen + Moneybird**: pipeline + PDF + push
+6. **Communicatie**: email templates + triggers + WhatsApp deeplinks
+7. **Polish**: takenlijst, instellingen, dashboard home, RLS audit, security scan
+
+---
+
+## 12. Wat Claude NIET hoeft te beslissen
+
+- Geen keuze tussen Mollie/Stripe → niet doen
+- Geen klantportaal → niet bouwen
+- Geen Twilio/MessageBird → alleen wa.me links
+- Geen alternatieve boekhoudpakketten → Moneybird is de enige
+- Geen multi-tenant / workspaces → 1 bedrijf, 1 admin
+
+---
+
+## 13. Acceptatie per module
+
+Elke module is "klaar" als:
+- Migratie draait schoon op leeg Supabase project
+- Pagina laadt zonder console errors
+- CRUD werkt incl. RLS (medewerker mag niet wat hij niet mag)
+- Audit log krijgt een regel bij wijziging
+- Mobiel (390px breed) bruikbaar — alle magazijn-flows zijn primair mobiel
+
+---
+
+Wil je dat ik dit blueprint document letterlijk als `BLUEPRINT.md` in de repo zet zodat je het direct aan Claude kan geven? Of eerst nog ergens iets aanpassen / toevoegen?
