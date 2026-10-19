@@ -16,7 +16,7 @@ de light DOM (slot), net als op de homepage, zodat dpv-shop ze kan bedienen.
 Gebruik:  python3 build.py            → schrijft out/<slug>.html
 De inhoud per pagina staat in content_*.py; de opbouw per template hieronder.
 """
-import html, os, re, importlib
+import html, json, os, re, importlib
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://staging.dagpakketverhuur.nl'
@@ -27,7 +27,8 @@ e = html.escape
 
 
 def url(path):
-    return SITE + path
+    # Relatief: dezelfde HTML werkt op staging én live, zonder staging-URL's.
+    return path
 
 
 # ---------------------------------------------------------------- icons
@@ -350,11 +351,21 @@ JS = r"""
   if(!grid)return;
   unlazy(grid);
 
+  /* Alt-teksten van de productfoto's (de kaarten van dpv-shop hebben alt=""). */
+  var setAlts=function(){
+    var alts={};try{alts=JSON.parse(grid.dataset.alts||'{}')}catch(e){}
+    Object.keys(alts).forEach(function(id){
+      var b=grid.querySelector('[data-product="'+id+'"]'),card=b&&b.closest('[data-prod-card]'),img=card&&card.querySelector('img');
+      if(img)img.setAttribute('alt',alts[id]);
+    });
+  };
+  setAlts();
+
   /* Productkaarten actueel houden: dezelfde kaarten als op de categoriepagina
      (prijs, badge, knop). Lukt dat niet, dan blijven de meegeleverde kaarten staan. */
   var ids=[].map.call(grid.querySelectorAll('[data-product]'),function(b){return b.dataset.product;});
   if(ids.length&&window.fetch&&window.DOMParser){
-    fetch(grid.dataset.src||'/product-category/lasergame-huren/',{credentials:'same-origin'})
+    fetch(grid.dataset.src,{credentials:'same-origin'})
       .then(function(r){return r.ok?r.text():Promise.reject(r.status);})
       .then(function(t){
         var doc=new DOMParser().parseFromString(t,'text/html');
@@ -367,6 +378,7 @@ JS = r"""
           old.replaceWith(document.importNode(fresh,true));
         });
         unlazy(grid);
+        setAlts();
       }).catch(function(){});
   }
 
@@ -427,7 +439,7 @@ def intro(d):
 def products(d):
     checks = ''.join(f'<li>{icon("check", 18)}<span>{c}</span></li>' for c in d['checks'])
     return sec(
-        head(d['h2'], (url('/product-category/lasergame-huren/'), 'Alle lasergame-producten') if d.get('cat_link') else None, d.get('lead'))
+        head(d['h2'], (d['cat_link'], 'Alle lasergame-producten') if d.get('cat_link') else None, d.get('lead'))
         + f'''
 <div class="dpv-prodrow">
   <slot name="prods"></slot>
@@ -586,17 +598,21 @@ TEMPLATES = {'A': template_a, 'B': template_b, 'C': template_c}
 
 
 # ---------------------------------------------------------------- product cards
-def clean_card(card_html):
+def clean_card(card_html, alt=''):
     """Echte dpv-shop-kaart (van de categoriepagina) zonder lazy-load-placeholder."""
     c = re.sub(r'<noscript>.*?</noscript>', '', card_html, flags=re.S)
     c = re.sub(r'src="data:image/svg\+xml;base64,[^"]*"\s+data-src="([^"]+)"', r'src="\1"', c)
     c = c.replace('data-lazyloaded="1" ', '')
+    c = re.sub(r'(href|src)="https://staging\.dagpakketverhuur\.nl/', r'\1="/', c)
+    if alt:
+        c = c.replace('alt=""', f'alt="{e(alt)}"', 1)
     return c.strip()
 
 
 def render(c, cards_html):
     body = '\n\n'.join(TEMPLATES[c['template']](c))
-    grid = '\n'.join(clean_card(x) for x in cards_html)
+    alts = {str(pid): a for pid, a in c['product_alts'].items()}
+    grid = '\n'.join(clean_card(x, alts.get(str(pid), '')) for pid, x in zip(c['product_ids'], cards_html))
     return f'''<!--
   ============================================================
   DAGPAKKETVERHUUR — {c['naam']}  (template {c['template']})
@@ -615,7 +631,7 @@ def render(c, cards_html):
 <div id="dpv-rg-host"></div>
 
 <!-- Echte WooCommerce-productkaarten (dpv-shop), light DOM via slot. -->
-<div id="dpv-rg-prods" slot="prods" data-src="/product-category/lasergame-huren/">
+<div id="dpv-rg-prods" slot="prods" data-src="{e(c['cat_url'])}" data-alts="{e(json.dumps(alts, ensure_ascii=False))}">
 {grid}
 </div>
 <style>{LIGHT_CSS}</style>

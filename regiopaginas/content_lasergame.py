@@ -28,6 +28,7 @@ IMG = {
 COMPACT = url('/product/lasergame-compacte-huren/')
 XL = url('/product/lasergame-xl-huren/')
 HUB = url('/lasergame-huren/')
+CAT = url('/product-category/activiteiten-huren/lasergame-huren/')  # eigen permalink, 200, geen redirect
 CONTACT = url('/contact/')
 
 # ------------------------------------------------------------------ gedeeld
@@ -35,7 +36,7 @@ TRUST = [
     ('shield', 'Geen borg', 'Je betaalt alleen de huurprijs'),
     ('pin', 'Gratis afhalen in Fochteloo', 'Vanaf 16:00 de dag voor je event'),
     ('truck', 'Levering in heel Nederland', 'Verzonden met DHL'),
-    ('gift', 'Gratis bezorging vanaf €150', 'Bij een besteding vanaf €150'),
+    ('gift', 'Gratis verzending vanaf €150', 'Met DHL, bij een besteding vanaf €150'),
 ]
 
 PRODUCT_CHECKS = [
@@ -48,8 +49,8 @@ PRODUCT_CHECKS = [
 # Echte voorwaarden van /contact/.
 LEV_EIGEN = lambda gebied: {
     'icon': 'truck', 'h3': 'Wij bezorgen en halen op',
-    'p': f'In {gebied} bezorgen we zelf op het tijdslot dat je bij het afrekenen kiest. '
-         'Het tarief hangt af van je zone; vanaf een besteding van €150 is bezorgen gratis.',
+    'p': f'In {gebied} bezorgen we ook zelf, op het tijdslot dat je bij het afrekenen kiest. '
+         'Het tarief en de gratis-grens hangen af van je zone. Bereken het met je postcode.',
     'link': (CONTACT, 'Bereken je bezorgkosten'),
 }
 LEV_DHL = {
@@ -64,8 +65,8 @@ LEV_AFHALEN = {
 }
 
 B2B_CHECKS = [
+    'Binnen één werkdag een vaste prijs, inclusief bezorgen en ophalen',
     'Betalen op factuur, met je eigen referentie of PO-nummer',
-    'Offerte binnen 24 uur, zonder verplichting',
     'Alle prijzen inclusief 21% btw, apart op je factuur',
 ]
 
@@ -76,9 +77,10 @@ PAGES.append({
     'template': 'A', 'id': 49762, 'slug': 'lasergame-huren', 'naam': 'LASERGAME HUREN (HUB)',
     'plaats': 'Nederland',
     'seo_title': 'Lasergame huren | Compact & XL | Dagpakketverhuur',
-    'meta': 'Lasergame huren voor een kinderfeestje of bedrijfsuitje? Kies Compact of XL, geen borg, '
-            'gratis afhalen in Fochteloo of DHL-levering in heel Nederland.',
-    'product_ids': [47238, 47235],
+    'meta': 'Lasergame huren voor een kinderfeestje, bedrijfsuitje of sportdag. Kies Compact of XL, geen borg, '
+            'gratis afhalen in Fochteloo of DHL-levering in heel NL.',
+    'product_ids': [47238, 47235], 'cat_url': CAT,
+    'product_alts': {47238: 'Lasergame Compact huren', 47235: 'Lasergame XL huren'},
     'hero': {
         'img': IMG['bos'][0], 'alt': IMG['bos'][1], 'pos': '50% 40%',
         'eyebrow': 'Lasergame · Compact & XL',
@@ -88,10 +90,10 @@ PAGES.append({
     },
     'trust': TRUST,
     'products': {
-        'h2': 'Kies je lasergame', 'cat_link': True,
+        'h2': 'Kies je lasergame', 'cat_link': CAT,
         'lead': 'Twee sets die op dezelfde manier werken. Het verschil zit in de speelduur per ronde.',
         'checks': PRODUCT_CHECKS, 'info_h3': 'Bij beide sets',
-        'info_link': (url('/product-category/lasergame-huren/'), 'Bekijk ook de bundels en accessoires'),
+        'info_link': (CAT, 'Bekijk ook de bundels en accessoires'),
     },
     'keuze': {
         'h2': 'Welke set past bij jouw groep?',
@@ -122,8 +124,8 @@ PAGES.append({
              'p': 'Een actieve teamactiviteit zonder begeleiding: iedereen kan direct meedoen.',
              'link': (url('/zakelijk/'), 'Zakelijk huren')},
             {'icon': 'school', 'h3': 'School, sportdag of vereniging',
-             'p': 'Op factuur betalen en vooraf een offerte. We denken mee over de planning.',
-             'link': (url('/zakelijk/'), 'Offerte aanvragen')},
+             'p': 'Binnen één werkdag een vaste prijs en betalen op factuur. We denken mee over de planning.',
+             'link': (url('/zakelijk/'), 'Zakelijke prijs aanvragen')},
         ],
     },
     'stappen': {
@@ -147,8 +149,7 @@ PAGES.append({
     'b2b': {
         'kicker': 'Zakelijk',
         'h2': 'Voor bedrijven, scholen en verenigingen',
-        'p': 'Organiseer je een teamuitje, sportdag of clubactiviteit? Vraag een zakelijke prijs aan: '
-             'je krijgt binnen één werkdag een vaste prijs, inclusief bezorgen en ophalen.',
+        'p': 'Organiseer je een teamuitje, sportdag of clubactiviteit? Vertel ons wat je nodig hebt en vraag een zakelijke prijs aan.',
         'checks': B2B_CHECKS,
         'img': IMG['veld'][0], 'alt': IMG['veld'][1],
     },
@@ -165,9 +166,9 @@ PAGES.append({
             ('Betaal ik borg?',
              'Nee, we vragen op dit moment geen borg. Je hoeft dus niets vooruit te betalen dat je later terugkrijgt.'),
             ('Wat kost bezorgen?',
-             'DHL levert in heel Nederland voor €16 per pakket, gratis vanaf €150. In Noord-Nederland bezorgen we ook zelf; '
-             f'het tarief hangt af van je zone en is gratis vanaf een besteding van €150. Zelf afhalen in Fochteloo is altijd gratis. '
-             f'<a href="{CONTACT}">Bereken je bezorgkosten</a>.'),
+             'Lasergames versturen we met DHL door heel Nederland: €16 per pakket, gratis vanaf €150. '
+             'In Noord-Nederland bezorgen we ook zelf. Het tarief en de gratis-grens hangen af van je zone. '
+             f'<a href="{CONTACT}">Bereken het met je postcode</a>. Zelf afhalen in Fochteloo is altijd gratis.'),
             ('Kan ik binnen en buiten spelen?',
              'Ja. Speel in de tuin, in een park, op een veld of binnen in een grote ruimte of hal.'),
             ('Kan ik annuleren of mijn datum wijzigen?',
@@ -178,7 +179,7 @@ PAGES.append({
     'final': {
         'img': IMG['tuin'][0], 'alt': IMG['tuin'][1],
         'h2': 'Klaar voor een potje lasergame?',
-        'p': 'Kies je set, kies je datum en wij regelen de rest. Geen borg, gratis bezorging vanaf €150.',
+        'p': 'Kies je set, kies je datum en wij regelen de rest. Geen borg, gratis DHL-verzending vanaf €150.',
         'links': [('Lasergame Compact', COMPACT), ('Lasergame XL', XL)],
     },
 })
@@ -188,9 +189,10 @@ PAGES.append({
     'template': 'B', 'id': 49694, 'slug': 'lasergame-huren-drenthe', 'naam': 'LASERGAME HUREN DRENTHE (PROVINCIE)',
     'plaats': 'Drenthe',
     'seo_title': 'Lasergame huren in Drenthe | Dagpakketverhuur',
-    'meta': 'Lasergame huren in Drenthe? Compact of XL, geen borg en gratis bezorging vanaf €150. '
-            'Wij bezorgen zelf, versturen met DHL of je haalt af in Fochteloo.',
-    'product_ids': [47238, 47235],
+    'meta': 'Lasergame huren in Drenthe? Wij bezorgen zelf in Assen, Emmen en omgeving, of je haalt gratis af in Fochteloo. '
+            'Geen borg, Compact of XL, vanaf 6 jaar.',
+    'product_ids': [47238, 47235], 'cat_url': CAT,
+    'product_alts': {47238: 'Lasergame Compact huren', 47235: 'Lasergame XL huren'},
     'hero': {
         'img': IMG['kids'][0], 'alt': IMG['kids'][1], 'pos': '50% 35%',
         'eyebrow': 'Lasergame · Drenthe',
@@ -204,10 +206,10 @@ PAGES.append({
         'h2': 'Persoonlijk bezorgd in heel Drenthe',
         'p': [
             'Drenthe valt binnen ons eigen bezorggebied in Noord-Nederland. We brengen je lasergame op het tijdslot '
-            'dat je bij het afrekenen kiest en halen alles na je event weer op. Je betaalt geen borg en bezorgen is gratis '
-            'vanaf een besteding van €150.',
+            'dat je bij het afrekenen kiest en halen alles na je event weer op. Je betaalt geen borg. '
+            'Het tarief en de gratis-grens voor bezorgen hangen af van je zone. Bereken het met je postcode.',
             'Liever zelf ophalen? Dat kan altijd gratis in Fochteloo, vanaf 16:00 de dag voor je event. '
-            'En komt het beter uit, dan versturen we je set met DHL.',
+            'Of laat je set met DHL versturen: gratis vanaf €150.',
         ],
     },
     'products': {
@@ -223,7 +225,7 @@ PAGES.append({
              'p': 'Vanaf 6 jaar speelt iedereen mee. Met struiken, schuurtjes of pallets heb je meteen een speelveld.',
              'link': (url('/kinderfeestje-drenthe/'), 'Kinderfeestje in Drenthe')},
             {'icon': 'briefcase', 'h3': 'Teamuitje of personeelsfeest',
-             'p': 'Een actieve activiteit waar iedereen direct aan mee kan doen, op je eigen locatie.'},
+             'p': 'Een actief uitje waar iedereen direct aan mee kan doen, op je eigen locatie.'},
             {'icon': 'school', 'h3': 'Sportdag of schoolevenement',
              'p': 'Speel op het sportveld of in de gymzaal. Scholen betalen op factuur.'},
             {'icon': 'users', 'h3': 'Buurtfeest of vereniging',
@@ -246,7 +248,7 @@ PAGES.append({
     'b2b': {
         'kicker': 'Zakelijk in Drenthe',
         'h2': 'Bedrijven, scholen en verenigingen',
-        'p': 'Vraag een zakelijke prijs aan en je krijgt binnen één werkdag een vaste prijs, inclusief bezorgen en ophalen.',
+        'p': 'Een sportdag, teamuitje of clubactiviteit in Drenthe? Vertel ons wat je nodig hebt en vraag een zakelijke prijs aan.',
         'checks': B2B_CHECKS[:2],
         'img': IMG['veld'][0], 'alt': IMG['veld'][1],
     },
@@ -256,8 +258,8 @@ PAGES.append({
         'intro': 'Bel ons binnen openingstijden. Spoed buiten openingstijden? Stuur een WhatsApp.',
         'items': [
             ('Bezorgen jullie in heel Drenthe?',
-             'Ja, Drenthe valt binnen ons eigen bezorggebied. Het tarief hangt af van de zone van je postcode en bezorgen is gratis '
-             f'vanaf een besteding van €150. <a href="{CONTACT}">Bereken je bezorgkosten</a>.'),
+             'Ja, Drenthe valt binnen ons eigen bezorggebied. Het tarief en de gratis-grens hangen af van je zone. '
+             f'<a href="{CONTACT}">Bereken het met je postcode</a>. Verzending met DHL is gratis vanaf €150.'),
             ('Kan ik de lasergame zelf ophalen?',
              'Ja, en dat is altijd gratis. Ophalen kan vanaf 16:00 de dag voor je event op de parkeerplaats aan Verlaat 3 in Fochteloo. '
              'We nemen vooraf contact op zodra alles klaarligt.'),
@@ -273,7 +275,7 @@ PAGES.append({
     'final': {
         'img': IMG['bos'][0], 'alt': IMG['bos'][1],
         'h2': 'Lasergame in Drenthe regelen?',
-        'p': 'Kies je set en je datum. Geen borg, gratis bezorging vanaf €150.',
+        'p': 'Kies je set en je datum. Geen borg, gratis DHL-verzending vanaf €150.',
         'links': [('Alle lasergame-informatie', HUB), ('Lasergame Compact', COMPACT), ('Lasergame XL', XL)],
     },
 })
@@ -283,9 +285,10 @@ PAGES.append({
     'template': 'C', 'id': 49882, 'slug': 'lasergame-huren-emmen', 'naam': 'LASERGAME HUREN EMMEN (STAD)',
     'plaats': 'Emmen',
     'seo_title': 'Lasergame huren in Emmen | Dagpakketverhuur',
-    'meta': 'Lasergame huren in Emmen, Klazienaveen of Nieuw-Amsterdam? Compact of XL, geen borg, '
-            'gratis bezorging vanaf €150 en te spelen vanaf 6 jaar.',
-    'product_ids': [47238, 47235],
+    'meta': 'Lasergame huren in Emmen, Klazienaveen of Nieuw-Amsterdam? Wij bezorgen en halen op. '
+            'Geen borg, Compact of XL, voor feestjes, scholen en teamuitjes.',
+    'product_ids': [47238, 47235], 'cat_url': CAT,
+    'product_alts': {47238: 'Lasergame Compact huren', 47235: 'Lasergame XL huren'},
     'hero': {
         'img': IMG['tuin'][0], 'alt': IMG['tuin'][1], 'pos': '50% 45%',
         'eyebrow': 'Lasergame · Emmen',
@@ -298,14 +301,14 @@ PAGES.append({
         'kicker': 'Lasergame in Emmen',
         'h2': 'Bezorgd bij jou in Emmen',
         'p': [
-            'Woon je in Emmen of een van de dorpen in de gemeente? Dan bezorgen we je lasergame zelf, op het tijdslot '
-            'dat je bij het afrekenen kiest. Vul je postcode in om je tarief te zien; vanaf een besteding van €150 is bezorgen gratis.',
+            'Woon je in Emmen of ergens anders in de hele gemeente Emmen? Dan bezorgen we je lasergame zelf, op het tijdslot '
+            'dat je bij het afrekenen kiest. Het tarief en de gratis-grens hangen af van je zone. Bereken het met je postcode.',
             'Speel je binnen, bijvoorbeeld in een sporthal of grote ruimte, of buiten in de tuin of het park? '
             'Beide sets werken binnen en buiten en zijn binnen 5 minuten speelklaar.',
         ],
     },
     'products': {
-        'h2': 'Kies je set',
+        'h2': 'Lasergame Compact of XL',
         'lead': 'Compact voor korte rondes en kleinere groepen, XL voor een uitgebreider spel.',
         'checks': PRODUCT_CHECKS, 'info_h3': 'Bij beide sets',
         'info_link': (HUB, 'Hulp bij kiezen'),
@@ -320,7 +323,7 @@ PAGES.append({
         ],
     },
     'gelegenheden': {
-        'h2': 'Lasergame in Emmen voor',
+        'h2': 'Waarvoor huur je een lasergame in Emmen?',
         'items': [
             {'icon': 'cake', 'h3': 'Kinderfeestje',
              'p': 'Vanaf 6 jaar speelt iedereen mee, in de tuin of binnen bij slecht weer.',
@@ -334,14 +337,13 @@ PAGES.append({
     'b2b': {
         'kicker': 'Zakelijk in Emmen',
         'h2': 'Ook voor bedrijven, scholen en verenigingen in Emmen',
-        'p': 'Plan je een teamuitje, sportdag of clubactiviteit? Vraag een zakelijke prijs aan: binnen één werkdag een vaste prijs, '
-             'inclusief bezorgen en ophalen.',
+        'p': 'Plan je een teamuitje, sportdag of clubactiviteit in Emmen? Vertel ons wat je nodig hebt en vraag een zakelijke prijs aan.',
         'checks': B2B_CHECKS[:2],
         'img': IMG['veld'][0], 'alt': IMG['veld'][1],
     },
     'levering': {
         'h2': 'Levering in Emmen en omgeving',
-        'lead': 'We bezorgen in heel de gemeente Emmen, ook in onder meer deze plaatsen. Je tarief zie je bij het invullen van je postcode.',
+        'lead': 'We bezorgen in de hele gemeente Emmen, onder meer in deze plaatsen. Het tarief en de gratis-grens hangen af van je zone. Bereken het met je postcode.',
         'plaatsen': ['Emmen', 'Klazienaveen', 'Nieuw-Amsterdam', 'Erica', 'Schoonebeek',
                      'Emmer-Compascuum', 'Nieuw-Weerdinge', 'Zwartemeer'],
         'items': [LEV_EIGEN('Emmen en omgeving'), LEV_AFHALEN, LEV_DHL],
@@ -353,7 +355,7 @@ PAGES.append({
         'items': [
             ('Bezorgen jullie ook in de dorpen rond Emmen?',
              'Ja, we bezorgen in de hele gemeente Emmen, zoals in Klazienaveen, Nieuw-Amsterdam, Erica en Schoonebeek. '
-             f'Het tarief hangt af van je postcode; vanaf €150 is bezorgen gratis. <a href="{CONTACT}">Bereken je bezorgkosten</a>.'),
+             f'Het tarief en de gratis-grens hangen af van je zone. <a href="{CONTACT}">Bereken het met je postcode</a>.'),
             ('Kunnen we binnen spelen als het regent?',
              'Ja. Beide sets werken binnen en buiten. Een sporthal, gymzaal of grote ruimte werkt goed.'),
             ('Op welk moment wordt er bezorgd?',
@@ -368,7 +370,7 @@ PAGES.append({
     'final': {
         'img': IMG['kids'][0], 'alt': IMG['kids'][1],
         'h2': 'Lasergame in Emmen regelen?',
-        'p': 'Kies je set en je datum, wij bezorgen bij jou in Emmen. Gratis vanaf €150.',
+        'p': 'Kies je set en je datum, wij bezorgen bij jou in Emmen. Of laat je set met DHL versturen: gratis vanaf €150.',
         'links': [('Lasergame huren in Drenthe', url('/lasergame-huren-drenthe/')), ('Alle lasergame-informatie', HUB),
                   ('Lasergame Compact', COMPACT), ('Lasergame XL', XL)],
     },
