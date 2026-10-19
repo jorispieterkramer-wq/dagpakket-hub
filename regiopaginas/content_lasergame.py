@@ -28,7 +28,7 @@ IMG = {
 COMPACT = url('/product/lasergame-compacte-huren/')
 XL = url('/product/lasergame-xl-huren/')
 HUB = url('/lasergame-huren/')
-CAT = url('/product-category/activiteiten-huren/lasergame-huren/')  # eigen permalink, 200, geen redirect
+CAT = url('/product-category/activiteiten-attracties-huren/attracties-activiteiten-huren/')  # live: 301-doel van /product-category/lasergame-huren/, 200 zonder redirect
 CONTACT = url('/contact/')
 
 # ------------------------------------------------------------------ gedeeld

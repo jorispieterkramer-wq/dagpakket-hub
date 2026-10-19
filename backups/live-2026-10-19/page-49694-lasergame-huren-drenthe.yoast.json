@@ -1,0 +1,30 @@
+{
+ "posts": [
+  {
+   "id": 49694,
+   "title": "Lasergame huren Drenthe",
+   "status": "publish",
+   "edit_link": "https://dagpakketverhuur.nl/wp-admin/post.php?post=49694&action=edit",
+   "focus_keyphrase": "lasergame huren drenthe",
+   "seo_title": "Lasergame huren Drenthe | Gratis bezorging | Dagpakketverhuur",
+   "meta_description": "Lasergame huren in Drenthe? Dagpakketverhuur bezorgt snel door heel Drenthe. Geen borg, gratis bezorging v.a. €150. Lasergame XL",
+   "social_title": "",
+   "social_description": "",
+   "seo_title_fallback": "",
+   "meta_description_fallback": "",
+   "social_title_fallback": "%%title%%",
+   "social_description_fallback": "",
+   "editable": true,
+   "needs_improvement": {
+    "seo_title": false,
+    "meta_description": false,
+    "social_title": false,
+    "social_description": true
+   }
+  }
+ ],
+ "total": 1,
+ "total_pages": 1,
+ "page": 1,
+ "per_page": 20
+}

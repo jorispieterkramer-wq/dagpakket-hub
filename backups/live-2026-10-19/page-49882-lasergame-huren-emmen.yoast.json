@@ -1,0 +1,30 @@
+{
+ "posts": [
+  {
+   "id": 49882,
+   "title": "Lasergame huren Emmen",
+   "status": "publish",
+   "edit_link": "https://dagpakketverhuur.nl/wp-admin/post.php?post=49882&action=edit",
+   "focus_keyphrase": "lasergame huren emmen",
+   "seo_title": "Lasergame huren Emmen | Gratis bezorging | Dagpakketverhuur",
+   "meta_description": "Lasergame huren in Emmen? Dagpakketverhuur bezorgt snel door heel Noord-Nederland. Geen borg, gratis bezorging v.a. €150. Lasergame XL.",
+   "social_title": "",
+   "social_description": "",
+   "seo_title_fallback": "",
+   "meta_description_fallback": "",
+   "social_title_fallback": "%%title%%",
+   "social_description_fallback": "",
+   "editable": true,
+   "needs_improvement": {
+    "seo_title": false,
+    "meta_description": false,
+    "social_title": false,
+    "social_description": true
+   }
+  }
+ ],
+ "total": 1,
+ "total_pages": 1,
+ "page": 1,
+ "per_page": 20
+}
