@@ -328,7 +328,7 @@ PAGES.append({
             {'icon': 'school', 'h3': 'Sportdag of schoolactiviteit',
              'p': 'Op het sportveld of in de gymzaal. Scholen betalen op factuur.'},
             {'icon': 'sun', 'h3': 'Buurtfeest',
-             'p': 'Straat tegen straat op een grasveld. Snel opgezet, en na afloop zetten we alles weer op.'},
+             'p': 'Straat tegen straat op een grasveld. Snel opgezet en net zo snel weer opgeruimd.'},
         ],
     },
     'b2b': {
