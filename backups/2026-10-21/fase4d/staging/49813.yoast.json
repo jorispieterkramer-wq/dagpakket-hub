@@ -1,0 +1,17 @@
+{
+ "yoast_head_json": {
+  "title": "Feestverhuur Noord-Nederland | Alles voor jouw feest",
+  "description": "Feestverhuur in Noord-Nederland? Dagpakketverhuur heeft alles: partytent, statafels, biertafels, lasergame en silent disco.",
+  "robots": {
+   "index": "noindex",
+   "follow": "follow",
+   "max-snippet": "max-snippet:-1",
+   "max-image-preview": "max-image-preview:large",
+   "max-video-preview": "max-video-preview:-1"
+  },
+  "canonical": null
+ },
+ "status": "publish",
+ "slug": "feestverhuur",
+ "link": "https://staging.dagpakketverhuur.nl/feestverhuur/"
+}

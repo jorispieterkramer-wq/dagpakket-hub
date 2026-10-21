@@ -1,0 +1,17 @@
+{
+ "yoast_head_json": {
+  "title": "Zakelijke verhuur & bedrijfsuitje activiteiten | Dagpakketverhuur",
+  "description": "Bedrijfsuitje, personeelsfeest of open dag? Huur lasergame, pubquiz, silent disco, tenten en meubilair. Eén aanspreekpunt, bezorgd en opgehaald, op factuur.",
+  "robots": {
+   "index": "index",
+   "follow": "follow",
+   "max-snippet": "max-snippet:-1",
+   "max-image-preview": "max-image-preview:large",
+   "max-video-preview": "max-video-preview:-1"
+  },
+  "canonical": "https://dagpakketverhuur.nl/zakelijk/"
+ },
+ "status": "publish",
+ "slug": "zakelijk",
+ "link": "https://dagpakketverhuur.nl/zakelijk/"
+}

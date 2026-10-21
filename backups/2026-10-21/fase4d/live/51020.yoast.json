@@ -1,0 +1,17 @@
+{
+ "yoast_head_json": {
+  "title": "Biertap huren in Noord-Nederland | DagpakketVerhuur",
+  "description": "Biertap huren in Noord-Nederland? Compleet pakket inclusief fust, bezorgd in Friesland, Drenthe en Groningen. Geen borg, gratis v.a. €150.",
+  "robots": {
+   "index": "index",
+   "follow": "follow",
+   "max-snippet": "max-snippet:-1",
+   "max-image-preview": "max-image-preview:large",
+   "max-video-preview": "max-video-preview:-1"
+  },
+  "canonical": "https://dagpakketverhuur.nl/biertap-huren/"
+ },
+ "status": "publish",
+ "slug": "biertap-huren",
+ "link": "https://dagpakketverhuur.nl/biertap-huren/"
+}

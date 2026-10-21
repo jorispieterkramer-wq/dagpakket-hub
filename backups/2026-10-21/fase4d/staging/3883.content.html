@@ -1,0 +1,222 @@
+<!--
+  ============================================================
+  DAGPAKKETVERHUUR — HOMEPAGE
+  Plak dit in Elementor: 1 sectie, volle breedte, geen padding,
+  daarin één HTML-widget. Verder niets in de sectie.
+  ------------------------------------------------------------
+  Dit blok rendert in een SHADOW ROOT. Elementor, het thema en
+  andere plugins kunnen de opmaak daarbinnen niet raken — wat je
+  hier ziet is exact wat er op de site staat. Niets aanpassen
+  buiten de teksten en afbeeldings-URL's.
+  Uitzondering: de sectie "Populaire producten" staat bewust
+  BUITEN de shadow root (als slot), zodat de productkaarten en
+  de Huren-knop van dpv-shop 2.10.0+ blijven werken.
+  ============================================================
+-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!-- Productgrid: light DOM, wordt via een slot in het ontwerp geplaatst. -->
+<style>
+#dpv-pop-prods{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;align-items:stretch}
+#dpv-pop-prods .dpv-prod-skel{background:#fff;border-radius:12px;box-shadow:0 1px 3px rgba(20,24,31,.07);min-height:290px}
+@media (max-width:860px){#dpv-pop-prods{grid-template-columns:repeat(2,1fr);gap:12px}}
+</style>
+<template id="dpv-home-tpl">
+<style>
+:host{display:block}
+*{box-sizing:border-box;margin:0;padding:0;border:0;background:none;font:inherit;color:inherit;
+  letter-spacing:normal;text-transform:none;text-decoration:none;list-style:none}
+.dpv-home{--pri:#2f4156;--ink:#14181f;--mut:#5b6472;--soft:#9aa2ad;--line:#ececec;
+  font-family:Inter,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.5;
+  color:var(--ink);text-wrap:pretty;background:#fafafa}
+a{color:var(--pri);cursor:pointer}
+h1,h2,.dpv-num{font-family:Poppins,Arial,sans-serif}
+img{display:block;max-width:100%}
+button{cursor:pointer}
+.dpv-wrap{max-width:1280px;margin:0 auto;padding:72px 32px 0}
+.dpv-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* hero */
+.dpv-hero{position:relative;height:600px;overflow:hidden}
+.dpv-hero>img.dpv-img{object-position:50% 58%}
+.dpv-hero-scrim{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(0deg,rgba(10,12,16,.72) 0%,rgba(10,12,16,.35) 45%,rgba(10,12,16,.1) 70%)}
+.dpv-hero-body{position:absolute;left:0;right:0;bottom:0;padding:0 32px 56px}
+.dpv-hero-inner{max-width:1280px;margin:0 auto}
+.dpv-hero-col{max-width:560px}
+.dpv-eyebrow{font-size:13px;font-weight:600;color:#fff;opacity:.85;letter-spacing:.03em;margin-bottom:16px}
+.dpv-hero h1{font-size:42px;line-height:1.16;font-weight:700;margin-bottom:18px;color:#fff;letter-spacing:-.01em}
+.dpv-hero-sub{font-size:15.5px;color:#e7e9ec;line-height:1.7;margin-bottom:28px;max-width:440px}
+.dpv-cta-row{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.dpv-btn{background:#fff;color:var(--ink);font-weight:600;font-size:14.5px;
+  padding:15px 26px;border-radius:8px;display:inline-block}
+.dpv-btn:hover{background:#f1f2f4}
+.dpv-link-ul{color:#fff;font-weight:600;font-size:14.5px;border-bottom:1.5px solid #fff;padding-bottom:2px}
+.dpv-link-ul:hover{opacity:.85}
+/* sectiekoppen */
+.dpv-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px;gap:12px}
+.dpv-head h2{font-size:22px;font-weight:700;white-space:nowrap}
+.dpv-head a{font-weight:600;font-size:13.5px;white-space:nowrap}
+/* categorieën */
+.dpv-cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.dpv-cat{position:relative;display:block;border-radius:10px;overflow:hidden;height:190px;background:#14181f}
+.dpv-cat-scrim{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(0deg,rgba(8,10,14,.94) 0%,rgba(8,10,14,.6) 45%,rgba(8,10,14,.3) 100%)}
+.dpv-cat-txt{position:absolute;left:0;right:0;bottom:0;padding:14px 16px}
+.dpv-cat-txt strong{display:block;font-family:Poppins,Arial,sans-serif;font-weight:700;font-size:16px;color:#fff;line-height:1.25}
+/* producten (grid staat in light DOM) */
+::slotted(#dpv-pop-prods){display:grid}
+/* ons verhaal */
+.dpv-about{display:grid;grid-template-columns:1fr 1fr}
+.dpv-about-txt{background:#f6f4ef;padding:48px 48px 48px 0;display:flex;flex-direction:column;
+  justify-content:center;min-height:420px;border-radius:18px 0 0 18px}
+.dpv-about-txt>div{padding-left:32px}
+.dpv-kicker{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#a8935f;margin-bottom:14px}
+.dpv-about-txt h2{font-size:27px;font-weight:700;margin-bottom:16px;line-height:1.3}
+.dpv-about-txt p{font-size:15px;color:#5c6068;line-height:1.75;margin-bottom:24px;max-width:420px}
+.dpv-facts{display:flex;gap:36px;margin-bottom:28px}
+.dpv-num{font-weight:700;font-size:24px}
+.dpv-facts small{font-size:12px;color:var(--soft)}
+.dpv-link-dark{color:var(--ink);font-weight:600;font-size:14px;border-bottom:1.5px solid var(--ink);padding-bottom:2px;align-self:flex-start}
+.dpv-about-img{position:relative;min-height:420px;border-radius:0 18px 18px 0;overflow:hidden;background:#f6f4ef}
+/* reviews */
+.dpv-rev-title{font-size:22px;font-weight:700;margin-bottom:28px;text-align:center}
+.dpv-rev-row{display:flex;align-items:flex-start;justify-content:center;gap:20px}
+.dpv-arrow{flex-shrink:0;width:40px;height:40px;border-radius:50%;border:1px solid #e3e6ea;
+  background:#fff;font-size:16px;color:var(--ink);line-height:1}
+.dpv-arrow-desk{margin-top:200px}
+.dpv-rev-track{display:flex;align-items:flex-start;justify-content:center;gap:28px;overflow:hidden;flex:1}
+.dpv-rev-nav{display:none}
+.dpv-rev{flex:0 0 auto;width:280px;opacity:.4;transform:scale(.9);transition:all .35s ease}
+.dpv-rev[data-active="true"]{width:440px;opacity:1;transform:scale(1)}
+.dpv-rev-photo{position:relative;aspect-ratio:1/1;border-radius:12px;overflow:hidden;margin-bottom:16px;background:#f1f2f3}
+.dpv-stars{color:var(--pri);font-size:12px;letter-spacing:.15em;margin-bottom:10px}
+.dpv-rev p{font-size:14.5px;color:#3d434c;line-height:1.65;margin-bottom:10px}
+.dpv-rev cite{display:block;font-size:11.5px;font-weight:600;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--soft);font-style:normal;line-height:1.5}
+/* logo-loop */
+.dpv-logos{max-width:1280px;margin:0 auto;padding:96px 0 104px}
+.dpv-logos p{text-align:center;font-size:12px;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--soft);margin-bottom:48px}
+.dpv-logo-mask{overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.dpv-logo-track{display:flex;width:max-content;animation:dpvLogoScroll 44s linear infinite}
+.dpv-logo-track>img{flex:0 0 auto;height:42px;width:auto;object-fit:contain;
+  margin-right:64px;opacity:.6;filter:grayscale(1);transition:opacity .25s ease,filter .25s ease}
+.dpv-logo-track>img:hover{opacity:1;filter:grayscale(0)}
+.dpv-logo-mask:hover .dpv-logo-track{animation-play-state:paused}
+@keyframes dpvLogoScroll{from{transform:translateX(0)}to{transform:translateX(-33.333%)}}
+/* scroll-animatie */
+.dpv-anim [data-reveal]{opacity:0;transform:translateY(22px);
+  transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1)}
+.dpv-anim [data-reveal].is-in{opacity:1;transform:none}
+.dpv-anim .dpv-hero-col{opacity:0;transform:translateY(16px);
+  animation:dpvHeroIn .8s cubic-bezier(.22,.61,.36,1) .15s forwards}
+@keyframes dpvHeroIn{to{opacity:1;transform:none}}
+@media (max-width:860px){
+  .dpv-wrap{padding:48px 20px 0}
+  .dpv-hero{height:480px}
+  .dpv-hero h1{font-size:30px}
+  .dpv-hero-sub{display:none}
+  .dpv-hero-body{padding:0 20px 40px}
+  .dpv-head h2{font-size:18px}
+  .dpv-cats{grid-template-columns:none;display:flex;overflow-x:auto;gap:14px;
+    scroll-snap-type:x proximity;padding-bottom:4px;scrollbar-width:none}
+  .dpv-cats::-webkit-scrollbar{width:0;height:0}
+  .dpv-cats>*{flex:0 0 78%;scroll-snap-align:start}
+  .dpv-about{grid-template-columns:minmax(0,1fr)}
+  .dpv-about-txt{border-radius:18px 18px 0 0;padding:28px 20px;min-height:0}
+  .dpv-about-txt>div{padding-left:0}
+  .dpv-about-img{border-radius:0 0 18px 18px;min-height:260px}
+  .dpv-rev-title{font-size:19px;margin-bottom:18px}
+  .dpv-rev-row{flex-direction:column;gap:0}
+  .dpv-arrow-desk{display:none;margin-top:0}
+  .dpv-rev-track{width:100%;gap:0;order:1;margin-bottom:18px}
+  .dpv-rev{display:none}
+  .dpv-rev[data-active="true"]{display:block;width:100%;opacity:1;transform:none}
+  .dpv-rev-nav{display:flex;order:2;align-items:center;justify-content:center;gap:14px}
+  .dpv-rev p{font-size:13.5px}
+  .dpv-dots{display:flex;gap:7px}
+  .dpv-dot{width:7px;height:7px;border-radius:50%;background:#d7dce2;padding:0}
+  .dpv-dot[data-active="true"]{background:var(--pri)}
+  .dpv-logos{padding:64px 0 72px}
+}
+@media (prefers-reduced-motion:reduce){
+  .dpv-anim [data-reveal]{opacity:1;transform:none;transition:none}
+  .dpv-anim .dpv-hero-col{opacity:1;transform:none;animation:none}
+}
+</style>
+  <section>
+    <img data-skip-lazy  src="https://staging.dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_afvuyfafvuyfafvu_11zon.webp" alt="Feestlocatie met partytent, statafels en verlichting klaar voor een event van Dagpakketverhuur" fetchpriority="high">
+          Verhuur voor elk feest en event
+          <h1>Persoonlijke service,<br>van vraag tot levering</h1>
+          <p>Ons team denkt met je mee over de juiste keuze, regelt bezorging en staat klaar via telefoon of WhatsApp.</p>
+            <a href="https://staging.dagpakketverhuur.nl/shop/">Volledig assortiment</a>
+            <a href="https://staging.dagpakketverhuur.nl/contact/">Naar klantenservice</a>
+  </section>
+  <section data-reveal>
+      <h2>Populaire categorieën</h2>
+      <a href="https://staging.dagpakketverhuur.nl/shop/">Alle categorieën →</a>
+      <a href="https://staging.dagpakketverhuur.nl/product-category/activiteiten-huren/">
+        <img data-skip-lazy  src="https://staging.dagpakketverhuur.nl/wp-content/uploads/2026/02/Ontwerp-zonder-titel_11zon.webp" alt="Deelnemers spelen lasergame met de laserguns van Dagpakketverhuur" loading="lazy">
+        <strong>Activiteiten</strong>
+      </a>
+      <a href="https://staging.dagpakketverhuur.nl/product-category/bar-koeling-huren/">
+        <img data-skip-lazy  src="https://staging.dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_evf1cjevf1cjevf1_11zon.webp" alt="Zwarte mobiele bar met koeling, debrasseerbar en multiwagon klaargezet op een event" loading="lazy">
+        <strong>Bar &amp; Koeling</strong>
+      </a>
+      <a href="https://staging.dagpakketverhuur.nl/product-category/meubilair-huren/">
+        <img data-skip-lazy  src="https://staging.dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_azdggoazdggoazdg_11zon.webp" alt="Bierbanksets en statafels met kleden op een ingerichte feestlocatie" loading="lazy">
+        <strong>Meubilair</strong>
+      </a>
+      <a href="https://staging.dagpakketverhuur.nl/product-category/tenten-verwarming-huren/">
+        <img data-skip-lazy  src="https://staging.dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_sbd730sbd730sbd7_11zon.webp" alt="Witte stretchtent met terrasverwarmers en feestverlichting boven een gevulde eventvloer" loading="lazy">
+        <strong>Tenten &amp; Verwarming</strong>
+      </a>
+  </section>
+  <section data-reveal>
+      <h2>Populaire producten</h2>
+      <a href="https://staging.dagpakketverhuur.nl/shop/">Bekijk alles →</a>
+    <slot name="prods"></slot>
+  </section>
+  <section data-reveal>
+          Ons verhaal
+          <h2>Begonnen met 12 lasergunsets, nooit meer gestopt</h2>
+          <p>Op mijn zestiende ben ik begonnen met het verhuren van 12 lasergunsets aan vrienden en buurtgenoten. Inmiddels is dat uitgegroeid tot een compleet assortiment voor elk feest — met dezelfde persoonlijke aanpak van toen.</p>
+            50+<small>geslaagde events</small>
+            9–21<small>ma–za bereikbaar</small>
+          <a href="/over-ons/">Lees ons verhaal →</a>
+        <img data-skip-lazy  src="https://staging.dagpakketverhuur.nl/wp-content/uploads/2025/03/IMG_1962-1-scaled.jpg" alt="Joris van Dagpakketverhuur in het magazijn tussen de verhuurmaterialen" loading="lazy">
+  </section>
+  <section data-reveal>
+    <h2>Ervaringen van onze klanten</h2>
+      <button type="button" data-dpv-rev="prev" aria-label="Vorige">‹</button>
+        <figure data-active="false">
+          <img data-skip-lazy  src="https://staging.dagpakketverhuur.nl/wp-content/uploads/2025/09/F4E27435-5E6B-4CE1-A3FA-FB4B5AE65C54.jpeg" alt="Collega's in actie tijdens een lasergame op een bedrijfsuitje" loading="lazy">
+          ★ ★ ★ ★ ★
+          <p>Super goede service en heel handig geregeld. Mooi dat het zo kan.</p>
+          <cite>Jurgen Elshof — bedrijfsuitje lasergame</cite>
+        </figure>
+        <figure data-active="true">
+          <img data-skip-lazy  src="https://staging.dagpakketverhuur.nl/wp-content/uploads/2025/12/Social-media-Kit-Dagpakketverhuur-4.png" alt="Kinderen spelen met Gelblasters op een kinderfeestje" loading="lazy">
+          ★ ★ ★ ★ ★
+          <p>Wij hebben een top kinderfeestje gehad, 14 kinderen met een gelblaster — tussen de traan door zeiden ze: dit is echt het leukste feestje ooit! Joris is ongelooflijk flexibel, meedenkend en oplossingsgericht!</p>
+          <cite>Marjolijn Leijs — kinderfeestje gelblaster</cite>
+        </figure>
+        <figure data-active="false">
+          <img data-skip-lazy  src="https://staging.dagpakketverhuur.nl/wp-content/uploads/2026/08/WhatsApp-Image-2026-08-24-at-16.06.21_11zon_11zon-1.webp" alt="Babyshower met gedekte buffettafel en klapstoelen van Dagpakketverhuur" loading="lazy">
+          ★ ★ ★ ★ ★
+          <p>Buffettafel en stoelen stonden op tijd klaar en de tafel zag er precies uit zoals we hoopten. Ophalen was net zo makkelijk geregeld.</p>
+          <cite>Babyshower — buffettafel &amp; klapstoelen</cite>
+        </figure>
+      <button type="button" data-dpv-rev="next" aria-label="Volgende">›</button>
+        <button type="button" data-dpv-rev="prev" aria-label="Vorige review">‹</button>
+          <button type="button" data-dpv-dot="0" aria-label="Review 1"></button>
+          <button type="button" data-dpv-dot="1" aria-label="Review 2"></button>
+          <button type="button" data-dpv-dot="2" aria-label="Review 3"></button>
+        <button type="button" data-dpv-rev="next" aria-label="Volgende review">›</button>
+  </section>
+  <section data-reveal>
+    <p>Onder anderen geleverd aan</p>
+  </section>
+</template>

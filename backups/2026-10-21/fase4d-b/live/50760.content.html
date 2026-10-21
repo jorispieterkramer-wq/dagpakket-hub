@@ -1,0 +1,290 @@
+<!--
+  ============================================================
+  DAGPAKKETVERHUUR — ZAKELIJK
+  Eén Elementor HTML-widget in een sectie, volle breedte, padding 0.
+  ------------------------------------------------------------
+  Alles staat in een SHADOW ROOT: thema- en Elementor-CSS raken dit
+  ontwerp niet meer (zelfde aanpak als de klantenservice-pagina).
+  Het formulier zit IN dit blok en gaat rechtstreeks naar de plugin
+  (dpvs_business_request → mail naar de site + bevestiging naar de klant).
+  Er is dus GEEN extra shortcode-widget en geen formulier-plugin nodig.
+  ------------------------------------------------------------
+  CALENDLY: zet de link één regel hieronder in het script bij
+      var CALENDLY = 'https://calendly.com/jorispieterkramer/30min';
+  Zodra daar een URL staat, toont stap 2 van "Kennismakingsgesprek"
+  de Calendly-agenda; blijft hij leeg, dan staat er de knop
+  "Bel mij terug" en versturen we de aanvraag zonder tijdstip.
+  ============================================================
+-->
+<template id="dpv-zk-tpl">
+<style>
+:host{display:block}
+*{box-sizing:border-box}
+[hidden]{display:none !important}
+.zk{--pri:#2f4156;--ink:#14181f;--mut:#5b6472;--soft:#9aa2ad;--line:#e3e6ea;
+  font-family:Inter,-apple-system,Arial,sans-serif;color:var(--ink);background:#fafafa;
+  font-size:14px;line-height:1.5;text-wrap:pretty}
+.zk a{color:var(--pri);text-decoration:none}
+.zk a:hover{color:#1f2e3a}
+h1,h2,h3,.t,.num{font-family:Poppins,Inter,Arial,sans-serif;font-weight:500;margin:0}
+p{margin:0}
+img{display:block;max-width:100%}
+.wrap{max-width:1280px;margin:0 auto;padding:0 32px}
+/* hero */
+.hero{position:relative;height:600px;overflow:hidden;background:#14181f}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 72%}
+.scrim{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(0deg,rgba(10,12,16,.74) 0%,rgba(10,12,16,.36) 46%,rgba(10,12,16,.1) 72%)}
+.hero-body{position:absolute;left:0;right:0;bottom:0;padding:0 32px 56px}
+.hero-in{max-width:1280px;margin:0 auto}
+.tag{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.34);
+  color:#fff;font-size:12.5px;font-weight:500;letter-spacing:.04em;padding:7px 14px;border-radius:999px;margin-bottom:20px}
+.hero h1{font-size:44px;line-height:1.14;font-weight:600;color:#fff;letter-spacing:-.5px;margin-bottom:18px}
+.hero-sub{font-size:15.5px;color:#e7e9ec;line-height:1.7;margin-bottom:28px;max-width:440px}
+.row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn{background:#fff;color:var(--ink);font-weight:500;font-size:14.5px;padding:15px 26px;border-radius:8px;
+  border:0;cursor:pointer;font-family:inherit}
+.btn:hover{background:#f1f2f4}
+.btn-o{border:1px solid rgba(255,255,255,.55);color:#fff;font-weight:500;font-size:14.5px;
+  padding:14px 24px;border-radius:8px;background:none;cursor:pointer;font-family:inherit}
+.btn-o:hover{background:rgba(255,255,255,.12);color:#fff}
+.zk a.tel{color:#fff;font-weight:500;font-size:14.5px;border-bottom:1.5px solid #fff;padding-bottom:2px}
+.zk a.tel:hover{color:#fff;opacity:.85}
+/* wie je aan de lijn krijgt */
+.about{display:grid;grid-template-columns:1fr 1fr;max-width:1280px;margin:0 auto;padding:64px 32px 0}
+.about-txt{background:#f6f4ef;padding:48px 48px 48px 32px;display:flex;flex-direction:column;
+  justify-content:center;min-height:420px;border-radius:18px 0 0 18px}
+.kick{font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#a8935f;margin-bottom:14px}
+.about-txt h2{font-size:27px;font-weight:600;margin-bottom:16px;line-height:1.3}
+.about-txt p{font-size:15px;color:var(--mut);line-height:1.75;margin-bottom:20px;max-width:440px}
+.facts{display:flex;gap:36px;margin-bottom:28px}
+.num{font-weight:600;font-size:24px}
+.facts small{font-size:12px;color:var(--soft)}
+.ul{color:var(--ink);font-weight:500;font-size:14px;border-bottom:1.5px solid var(--ink);
+  padding-bottom:2px;align-self:flex-start}
+.ul:hover{color:var(--ink)}
+.about-img{position:relative;min-height:420px;border-radius:0 18px 18px 0;overflow:hidden;background:#f6f4ef}
+.about-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* logo-loop */
+.logos{max-width:1280px;margin:0 auto;padding:88px 0 0}
+.logos p{text-align:center;font-size:12px;font-weight:500;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--soft);margin-bottom:28px}
+.mask{overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.track{display:flex;width:max-content;animation:zkLogo 64s linear infinite}
+.track img{flex:0 0 auto;margin-right:96px;height:38px;width:auto;object-fit:contain;opacity:.55;filter:grayscale(1)}
+@keyframes zkLogo{from{transform:translateX(0)}to{transform:translateX(-33.333%)}}
+/* categorieën */
+.cats-sec{max-width:1280px;margin:0 auto;padding:80px 32px 0}
+.head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:28px;gap:12px}
+.head h2{font-size:22px;font-weight:600;white-space:nowrap}
+.head a{font-weight:500;font-size:13.5px;white-space:nowrap}
+.cats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cat{position:relative;display:block;border-radius:10px;overflow:hidden;height:190px;background:#14181f}
+.cat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.cat-scrim{position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(0deg,rgba(8,10,14,.94) 0%,rgba(8,10,14,.6) 45%,rgba(8,10,14,.3) 100%)}
+.cat strong{position:absolute;left:16px;bottom:14px;font-family:Poppins,Inter,Arial,sans-serif;
+  font-weight:500;font-size:16px;color:#fff;line-height:1.25}
+/* kennismaken + formulier — zelfde opbouw als het ontwerp */
+.meet{background:#f7f8f9;border-top:1px solid var(--line);margin-top:88px}
+.meet-in{max-width:1280px;margin:0 auto;padding:80px 32px 88px;display:grid;
+  grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:72px;align-items:start}
+.meet-kick{display:inline-block;font-size:12px;font-weight:500;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--soft);margin-bottom:16px}
+.meet h2{font-size:31px;font-weight:600;line-height:1.2;margin-bottom:18px;letter-spacing:-.5px}
+.meet-lead{font-size:15px;color:#5c6068;line-height:1.8;margin-bottom:36px;max-width:430px}
+.pts{display:flex;flex-direction:column;gap:26px}
+.pt{display:flex;gap:16px;align-items:flex-start}
+.pt-ic{flex:0 0 auto;width:38px;height:38px;border-radius:10px;background:#fff;
+  border:1px solid #e5e7ea;display:flex;align-items:center;justify-content:center}
+.pt b{display:block;font-family:Poppins,Inter,Arial,sans-serif;font-size:15px;font-weight:600;margin-bottom:5px}
+.pt p{font-size:13.5px;color:#5c6068;line-height:1.72;max-width:370px}
+.form-card{background:#fff;border:1px solid #e5e7ea;border-radius:16px;padding:38px 40px;
+  box-shadow:0 1px 2px rgba(20,24,31,.04),0 12px 32px rgba(20,24,31,.05)}
+.tabs{display:flex;gap:8px;background:#f6f7f8;border-radius:999px;padding:5px;margin-bottom:26px}
+.tabs button{flex:1;background:none;border:0;border-radius:999px;padding:11px 14px;
+  font-family:inherit;font-size:13.5px;font-weight:500;color:#5c6068;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--pri);color:#fff}
+.form-card h3{font-size:20px;font-weight:600;margin-bottom:8px}
+.form-card .sub{font-size:13.5px;color:#5c6068;line-height:1.7;margin-bottom:24px}
+.fields{display:grid;gap:16px}
+.fields .hint{font-size:12.5px;color:#8b9099;line-height:1.6;margin:-10px 0 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:block;font-size:12.5px;color:#5b6472}
+label>span{display:block;margin-bottom:6px}
+input,select,textarea{font-family:inherit;font-size:14px;color:var(--ink);background:#fff;
+  border:1px solid #dfe3e8;border-radius:9px;padding:12px 13px;width:100%;outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--pri);box-shadow:0 0 0 3px rgba(47,65,86,.09)}
+textarea{resize:vertical;min-height:84px;line-height:1.55}
+.opt{color:#a7adb6}
+.send{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:4px}
+.send small{font-size:12px;color:#a7adb6;max-width:260px;line-height:1.55}
+.send button{background:var(--pri);color:#fff;border:0;font-family:inherit;font-weight:500;
+  font-size:14px;padding:14px 26px;border-radius:9px;cursor:pointer}
+.send button:hover{background:#263646}
+.send button[disabled]{opacity:.6;cursor:default}
+.call{font-size:13px;color:#5c6068}
+.call a{font-weight:500}
+.msg{font-size:13px;line-height:1.55;color:#a1362f}
+.done{background:#f2f8f4;border:1px solid #cfe3d8;border-radius:12px;padding:24px}
+.done b{display:block;font-family:Poppins,Inter,Arial,sans-serif;font-size:16px;font-weight:500;margin-bottom:6px}
+.done p{font-size:13.5px;color:#4a5461;line-height:1.7}
+.done button{margin-top:18px;background:none;border:1px solid #cfd4da;color:var(--ink);
+  font-family:inherit;font-size:13px;font-weight:500;padding:9px 16px;border-radius:8px;cursor:pointer}
+.done button:hover{border-color:var(--soft)}
+.cal-head{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:18px}
+.cal-head h3{margin-bottom:5px}
+.cal-head p{font-size:13px;color:#8d949d}
+.cal-head button{background:none;border:1px solid #dfe3e8;color:#5c6068;font-family:inherit;
+  font-size:12.5px;font-weight:500;padding:8px 14px;border-radius:8px;cursor:pointer}
+.cal iframe{width:100%;height:660px;border:0;display:block;border-radius:12px}
+.cal-note{font-size:11.5px;color:#b0b6bd;margin-top:12px}
+@media (max-width:1100px){
+  .meet-in{grid-template-columns:minmax(0,1fr);gap:40px}
+  .meet-lead,.pt p{max-width:none}
+}
+@media (max-width:860px){
+  .hero{height:480px}
+  .hero h1{font-size:29px}
+  .hero-sub{display:none}
+  .hero-body{padding:0 24px 44px}
+  .btn,.btn-o{padding:13px 20px;font-size:14px}
+  .about{grid-template-columns:minmax(0,1fr);padding:56px 24px 0}
+  .about-txt{border-radius:18px 18px 0 0;padding:34px 24px;min-height:0}
+  .about-txt h2{font-size:22px}
+  .about-img{border-radius:0 0 18px 18px;min-height:260px}
+  .logos{padding-top:68px}
+  .cats-sec{padding:68px 24px 0}
+  .head h2{font-size:18px;white-space:normal}
+  .cats{display:flex;overflow-x:auto;gap:14px;scroll-snap-type:x proximity;padding-bottom:4px;scrollbar-width:none}
+  .cats::-webkit-scrollbar{width:0;height:0}
+  .cats>*{flex:0 0 78%;scroll-snap-align:start}
+  .meet{margin-top:68px}
+  .meet-in{padding:60px 24px 68px}
+  .meet h2{font-size:23px}
+  .meet-lead{font-size:14.5px;margin-bottom:28px}
+  .pts{gap:24px}
+  .form-card{padding:28px 24px}
+  .two{grid-template-columns:minmax(0,1fr)}
+  .cal iframe{height:780px}
+}
+</style>
+  <section>
+    <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_afvuyfafvuyfafvu_11zon.webp" alt="Bedrijfsevent met partytent, statafels en verlichting geleverd door Dagpakketverhuur" fetchpriority="high">
+          Zakelijk verhuur
+          <h1>Uw verhuurpartner<br>op de achtergrond</h1>
+          <p>Materiaal voor bedrijfsfeesten, open dagen en buurtevenementen — bezorgd, klaargezet en weer opgehaald.</p>
+            <button type="button" data-go="kennismaking">Plan een gesprek</button>
+            <button type="button" data-go="aanvraag">Aanvraag doen</button>
+            <a href="tel:0852129150">Bel 085 212 9150</a>
+  </section>
+  <section>
+        Wie je aan de lijn krijgt
+        <h2>Je spreekt altijd dezelfde persoon</h2>
+        <p>Ik ben Joris. Op mijn zestiende begon ik met 12 lasergunsets; inmiddels verhuren we activiteiten én partymateriaal aan bedrijven, scholen en verenigingen. Wat niet veranderd is: je hebt één aanspreekpunt, van eerste prijs tot ophalen na je event.</p>
+          50+<small>geslaagde events</small>
+          9–21<small>ma–za bereikbaar</small>
+        <a href="/over-ons/">Lees ons verhaal →</a>
+      <img src="https://dagpakketverhuur.nl/wp-content/uploads/2025/03/IMG_1962-1-scaled.jpg" alt="Joris van Dagpakketverhuur in het magazijn tussen de verhuurmaterialen" loading="lazy">
+  </section>
+  <section>
+    <p>Onder anderen geleverd aan</p>
+  </section>
+  <section>
+      <h2>Veelgevraagd door bedrijven en scholen</h2>
+      <a href="https://dagpakketverhuur.nl/shop/">Alle categorieën →</a>
+      <a href="https://dagpakketverhuur.nl/product-category/activiteiten-huren/">
+        <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Ontwerp-zonder-titel_11zon.webp" alt="Deelnemers spelen lasergame met de laserguns van Dagpakketverhuur" loading="lazy">
+        <strong>Activiteiten</strong>
+      </a>
+      <a href="https://dagpakketverhuur.nl/product-category/meubilair-huren/">
+        <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_azdggoazdggoazdg_11zon.webp" alt="Bierbanksets en statafels met kleden op een ingerichte feestlocatie" loading="lazy">
+        <strong>Meubilair</strong>
+      </a>
+      <a href="https://dagpakketverhuur.nl/product-category/servies-huren/">
+        <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_vsnpvcvsnpvcvsnp_11zon.webp" alt="Gedekte buffettafel met borden, bestek en glazen voor een zakelijk event" loading="lazy">
+        <strong>Servies</strong>
+      </a>
+      <a href="https://dagpakketverhuur.nl/product-category/bar-koeling-huren/">
+        <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_evf1cjevf1cjevf1_11zon.webp" alt="Zwarte mobiele bar met koeling en debrasseerbar klaargezet op een event" loading="lazy">
+        <strong>Bar &amp; Koeling</strong>
+      </a>
+      <a href="https://dagpakketverhuur.nl/product-category/tenten-verwarming-huren/">
+        <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_sbd730sbd730sbd7_11zon.webp" alt="Witte stretchtent met terrasverwarmers en feestverlichting boven een gevulde eventvloer" loading="lazy">
+        <strong>Tenten &amp; Verwarming</strong>
+      </a>
+      <a href="https://dagpakketverhuur.nl/product-category/glaswerk-huren/">
+        <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_pepj2cpepj2cpepj_11zon.webp" alt="Wijnglazen en bierglazen op een rij klaar voor gebruik" loading="lazy">
+        <strong>Glaswerk</strong>
+      </a>
+  </section>
+  <section id="zakelijk-aanvraag">
+        Zakelijk samenwerken
+        <h2>Liever een vaste partij dan elke keer opnieuw zoeken?</h2>
+        <p>Veel klanten bellen ons meerdere keren per jaar: een sportdag in het voorjaar, een open dag in september, het personeelsfeest in december. Een kort gesprek van 30 minuten is genoeg om te kijken of dat ook voor jullie werkt.</p>
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="#2f4156" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"></rect><path d="M8 3v4M16 3v4M3 11h18"></path></svg>
+              <b>We plannen met je hele jaar mee</b>
+              <p>Weet je nu al welke data eraan komen? Dan zetten we die vast in de planning, zodat het materiaal er in jullie drukke weken gewoon staat.</p>
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="#2f4156" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"></circle><path d="M5 20c0-3.4 3.1-5.6 7-5.6s7 2.2 7 5.6"></path></svg>
+              <b>Eén aanspreekpunt dat jullie kent</b>
+              <p>Dezelfde persoon aan de telefoon, die weet hoe jullie locatie eruitziet en wat er vorige keer stond. Een vervolgorder is daarna één berichtje.</p>
+            <svg viewBox="0 0 24 24" width="19" height="19" fill="none" stroke="#2f4156" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"></path><path d="M14 3v5h5M9.5 13h6M9.5 17h4"></path></svg>
+              <b>Alles op één order en één factuur</b>
+              <p>Activiteiten, meubilair, servies en tenten in één levering, op factuur met jullie eigen referentie of PO-nummer.</p>
+        <!-- stap 1: formulier -->
+            <button type="button" data-tab="aanvraag" aria-selected="true">Zakelijke aanvraag</button>
+            <button type="button" data-tab="kennismaking" aria-selected="false">Kennismakingsgesprek</button>
+          <h3 id="f-title">Vraag een zakelijke prijs aan</h3>
+          <p id="f-sub">Vertel wat je nodig hebt; je krijgt binnen één werkdag een vaste prijs inclusief bezorgen en ophalen. Zakelijk betaal je op factuur, vóór de huurdatum.</p>
+              <label>Bedrijfsnaam *<input id="f-comp" placeholder="Je bedrijf, school of vereniging"></label>
+              <label>Contactpersoon *<input id="f-name" placeholder="Voor- en achternaam"></label>
+              <label>E-mailadres *<input id="f-mail" type="email" placeholder="naam@organisatie.nl"></label>
+              <label>Telefoonnummer *<input id="f-tel" placeholder="06 12 34 56 78"></label>
+            <label>Branche
+              <select id="f-sector">
+                <option>Eventbureau / eventmanager</option>
+                <option>Cateraar / foodconcept</option>
+                <option>Horeca / feestlocatie</option>
+                <option>Vereniging / sportclub</option>
+                <option>School / onderwijs</option>
+                <option>Gemeente / zorginstelling</option>
+                <option>Collega-verhuurder</option>
+                <option>Anders</option>
+              </select>
+            </label>
+              <label>Events per jaar
+                <select id="f-vol">
+                  <option>1 event per jaar</option>
+                  <option>2 tot 4 events</option>
+                  <option>4 tot 10 events</option>
+                  <option>Meer dan 10 events</option>
+                </select>
+              </label>
+              <label>Voorkeur voor het gesprek
+                <select id="f-mode">
+                  <option>Telefonisch</option>
+                  <option>Videocall</option>
+                </select>
+              </label>
+              <label>Datum event<input id="f-date" type="date"></label>
+              <label>Postcode locatie<input id="f-pc" placeholder="1234 AB" autocomplete="postal-code"></label>
+            <label>Waar denk je aan?
+              <textarea id="f-notes" rows="3" placeholder="Bijvoorbeeld: personeelsfeest voor 120 man, statafels, glaswerk en een springkussen."></textarea>
+            </label>
+            <p id="f-out" hidden></p>
+              <small>We gebruiken je gegevens alleen voor deze aanvraag.</small>
+              <button type="button" id="f-send">Aanvraag versturen</button>
+        <!-- stap 2: agenda (Calendly) -->
+              <h3>Kies een moment</h3>
+              <p>Joris — Dagpakketverhuur · 30 min · telefonisch of videocall</p>
+            <button type="button" id="cal-back">Terug</button>
+          <iframe id="cal-frame" title="Agenda kennismakingsgesprek" loading="lazy"></iframe>
+          Tijden komen uit de agenda van Joris — je krijgt de uitnodiging direct per mail.
+        <!-- stap 3: bevestiging -->
+          <b id="done-title">Aanvraag verstuurd</b>
+          <p id="done-body">We nemen binnen één werkdag contact met je op met een vaste prijs. Spoed? Bel 085 212 9150.</p>
+          <button type="button" id="done-again">Nog een aanvraag doen</button>
+  </section>
+</template>

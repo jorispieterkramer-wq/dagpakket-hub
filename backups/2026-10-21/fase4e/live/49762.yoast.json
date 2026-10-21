@@ -1,0 +1,17 @@
+{
+ "yoast_head_json": {
+  "title": "Lasergame huren | Compact & XL | Dagpakketverhuur",
+  "description": "Lasergame huren voor een kinderfeestje, bedrijfsuitje of sportdag. Kies Compact of XL, geen borg, gratis afhalen in Fochteloo of DHL-levering in heel NL.",
+  "robots": {
+   "index": "index",
+   "follow": "follow",
+   "max-snippet": "max-snippet:-1",
+   "max-image-preview": "max-image-preview:large",
+   "max-video-preview": "max-video-preview:-1"
+  },
+  "canonical": "https://dagpakketverhuur.nl/lasergame-huren/"
+ },
+ "status": "publish",
+ "slug": "lasergame-huren",
+ "link": "https://dagpakketverhuur.nl/lasergame-huren/"
+}
