@@ -1,0 +1,17 @@
+{
+ "yoast_head_json": {
+  "title": "Partytent huren | Gratis bezorging | Geen borg | Dagpakketverhuur",
+  "description": "Partytent huren voor een tuinfeest, bruiloft of bedrijfsevenement? Dagpakketverhuur bezorgt persoonlijk door Noord-Nederland ✓ 4.8 op Google.",
+  "robots": {
+   "index": "index",
+   "follow": "follow",
+   "max-snippet": "max-snippet:-1",
+   "max-image-preview": "max-image-preview:large",
+   "max-video-preview": "max-video-preview:-1"
+  },
+  "canonical": "https://dagpakketverhuur.nl/partytent-huren/"
+ },
+ "status": "publish",
+ "slug": "partytent-huren",
+ "link": "https://dagpakketverhuur.nl/partytent-huren/"
+}

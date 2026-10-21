@@ -39,6 +39,9 @@
 .elementor-element:has(#dpv-rg-host) > .elementor-widget-wrap,.elementor-element:has(#dpv-rg-host) > .elementor-container,.elementor-element:has(#dpv-rg-host) > .e-con-inner{max-width:none !important;width:100% !important}
 #dpv-rg-prods{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:stretch}
 #dpv-rg-prods [data-prod-card]{height:100%}
+#dpv-rg-prods[data-cols="3"]{grid-template-columns:repeat(3,1fr)}
+#dpv-rg-prods[data-cols="4"]{grid-template-columns:repeat(4,1fr)}
+@media (max-width:860px){#dpv-rg-prods[data-cols="3"],#dpv-rg-prods[data-cols="4"]{grid-template-columns:repeat(2,1fr)}}
 /* toast van dpv-shop gebruikt var(--ink); die bestaat buiten de shop niet */
 .dpvs-toast{--ink:#14181f}
 </style>
@@ -104,6 +107,7 @@ button{cursor:pointer}
 
 /* producten: kaarten in light DOM, info-kaart ernaast */
 .dpv-prodrow{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+.dpv-prodrow-wide{grid-template-columns:minmax(0,1fr)}
 ::slotted(#dpv-rg-prods){display:grid}
 
 /* kaarten (zelfde wit/radius/schaduw als de productkaarten) */

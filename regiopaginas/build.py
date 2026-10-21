@@ -124,6 +124,7 @@ button{cursor:pointer}
 
 /* producten: kaarten in light DOM, info-kaart ernaast */
 .dpv-prodrow{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch}
+.dpv-prodrow-wide{grid-template-columns:minmax(0,1fr)}
 ::slotted(#dpv-rg-prods){display:grid}
 
 /* kaarten (zelfde wit/radius/schaduw als de productkaarten) */
@@ -279,6 +280,9 @@ LIGHT_CSS = """
 .elementor-element:has(#dpv-rg-host) > .elementor-widget-wrap,.elementor-element:has(#dpv-rg-host) > .elementor-container,.elementor-element:has(#dpv-rg-host) > .e-con-inner{max-width:none !important;width:100% !important}
 #dpv-rg-prods{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:stretch}
 #dpv-rg-prods [data-prod-card]{height:100%}
+#dpv-rg-prods[data-cols="3"]{grid-template-columns:repeat(3,1fr)}
+#dpv-rg-prods[data-cols="4"]{grid-template-columns:repeat(4,1fr)}
+@media (max-width:860px){#dpv-rg-prods[data-cols="3"],#dpv-rg-prods[data-cols="4"]{grid-template-columns:repeat(2,1fr)}}
 /* toast van dpv-shop gebruikt var(--ink); die bestaat buiten de shop niet */
 .dpvs-toast{--ink:#14181f}
 """
@@ -456,9 +460,9 @@ def intro(d):
 def products(d):
     checks = ''.join(f'<li>{icon("check", 18)}<span>{c}</span></li>' for c in d['checks'])
     return sec(
-        head(d['h2'], (d['cat_link'], 'Alle lasergame-producten') if d.get('cat_link') else None, d.get('lead'))
+        head(d['h2'], (d['cat_link'], d.get('cat_label', 'Alle lasergame-producten')) if d.get('cat_link') else None, d.get('lead'))
         + f'''
-<div class="dpv-prodrow">
+<div class="dpv-prodrow{' dpv-prodrow-wide' if d.get('wide') else ''}">
   <slot name="prods"></slot>
   <div class="dpv-card dpv-card-soft">
     <h3>{d['info_h3']}</h3>
@@ -521,8 +525,8 @@ REVIEW = {
 }
 
 
-def review(title, sub=None):
-    r = REVIEW
+def review(title, sub=None, r=None):
+    r = r or REVIEW
     s = f'<p class="dpv-rev-sub">{sub}</p>' if sub else ''
     return sec(f'''<h2 class="dpv-rev-title">{title}</h2>{s}
 <figure class="dpv-rev">
@@ -557,7 +561,7 @@ def final(d):
   <div class="dpv-hero-scrim"></div>
   <div class="dpv-final-body">
     <h2>{d['h2']}</h2><p>{d['p']}</p>
-    <div class="dpv-cta-row"><a class="dpv-btn" href="#lasergames" data-scroll="lasergames">Bekijk lasergames</a>
+    <div class="dpv-cta-row"><a class="dpv-btn" href="#lasergames" data-scroll="lasergames">{d.get('cta', 'Bekijk lasergames')}</a>
       <a class="dpv-link-ul" href="{TEL}">Of bel 085 212 9150</a></div>
     {lk}
   </div>
@@ -569,12 +573,12 @@ def template_a(c):
     """A — hub"""
     return [
         hero(c['hero']), trustbar(c['trust']), products(c['products']),
-        sec(head(c['keuze']['h2'], lead=c['keuze'].get('lead')) + cards(c['keuze']['items'], 'dpv-g3')),
+        sec(head(c['keuze']['h2'], lead=c['keuze'].get('lead')) + cards(c['keuze']['items'], c['keuze'].get('cols', 'dpv-g3'))),
         sec(head(c['gelegenheden']['h2'], lead=c['gelegenheden'].get('lead')) + cards(c['gelegenheden']['items'], 'dpv-g4')),
         sec(head(c['stappen']['h2'], lead=c['stappen'].get('lead')) + steps(c['stappen']['items'])),
         sec(head(c['regio']['h2'], lead=c['regio']['lead']) + places(c['regio']['items'])),
         b2b(c['b2b']),
-        review(c['review']['h2'], c['review'].get('sub')),
+        review(c['review']['h2'], c['review'].get('sub'), c['review'].get('data')),
         faq(c['faq']['h2'], c['faq']['intro'], c['faq']['items']),
         final(c['final']),
     ]
@@ -590,7 +594,7 @@ def template_b(c):
           if c.get('steden') and c['steden'].get('items') else []),
         sec(head(c['levering']['h2'], lead=c['levering'].get('lead')) + cards(c['levering']['items'], 'dpv-g3')),
         b2b(c['b2b'], compact=True),
-        review(c['review']['h2'], c['review'].get('sub')),
+        review(c['review']['h2'], c['review'].get('sub'), c['review'].get('data')),
         faq(c['faq']['h2'], c['faq']['intro'], c['faq']['items']),
         final(c['final']),
     ]
@@ -607,7 +611,7 @@ def template_c(c):
             + f'<ul class="dpv-chips" aria-label="Plaatsen rond {e(c["plaats"])}">'
             + ''.join(f'<li>{p}</li>' for p in c['levering']['plaatsen']) + '</ul>'
             + '<div style="height:24px"></div>' + cards(c['levering']['items'], 'dpv-g3')),
-        review(c['review']['h2'], c['review'].get('sub')),
+        review(c['review']['h2'], c['review'].get('sub'), c['review'].get('data')),
         faq(c['faq']['h2'], c['faq']['intro'], c['faq']['items']),
         final(c['final']),
     ]
@@ -650,7 +654,7 @@ def render(c, cards_html):
 <div id="dpv-rg-host"></div>
 
 <!-- Echte WooCommerce-productkaarten (dpv-shop), light DOM via slot. -->
-<div id="dpv-rg-prods" slot="prods" data-src="{e(c['cat_url'])}" data-alts="{e(json.dumps(alts, ensure_ascii=False))}">
+<div id="dpv-rg-prods" slot="prods"{f' data-cols="{c["prod_cols"]}"' if c.get('prod_cols') else ''} data-src="{e(c['cat_url'])}" data-alts="{e(json.dumps(alts, ensure_ascii=False))}">
 {grid}
 </div>
 <style>{LIGHT_CSS}</style>
