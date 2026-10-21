@@ -1,0 +1,163 @@
+<!--
+  ============================================================
+  DAGPAKKETVERHUUR — OVER ONS
+  Eén Elementor HTML-widget in een sectie, volle breedte, padding 0.
+  ------------------------------------------------------------
+  Dit blok rendert in een SHADOW ROOT. Elementor, het thema en
+  andere plugins kunnen de opmaak daarbinnen niet raken — wat je
+  hier ziet is exact wat er op de site staat.
+  ============================================================
+-->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Lora:ital,wght@0,400;1,400;1,500&display=swap" rel="stylesheet">
+<template id="dpv-ab-tpl">
+<style>
+:host{display:block}
+*{box-sizing:border-box;margin:0;padding:0;border:0;background:none;font:inherit;color:inherit;
+  letter-spacing:normal;text-transform:none;text-decoration:none;list-style:none}
+.dpv-ab{--pri:#2f4156;--acc:#567c8d;--mut:#6b7a8d;--card:#e6e0d7;
+  font-family:Outfit,Inter,Arial,sans-serif;font-size:16px;font-weight:400;line-height:1.5;
+  background:#f5f3ef;color:var(--pri);text-wrap:pretty}
+a{color:var(--pri);cursor:pointer}
+a:hover{color:#1f2e3a}
+img,video{display:block;max-width:100%}
+button{cursor:pointer}
+.dpv-ab-wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.dpv-ab-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.dpv-ab-kick{font-size:12px;line-height:1;letter-spacing:1.8px;text-transform:uppercase;
+  color:var(--acc);font-weight:600;margin-bottom:18px}
+h1{font-size:46px;line-height:1.1;letter-spacing:-1px;font-weight:600;margin-bottom:34px}
+h1 em{font-family:Lora,Georgia,serif;font-style:italic;font-weight:400;letter-spacing:0}
+h2{font-size:34px;line-height:1.15;letter-spacing:-.7px;font-weight:600;margin-bottom:20px}
+.dpv-ab-lead{font-size:17px;line-height:1.75;color:var(--mut);margin-bottom:30px;max-width:600px}
+/* hero */
+.dpv-ab-hero{display:grid;grid-template-columns:minmax(0,1.06fr) minmax(0,.94fr);
+  gap:56px;align-items:center;padding:76px 24px 48px;max-width:1180px;margin:0 auto}
+.dpv-ab-cta{display:flex;gap:22px;flex-wrap:wrap;align-items:center}
+.dpv-ab-btn{background:var(--pri);color:#fff;font-weight:600;font-size:15px;
+  padding:15px 26px;border-radius:999px;display:inline-block}
+.dpv-ab-btn:hover{background:#263646;color:#fff}
+.dpv-ab-ul{font-weight:600;font-size:15px;border-bottom:1.5px solid var(--pri);padding-bottom:2px}
+.dpv-ab-shot{position:relative}
+.dpv-ab-shot-frame{position:relative;height:500px;border-radius:28px;overflow:hidden;
+  box-shadow:0 10px 35px rgba(47,65,86,.08);background:#dfe7ee}
+.dpv-ab-badge{position:absolute;left:-18px;bottom:26px;background:rgba(255,255,255,.94);
+  border-radius:20px;padding:18px 20px;min-width:150px;box-shadow:0 10px 35px rgba(47,65,86,.08)}
+.dpv-ab-badge b{display:block;font-size:28px;line-height:1;letter-spacing:-.5px;font-weight:600}
+.dpv-ab-badge span{display:block;margin-top:6px;font-size:13px;line-height:1.4;color:var(--mut)}
+/* verhaal */
+.dpv-ab-story{padding:76px 24px}
+.dpv-ab-card{background:#fff;border:1px solid var(--card);border-radius:28px;padding:54px;
+  box-shadow:0 10px 35px rgba(47,65,86,.08)}
+.dpv-ab-card p{font-size:17px;line-height:1.8;color:var(--mut)}
+.dpv-ab-paras{display:flex;flex-direction:column;gap:20px}
+.dpv-ab-quote{margin:34px 0;padding:24px 28px;border-left:4px solid var(--acc);
+  background:#f4f8fa;border-radius:0 18px 18px 0}
+.dpv-ab-quote p{font-family:Lora,Georgia,serif;font-style:italic;font-size:24px;
+  line-height:1.6;color:var(--pri)}
+.dpv-ab-award{display:inline-flex;align-items:center;gap:12px;padding:14px 18px;border-radius:999px;
+  background:#f7f5f1;border:1px solid var(--card);font-size:14px;font-weight:600;line-height:1.4}
+.dpv-ab-award i{width:34px;height:34px;border-radius:999px;background:rgba(86,124,141,.12);
+  display:inline-flex;align-items:center;justify-content:center;flex:0 0 34px;
+  color:var(--acc);font-size:15px;font-style:normal}
+/* pers */
+.dpv-ab-press-sec{padding:0 24px 76px;text-align:center;max-width:1180px;margin:0 auto}
+.dpv-ab-press{display:grid;grid-template-columns:repeat(3,minmax(180px,1fr));gap:22px;
+  max-width:920px;margin:0 auto}
+.dpv-ab-press>div{min-height:132px;border-radius:24px;border:1px solid var(--card);
+  background:rgba(255,255,255,.82);display:flex;align-items:center;
+  justify-content:center;padding:26px;box-shadow:0 8px 24px rgba(47,65,86,.04)}
+.dpv-ab-press-slot{position:relative;width:100%;height:80px}
+.dpv-ab-press-slot img{object-fit:contain;padding:8px}
+.dpv-ab-press-slot[data-groot] img{padding:0;transform:scale(1.5)}
+/* community */
+.dpv-ab-com-sec{padding:0 24px 92px;text-align:center;max-width:1180px;margin:0 auto}
+.dpv-ab-hash{font-family:Lora,Georgia,serif;font-style:italic;font-size:40px;line-height:1.05;
+  letter-spacing:-.5px;margin-bottom:34px}
+.dpv-ab-com{display:flex;align-items:center;justify-content:center;gap:22px;overflow:hidden}
+.dpv-ab-com>div{position:relative;border-radius:24px;overflow:hidden;background:#dfe8ee;
+  box-shadow:0 10px 24px rgba(47,65,86,.08);aspect-ratio:9/16;flex:0 0 auto;width:250px;
+  opacity:.45;transform:scale(.92);transition:opacity .35s ease,transform .35s ease}
+.dpv-ab-com>div[data-active="true"]{width:330px;opacity:1;transform:scale(1)}
+.dpv-ab-play{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);
+  width:44px;height:44px;border-radius:999px;background:rgba(20,24,31,.55);color:#fff;
+  font-size:15px;line-height:1;padding:0;border:0;display:flex;align-items:center;
+  justify-content:center;opacity:0;transition:opacity .2s ease}
+.dpv-ab-com>div:hover .dpv-ab-play,.dpv-ab-play[data-paused="true"]{opacity:1}
+.dpv-ab-com>div[data-active="false"] .dpv-ab-play{display:none}
+@media (max-width:860px){
+  .dpv-ab-com>div .dpv-ab-play,
+  .dpv-ab-com>div[data-active="false"] .dpv-ab-play{display:flex;opacity:1}
+}
+.dpv-ab-arrows{margin-top:18px;display:flex;justify-content:center;gap:10px}
+.dpv-ab-arrows button{width:44px;height:44px;border:1px solid var(--card);
+  background:rgba(255,255,255,.82);border-radius:999px;color:var(--pri);font-size:18px}
+.dpv-ab-arrows button:hover{background:#fff}
+.dpv-ab-don{max-width:760px;margin:48px auto 0}
+.dpv-ab-don b{display:block;font-family:Lora,Georgia,serif;font-style:italic;font-weight:500;
+  font-size:84px;line-height:1;letter-spacing:-1.5px;margin-bottom:8px}
+.dpv-ab-don p{font-size:24px;line-height:1.3;font-weight:600}
+@media (max-width:860px){
+  .dpv-ab-hero{grid-template-columns:minmax(0,1fr);gap:32px;padding:48px 20px 32px}
+  h1{font-size:32px;margin-bottom:24px}
+  h2{font-size:25px}
+  .dpv-ab-lead{font-size:15.5px}
+  .dpv-ab-shot-frame{height:340px;border-radius:22px}
+  .dpv-ab-badge{left:14px;bottom:14px}
+  .dpv-ab-story{padding:44px 20px}
+  .dpv-ab-card{padding:26px 22px;border-radius:22px}
+  .dpv-ab-card p{font-size:15.5px}
+  .dpv-ab-quote{padding:18px 20px;margin:26px 0}
+  .dpv-ab-quote p{font-size:19px}
+  .dpv-ab-press-sec,.dpv-ab-com-sec{padding-left:20px;padding-right:20px;padding-bottom:56px}
+  .dpv-ab-press{grid-template-columns:minmax(0,1fr);gap:14px}
+  .dpv-ab-hash{font-size:28px;margin-bottom:22px}
+  .dpv-ab-com{overflow-x:auto;gap:14px;justify-content:flex-start;
+    scroll-snap-type:x proximity;scrollbar-width:none}
+  .dpv-ab-com::-webkit-scrollbar{width:0;height:0}
+  .dpv-ab-com>div,.dpv-ab-com>div[data-active="true"]{flex:0 0 68%;width:auto;
+    opacity:1;transform:none;scroll-snap-align:start}
+  .dpv-ab-arrows{display:flex}
+  .dpv-ab-don b{font-size:56px}
+  .dpv-ab-don p{font-size:18px}
+}
+</style>
+  <section>
+      Over ons
+      <h1>Huren voor één dag. <em>Simpel geregeld.</em></h1>
+      <p>Wat begon als een simpel idee, groeide uit tot Dagpakketverhuur: een plek waar je activiteiten en partymaterialen voor één dag kunt huren, zonder gedoe en zonder onnodige drempels.</p>
+        <a href="https://dagpakketverhuur.nl/shop/">Volledig assortiment</a>
+        <a href="https://dagpakketverhuur.nl/contact/">Naar klantenservice</a>
+      <img data-skip-lazy  src="https://dagpakketverhuur.nl/wp-content/uploads/2025/03/IMG_1962-1-scaled.jpg" alt="Joris van Dagpakketverhuur in het magazijn tussen de verhuurmaterialen" fetchpriority="high">
+      <b>25+</b>tevreden klanten
+  </section>
+  <section>
+        Ons verhaal
+        <h2>Waarom Dagpakketverhuur bestaat</h2>
+          <p>Toen ik 15 jaar oud was en net mijn eindexamens had gedaan, had ik tijd over en wilde ik graag gaan ondernemen. Tijdens het luisteren naar een ondernemerspodcast ontstond het idee: wat als je een compleet pakket voor één dag kunt huren, vol activiteiten, op elke locatie?</p>
+          <p>Ik ging het uitzoeken en had direct meerdere activiteiten op het oog. Alleen: als ik meteen in vijf verschillende activiteiten zou investeren, was ik op mijn 15e al zo'n €2.500 kwijt. Mijn vader zei toen iets heel simpels maar belangrijks: begin eerst met één product en breid van daaruit verder uit.</p>
+          <p>Zo begon ik op mijn 16e met mijn eerste product: 12 laserguns. In april ging Dagpakketverhuur live en in juni kwam de eerste boeking binnen. Vanaf dat moment wist ik dat hier echt vraag naar was.</p>
+          <p>In november 2024 won ik de Student Business Award Drenthe: een prijs voor jonge studenten die ondernemen. Daarbij ontving ik een cheque van €7.500 én een waardevol netwerk. Vanuit daar ben ik verder gaan bouwen. Sinds maart 2026 verhuren we naast activiteiten ook partymaterialen, zodat klanten nog meer op één plek kunnen regelen.</p>
+        <p>“Doe wat je leuk vindt en ga je dromen achterna.”</p>
+        <i>★</i>Winnaar Student Business Award 2024
+  </section>
+  <section>
+    <h2 style="margin-bottom:28px">Ook wel bekend van</h2>
+      <img data-skip-lazy  src="https://dagpakketverhuur.nl/wp-content/uploads/2026/03/dagblad-van-het-noorden.png" alt="Logo Dagblad van het Noorden" loading="lazy">
+      <img data-skip-lazy  src="https://dagpakketverhuur.nl/wp-content/uploads/2026/03/unnamed.png" alt="Logo Nieuwe Ooststellingwerver" loading="lazy">
+      <img data-skip-lazy  src="https://dagpakketverhuur.nl/wp-content/uploads/2026/03/sba_logo-1.png" alt="Logo Student Business Award" loading="lazy">
+  </section>
+  <section>
+    <h2 style="margin-bottom:10px">Onze community</h2>
+    #Dagpakketverhuur
+      <video data-skip-lazy  src="https://dagpakketverhuur.nl/wp-content/uploads/2026/03/SnapInsta.to_AQO_hgfww_cZer_4jwNFjYtKVghi9lOZuQsheGFKj2g-LOTuHU3MID1pNKj5dMBXI4mnb49uyedxq9YCNCHVW_-x_3Y_Lu08J5quOV0.mp4" muted loop playsinline preload="metadata" aria-label="Sfeervideo van een event van Dagpakketverhuur"></video><button type="button" data-dpv-play aria-label="Video pauzeren">❚❚</button>
+      <video data-skip-lazy  src="https://dagpakketverhuur.nl/wp-content/uploads/2026/03/SnapInsta.to_AQMYVpXY7URFfTUow_w3SQE9r5M8xH6vveLQY9mVfQWgkRzifE6nmNYNplWg6uOHIHm-LWdAKFJ-SdO7mExnxicgc-ewYxWfRRe9N8w.mp4" muted loop playsinline preload="metadata" aria-label="Sfeervideo van een event van Dagpakketverhuur"></video><button type="button" data-dpv-play aria-label="Video pauzeren">❚❚</button>
+      <video data-skip-lazy  src="https://dagpakketverhuur.nl/wp-content/uploads/2026/03/SnapInsta.to_AQNi1W0vOcLP5qeJlkTI2cq2j7eA8LDUxiyO6cqni6bBe_a6wjPeLI7htk_-uNYNl3ejRoAtap4vYuhJTDv4KdS9CbUMUKhUzkXwLDY.mp4" muted loop playsinline preload="metadata" aria-label="Sfeervideo van een event van Dagpakketverhuur"></video><button type="button" data-dpv-play aria-label="Video pauzeren">❚❚</button>
+      <img data-skip-lazy  src="https://dagpakketverhuur.nl/wp-content/uploads/2025/12/Social-media-Kit-Dagpakketverhuur-4.png" alt="Kinderen spelen met Gelblasters op een kinderfeestje" loading="lazy">
+      <img data-skip-lazy  src="https://dagpakketverhuur.nl/wp-content/uploads/2025/09/F4E27435-5E6B-4CE1-A3FA-FB4B5AE65C54.jpeg" alt="Collega's in actie tijdens een lasergame op een bedrijfsuitje" loading="lazy">
+      <button type="button" data-dpv-com="prev" aria-label="Vorige">‹</button>
+      <button type="button" data-dpv-com="next" aria-label="Volgende">›</button>
+      <b data-dpv-count="50">€0</b>
+      <p>In totaal gedoneerd aan Stichting Jarige Job en de Voedselbank</p>
+  </section>
+</template>

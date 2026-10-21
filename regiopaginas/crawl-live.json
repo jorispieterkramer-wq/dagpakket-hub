@@ -1,0 +1,2495 @@
+{
+ "pages": {
+  "/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/?elementskit_template=footer": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/?elementskit_template=header": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/?elementskit_template=header-2": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/afreken-pagina/": {
+   "code": "302",
+   "wa852": 0,
+   "guns": []
+  },
+  "/bedankt/": {
+   "code": "200",
+   "wa852": 1,
+   "guns": []
+  },
+  "/biertap-huren-drenthe/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/biertap-huren-friesland/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/biertap-huren-groningen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/biertap-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/category/uncategorized/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/contact/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/feestpot/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/feestverhuur/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/het-ultieme-kinderfeestje/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/karaoke-set-kinderfeestje/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/kinderfeestje-assen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/kinderfeestje-drachten/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/kinderfeestje-drenthe/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/kinderfeestje-emmen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/kinderfeestje-friesland/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/kinderfeestje-groningen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/kinderfeestje-heerenveen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/kinderfeestje-leeuwarden/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/kinderfeestje/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/lasergame-huren-assen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/lasergame-huren-drachten/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/lasergame-huren-drenthe/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/lasergame-huren-emmen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/lasergame-huren-friesland/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/lasergame-huren-groningen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/lasergame-huren-leeuwarden/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/lasergame-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/met-wie-kan-je-lasergamen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/over-ons/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": [
+    "12 laserguns"
+   ]
+  },
+  "/partytent-huren-assen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/partytent-huren-drenthe/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/partytent-huren-emmen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/partytent-huren-friesland/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/partytent-huren-groningen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/partytent-huren-heerenveen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/partytent-huren-leeuwarden/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/partytent-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/photobooth-huren-drenthe/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/photobooth-huren-friesland/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/photobooth-huren-groningen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/photobooth-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/piraten-start/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/piratenspeurtocht-bedankt/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/activiteiten-attracties-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/activiteiten-attracties-huren/attracties-activiteiten-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/activiteiten-attracties-huren/attracties-spellen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/activiteiten-attracties-huren/attracties-springkussens-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/bar-koeling-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/bar-koeling-huren/bar-koeling-barren-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/bar-koeling-huren/bar-koeling-dranken-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/bar-koeling-huren/bar-koeling-koeling-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/bestek-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/bestek-huren/bestek-goud-huren/": {
+   "code": "301",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/bestek-huren/bestek-rvs-huren/": {
+   "code": "301",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/buffet-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/buffet-huren/buffet-gastronormbakken-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/buffet-huren/buffet-overig-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/buffet-huren/buffet-warmhouden-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/glaswerk-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/inrichting-aankleding-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/inrichting-aankleding-huren/feestextras-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/keuken-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/keuken-huren/keuken-funfood-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/licht-geluid-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/licht-geluid-huren/geluid-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/licht-geluid-huren/licht-geluid-stroom-kabels-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/licht-geluid-huren/presentatie-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/licht-geluid-huren/verlichting-effecten-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/linnen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/linnen-huren/linnen-buffettafelrokken-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/linnen-huren/linnen-statafelrokken-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/linnen-huren/linnen-tafelkleden-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/meubilair-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/meubilair-huren/meubilair-bierbanken-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/meubilair-huren/meubilair-statafels-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/meubilair-huren/meubilair-stoelen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/meubilair-huren/meubilair-tafels-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/servies-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/servies-huren/servies-lichtgroen-huren/": {
+   "code": "301",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/servies-huren/servies-wit-huren/": {
+   "code": "301",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/tenten-verwarming-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/tenten-verwarming-huren/tenten-verwarming-easy-up-tenten-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/tenten-verwarming-huren/tenten-verwarming-pagodetenten-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/tenten-verwarming-huren/tenten-verwarming-stretchtenten-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/tenten-verwarming-huren/tenten-verwarming-verwarming-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/tenten-verwarming-huren/tenten-verwarming-zijwanden-vloeren-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product-category/uncategorized/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/3x3-partytent-zwarte-zijwanden-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/abraham-feestpop-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/all-in-one-dj-set-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/archery-tag-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/audio-gastenboek-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/barkrukken-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/bartafels-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/beamer-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/bedrade-zender-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/beerpong-tafel-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/bierbank-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/bierbankset-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/bierfluitjes-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/biertafel-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/bluetooth-zender-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/borrelplank-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/boter-kaas-en-eieren-xxl-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/broodmand-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/bubbelvoetbal-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/buffettafel-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/buffettafelrok-wit-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/buffettafelrok-zwart-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/buitenbioscoop-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/camouflage-bandana-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/camouflage-net-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/camouflage-schmink-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/chafing-dish-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/champagne-flutes-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/champagnekoeler-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/cola-regular/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/confetti-vulling-blauw-kopen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/confettikanon-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/confettikanon-vulling-blauwe-poeder/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/confettikanon-vulling-roze-confetti/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/confettikanon-vulling-roze-poeder/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/cornhole-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/deksel-gn-1-1-rvs-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/deksel-gn-1-2-rvs-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/deksel-gn-1-3-rvs-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/deksel-gn-1-4-rvs-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/deksel-gn-1-6-rvs-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/dessertlepel-goud/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/dessertlepels-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/dessertmes-goud/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/dessertmes-rvs/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/dessertvork-goud/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/dessertvorken-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/dienlepel-amefa-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/diepbord-19cm-lichtgroen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/diepe-borden-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/discolamp-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/dj-booth-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/dj-mixer-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/dmx-controller-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/draadloze-microfoon-handheld-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/draadloze-microfoon-headset-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/easy-up-partytent-3x6-zwart-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/easy-up-partytent-huren-wit-3x3m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/easy-up-partytent-wit-3x6m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/easy-up-partytent-zijwanden-wit-3x3m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/easy-up-partytent-zijwanden-wit-3x6m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/easy-up-partytent-zijwanden-zwart-3x6m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/elektrische-chafing-dish-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/etagere-3-laags-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/extra-gelblaster-ballen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/extra-pijlen-archery-tag/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/extra-verfballen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/fanta-cassis/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/fanta-orange/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/flevosap-appelsap/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/flevosap-sinaasappel/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/frisdrank-sappen-bestellen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/funfood-duo-huren-incl-ingredienten/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-1-65mm/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-1-rvs-100mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-1-rvs-150mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-1-rvs-200mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-1/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-2-rvs-100mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-2-rvs-150mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-2-rvs-200mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-2-rvs-65mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-2/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-3-rvs-100mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-3-rvs-150mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-3-rvs-200mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-3-rvs-65mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-3/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-4-100mm/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-4-150mm/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-4/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-6-rvs-100mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-6-rvs-150mm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gastronormbak-gn-1-6/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gebaksvork-goud-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gebaksvork-rvs-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/gelblaster-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/geluidsset-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/glowsticks-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/handmicrofoon-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/heineken-blade-biertap-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/ice-tea-green/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/ice-tea-sparkling/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/ijsemmer-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/jbl-box-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/jenga-xxl-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/kabelhaspel-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/kabelmatten-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/karaoke-quiz/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/karaoke-set-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/klapbuffet-80-x-180cm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/klapstoelen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/klaptafel-120cm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/klaptafel-180cm/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/klaptafel-rond-150cm/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/koelkast-glazen-deur-360l-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/koelmeubel-liggend-330l-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/koffielepel-goud-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/koffielepel-rvs-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/koffiezetmachine-14-liter-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/kom-17cm-lichtgroen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/kom-wit-huren-per-10/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/krachtstroom-verdeler-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/krachtstroomkabel-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/kubb-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/lasergame-afstandsbediening-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/lasergame-compact-bundel-per-speler-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/lasergame-compacte-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/lasergame-scoreboard/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/lasergame-xl-bundel-per-speler-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/lasergame-xl-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/led-letters-cijfers-huren-per-stuk/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/led-spots-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/longdrink-glazen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/luxe-zijwanden-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/mengpaneel-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/microfoon-set-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/microfoonset-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/mobiele-bar-flex-industrial-black-met-tap-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/mobiele-bar-flex-natural-oak-met-tap-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/mobiele-bar-solid-industrial-black-met-tap-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/mobiele-bar-solid-natural-oak-met-tap-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/moving-head-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/oorkondes-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/op-en-afbouw-service/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/opblaasbaar-projectiescherm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/opblaasbare-partytent-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/pagodetent-5-x-5m-zand-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/paintball-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/partypan-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/partytent-huren-zwart-3x3/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/photobooth-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/platbord-26cm-wit/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/platbord-28cm-lichtgroen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/platbord-o-205cm-lichtgroen-kopie/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/platte-borden-20cm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/pointer-beamer-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/polaroid-camera-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/polaroid-fotos-kopen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/popcorn-ingredienten-kopen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/popcornmachine-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/prikkabel-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/prikkabel-warm-wit-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/pubquiz-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/quizknoppen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/ringwerpen-xxl-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/rivella-original/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/ronde-klaptafel-120cm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/rookmachine-huren-2/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/rookvloeistof-1-liter/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/royal-club-bitter-lemon/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/royal-club-ginger-ale/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/royal-club-tonic/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/sarah-feestpop/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/scorekaart-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/serveerplateau-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/serveerschaal-23cm/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/serveerschaal-31cm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/servetten-standaard/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/silent-disco-glow-bundel-per-persoon-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/silent-disco-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/sjoelbak-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/slacouvert-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/spa-intense-rood/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/spa-plat-mineraalwater/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/springkussen-disco-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/springkussen-jungle-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/springkussen-met-glijbaan-jungle-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/springkussen-met-glijbaan-unicorn-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/springkussen-unicorn-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/springkussen-voetbal-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/sprite-regular/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/sprite-zero/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stackchair-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/standaard-zijwanden-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafel-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafel-rok-zwart-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafelrok-champagne-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafelrok-dark-grey/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafelrok-light-grey/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafelrok-los-navy-blue/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafelrok-los-red/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafelrok-los-wit/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafelrok-los-zwart/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafelrok-navy-blue/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafelrok-wine-red/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/statafelrok-wit-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stekkerdoos-3-voudig-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stekkerdoos-5-voudig/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stekkerdoos-8-voudig/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-10x10m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-4-5-x-7-5m-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-6x15m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-6x75m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-7-5-x-20m-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-7-5x10-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-groen-10x12m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-zand-10x12m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-zand-10x20m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-zand-10x24m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-zand-10x27m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-zand-10x30m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-zand-10x35m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-zand-10x40m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stretchtent-zand-20x20m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/stroboscoop-huren-2/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/suikerspin-ingredienten-kopen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/suikerspinmachine-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/sumoworstelen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/taartplateau-porselein-32-5cm-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/tafelkleed-wit-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/tafelkleed-zwart-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/tafellepel-goud/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/tafellepels-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/tafelmes-goud/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/tafelmessen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/tafelvork-goud/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/tafelvorken-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/target-vest-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/teamlintjes-rood-blauw-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/teamvlaggen-rood-blauw-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/tentgewichten-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/terrasverwarmer-round-excl-gas/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/terrasverwarmer-round-incl-gas/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/thermoskan-1-5l-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/truss-totem-1m-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/truss-totem-cover-1m-zwart/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/truss-totem-cover-wit-1m-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/tumbler-glazen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/vaatwaskorf-bestek-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/vaatwaskorf-borden-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/vaatwaskorf-glazen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/valmatten-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/verlengkabel-25m/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/verlengkabel-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/verlichtingsset-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/vier-op-een-rij-xxl-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/vlondervloer-huren-per-m2/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/voetbal-dartbord-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/walkie-talkies-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/waterkoker-1-8l-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/weddingchair-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/weekemmer-gelblaster-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/wijnglazen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/zaklopen-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/product/zwarte-klapstoel-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/shop/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/silent-disco-huren-assen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/silent-disco-huren-drenthe/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/silent-disco-huren-emmen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/silent-disco-huren-friesland/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/silent-disco-huren-groningen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/silent-disco-huren-leeuwarden/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/silent-disco-verhuur/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/statafel-huren-drenthe/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/statafel-huren-friesland/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/statafel-huren-groningen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/stretchtent-huren-drenthe/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/stretchtent-huren-friesland/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/stretchtent-huren-groningen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/stretchtent-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/terrasverwarmer-huren-drenthe/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/terrasverwarmer-huren-friesland/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/terrasverwarmer-huren-groningen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/terrasverwarmer-huren/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/voordelen-van-lasergamen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/wettelijk/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/winkelwagen/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  },
+  "/zakelijk/": {
+   "code": "200",
+   "wa852": 0,
+   "guns": []
+  }
+ },
+ "bad_links": {
+  "/klantenservice/": {
+   "status": "404|",
+   "on": [
+    "/winkelwagen/"
+   ]
+  },
+  "/product-category/activiteiten-huren/": {
+   "status": "301|https://dagpakketverhuur.nl/product-category/activiteiten-attracties-huren/",
+   "on": [
+    "/",
+    "/?elementskit_template=footer",
+    "/bedankt/",
+    "/biertap-huren-drenthe/",
+    "/biertap-huren-friesland/",
+    "/biertap-huren-groningen/",
+    "/biertap-huren/",
+    "/category/uncategorized/",
+    "/contact/",
+    "/feestpot/",
+    "/feestverhuur/",
+    "/het-ultieme-kinderfeestje/",
+    "/karaoke-set-kinderfeestje/",
+    "/kinderfeestje-assen/",
+    "/kinderfeestje-drachten/",
+    "/kinderfeestje-drenthe/",
+    "/kinderfeestje-emmen/",
+    "/kinderfeestje-friesland/",
+    "/kinderfeestje-groningen/",
+    "/kinderfeestje-heerenveen/",
+    "/kinderfeestje-leeuwarden/",
+    "/kinderfeestje/",
+    "/lasergame-huren-assen/",
+    "/lasergame-huren-drachten/",
+    "/lasergame-huren-drenthe/",
+    "/lasergame-huren-emmen/",
+    "/lasergame-huren-friesland/",
+    "/lasergame-huren-groningen/",
+    "/lasergame-huren-leeuwarden/",
+    "/lasergame-huren/",
+    "/met-wie-kan-je-lasergamen/",
+    "/over-ons/",
+    "/partytent-huren-assen/",
+    "/partytent-huren-drenthe/",
+    "/partytent-huren-emmen/",
+    "/partytent-huren-friesland/",
+    "/partytent-huren-groningen/",
+    "/partytent-huren-heerenveen/",
+    "/partytent-huren-leeuwarden/",
+    "/partytent-huren/",
+    "/photobooth-huren-drenthe/",
+    "/photobooth-huren-friesland/",
+    "/photobooth-huren-groningen/",
+    "/photobooth-huren/",
+    "/piraten-start/",
+    "/piratenspeurtocht-bedankt/",
+    "/product-category/activiteiten-attracties-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-activiteiten-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-spellen-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-springkussens-huren/",
+    "/product-category/bar-koeling-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-barren-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-dranken-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-koeling-huren/",
+    "/product-category/bestek-huren/",
+    "/product-category/buffet-huren/",
+    "/product-category/buffet-huren/buffet-gastronormbakken-huren/",
+    "/product-category/buffet-huren/buffet-overig-huren/",
+    "/product-category/buffet-huren/buffet-warmhouden-huren/",
+    "/product-category/glaswerk-huren/",
+    "/product-category/inrichting-aankleding-huren/",
+    "/product-category/inrichting-aankleding-huren/feestextras-huren/",
+    "/product-category/keuken-huren/",
+    "/product-category/keuken-huren/keuken-funfood-huren/",
+    "/product-category/licht-geluid-huren/",
+    "/product-category/licht-geluid-huren/geluid-huren/",
+    "/product-category/licht-geluid-huren/licht-geluid-stroom-kabels-huren/",
+    "/product-category/licht-geluid-huren/presentatie-huren/",
+    "/product-category/licht-geluid-huren/verlichting-effecten-huren/",
+    "/product-category/linnen-huren/",
+    "/product-category/linnen-huren/linnen-buffettafelrokken-huren/",
+    "/product-category/linnen-huren/linnen-statafelrokken-huren/",
+    "/product-category/linnen-huren/linnen-tafelkleden-huren/",
+    "/product-category/meubilair-huren/",
+    "/product-category/meubilair-huren/meubilair-bierbanken-huren/",
+    "/product-category/meubilair-huren/meubilair-statafels-huren/",
+    "/product-category/meubilair-huren/meubilair-stoelen-huren/",
+    "/product-category/meubilair-huren/meubilair-tafels-huren/",
+    "/product-category/servies-huren/",
+    "/product-category/tenten-verwarming-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-easy-up-tenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-pagodetenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-stretchtenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-verwarming-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-zijwanden-vloeren-huren/",
+    "/product-category/uncategorized/",
+    "/product/3x3-partytent-zwarte-zijwanden-huren/",
+    "/product/abraham-feestpop-huren/",
+    "/product/all-in-one-dj-set-huren/",
+    "/product/archery-tag-huren/",
+    "/product/audio-gastenboek-huren/",
+    "/product/barkrukken-huren/",
+    "/product/bartafels-huren/",
+    "/product/beamer-huren/",
+    "/product/bedrade-zender-huren/",
+    "/product/beerpong-tafel-huren/",
+    "/product/bierbank-huren/",
+    "/product/bierbankset-huren/",
+    "/product/bierfluitjes-huren/",
+    "/product/biertafel-huren/",
+    "/product/bluetooth-zender-huren/",
+    "/product/borrelplank-huren/",
+    "/product/boter-kaas-en-eieren-xxl-huren/",
+    "/product/broodmand-huren/",
+    "/product/bubbelvoetbal-huren/",
+    "/product/buffettafel-huren/",
+    "/product/buffettafelrok-wit-huren/",
+    "/product/buffettafelrok-zwart-huren/",
+    "/product/buitenbioscoop-huren/",
+    "/product/camouflage-bandana-huren/",
+    "/product/camouflage-net-huren/",
+    "/product/camouflage-schmink-huren/",
+    "/product/chafing-dish-huren/",
+    "/product/champagne-flutes-huren/",
+    "/product/champagnekoeler-huren/",
+    "/product/cola-regular/",
+    "/product/confetti-vulling-blauw-kopen/",
+    "/product/confettikanon-huren/",
+    "/product/confettikanon-vulling-blauwe-poeder/",
+    "/product/confettikanon-vulling-roze-confetti/",
+    "/product/confettikanon-vulling-roze-poeder/",
+    "/product/cornhole-huren/",
+    "/product/deksel-gn-1-1-rvs-huren/",
+    "/product/deksel-gn-1-2-rvs-huren/",
+    "/product/deksel-gn-1-3-rvs-huren/",
+    "/product/deksel-gn-1-4-rvs-huren/",
+    "/product/deksel-gn-1-6-rvs-huren/",
+    "/product/dessertlepel-goud/",
+    "/product/dessertlepels-huren/",
+    "/product/dessertmes-goud/",
+    "/product/dessertmes-rvs/",
+    "/product/dessertvork-goud/",
+    "/product/dessertvorken-huren/",
+    "/product/dienlepel-amefa-huren/",
+    "/product/diepbord-19cm-lichtgroen-huren/",
+    "/product/diepe-borden-huren/",
+    "/product/discolamp-huren/",
+    "/product/dj-booth-huren/",
+    "/product/dj-mixer-huren/",
+    "/product/dmx-controller-huren/",
+    "/product/draadloze-microfoon-handheld-huren/",
+    "/product/draadloze-microfoon-headset-huren/",
+    "/product/easy-up-partytent-3x6-zwart-huren/",
+    "/product/easy-up-partytent-huren-wit-3x3m/",
+    "/product/easy-up-partytent-wit-3x6m/",
+    "/product/easy-up-partytent-zijwanden-wit-3x3m/",
+    "/product/easy-up-partytent-zijwanden-wit-3x6m/",
+    "/product/easy-up-partytent-zijwanden-zwart-3x6m/",
+    "/product/elektrische-chafing-dish-huren/",
+    "/product/etagere-3-laags-huren/",
+    "/product/extra-gelblaster-ballen-huren/",
+    "/product/extra-pijlen-archery-tag/",
+    "/product/extra-verfballen-huren/",
+    "/product/fanta-cassis/",
+    "/product/fanta-orange/",
+    "/product/flevosap-appelsap/",
+    "/product/flevosap-sinaasappel/",
+    "/product/frisdrank-sappen-bestellen/",
+    "/product/funfood-duo-huren-incl-ingredienten/",
+    "/product/gastronormbak-gn-1-1-65mm/",
+    "/product/gastronormbak-gn-1-1-rvs-100mm-huren/",
+    "/product/gastronormbak-gn-1-1-rvs-150mm-huren/",
+    "/product/gastronormbak-gn-1-1-rvs-200mm-huren/",
+    "/product/gastronormbak-gn-1-1/",
+    "/product/gastronormbak-gn-1-2-rvs-100mm-huren/",
+    "/product/gastronormbak-gn-1-2-rvs-150mm-huren/",
+    "/product/gastronormbak-gn-1-2-rvs-200mm-huren/",
+    "/product/gastronormbak-gn-1-2-rvs-65mm-huren/",
+    "/product/gastronormbak-gn-1-2/",
+    "/product/gastronormbak-gn-1-3-rvs-100mm-huren/",
+    "/product/gastronormbak-gn-1-3-rvs-150mm-huren/",
+    "/product/gastronormbak-gn-1-3-rvs-200mm-huren/",
+    "/product/gastronormbak-gn-1-3-rvs-65mm-huren/",
+    "/product/gastronormbak-gn-1-3/",
+    "/product/gastronormbak-gn-1-4-100mm/",
+    "/product/gastronormbak-gn-1-4-150mm/",
+    "/product/gastronormbak-gn-1-4/",
+    "/product/gastronormbak-gn-1-6-rvs-100mm-huren/",
+    "/product/gastronormbak-gn-1-6-rvs-150mm-huren/",
+    "/product/gastronormbak-gn-1-6/",
+    "/product/gebaksvork-goud-huren/",
+    "/product/gebaksvork-rvs-huren/",
+    "/product/gelblaster-huren/",
+    "/product/geluidsset-huren/",
+    "/product/glowsticks-huren/",
+    "/product/handmicrofoon-huren/",
+    "/product/heineken-blade-biertap-huren/",
+    "/product/ice-tea-green/",
+    "/product/ice-tea-sparkling/",
+    "/product/ijsemmer-huren/",
+    "/product/jbl-box-huren/",
+    "/product/jenga-xxl-huren/",
+    "/product/kabelhaspel-huren/",
+    "/product/kabelmatten-huren/",
+    "/product/karaoke-quiz/",
+    "/product/karaoke-set-huren/",
+    "/product/klapbuffet-80-x-180cm-huren/",
+    "/product/klapstoelen-huren/",
+    "/product/klaptafel-120cm-huren/",
+    "/product/klaptafel-180cm/",
+    "/product/klaptafel-rond-150cm/",
+    "/product/koelkast-glazen-deur-360l-huren/",
+    "/product/koelmeubel-liggend-330l-huren/",
+    "/product/koffielepel-goud-huren/",
+    "/product/koffielepel-rvs-huren/",
+    "/product/koffiezetmachine-14-liter-huren/",
+    "/product/kom-17cm-lichtgroen-huren/",
+    "/product/kom-wit-huren-per-10/",
+    "/product/krachtstroom-verdeler-huren/",
+    "/product/krachtstroomkabel-huren/",
+    "/product/kubb-huren/",
+    "/product/lasergame-afstandsbediening-huren/",
+    "/product/lasergame-compact-bundel-per-speler-huren/",
+    "/product/lasergame-compacte-huren/",
+    "/product/lasergame-scoreboard/",
+    "/product/lasergame-xl-bundel-per-speler-huren/",
+    "/product/lasergame-xl-huren/",
+    "/product/led-letters-cijfers-huren-per-stuk/",
+    "/product/led-spots-huren/",
+    "/product/longdrink-glazen-huren/",
+    "/product/luxe-zijwanden-huren/",
+    "/product/mengpaneel-huren/",
+    "/product/microfoon-set-huren/",
+    "/product/microfoonset-huren/",
+    "/product/mobiele-bar-flex-industrial-black-met-tap-huren/",
+    "/product/mobiele-bar-flex-natural-oak-met-tap-huren/",
+    "/product/mobiele-bar-solid-industrial-black-met-tap-huren/",
+    "/product/mobiele-bar-solid-natural-oak-met-tap-huren/",
+    "/product/moving-head-huren/",
+    "/product/oorkondes-huren/",
+    "/product/op-en-afbouw-service/",
+    "/product/opblaasbaar-projectiescherm-huren/",
+    "/product/opblaasbare-partytent-huren/",
+    "/product/pagodetent-5-x-5m-zand-huren/",
+    "/product/paintball-huren/",
+    "/product/partypan-huren/",
+    "/product/partytent-huren-zwart-3x3/",
+    "/product/photobooth-huren/",
+    "/product/platbord-26cm-wit/",
+    "/product/platbord-28cm-lichtgroen-huren/",
+    "/product/platbord-o-205cm-lichtgroen-kopie/",
+    "/product/platte-borden-20cm-huren/",
+    "/product/pointer-beamer-huren/",
+    "/product/polaroid-camera-huren/",
+    "/product/polaroid-fotos-kopen/",
+    "/product/popcorn-ingredienten-kopen/",
+    "/product/popcornmachine-huren/",
+    "/product/prikkabel-huren/",
+    "/product/prikkabel-warm-wit-huren/",
+    "/product/pubquiz-huren/",
+    "/product/quizknoppen-huren/",
+    "/product/ringwerpen-xxl-huren/",
+    "/product/rivella-original/",
+    "/product/ronde-klaptafel-120cm-huren/",
+    "/product/rookmachine-huren-2/",
+    "/product/rookvloeistof-1-liter/",
+    "/product/royal-club-bitter-lemon/",
+    "/product/royal-club-ginger-ale/",
+    "/product/royal-club-tonic/",
+    "/product/sarah-feestpop/",
+    "/product/scorekaart-huren/",
+    "/product/serveerplateau-huren/",
+    "/product/serveerschaal-23cm/",
+    "/product/serveerschaal-31cm-huren/",
+    "/product/servetten-standaard/",
+    "/product/silent-disco-glow-bundel-per-persoon-huren/",
+    "/product/silent-disco-huren/",
+    "/product/sjoelbak-huren/",
+    "/product/slacouvert-huren/",
+    "/product/spa-intense-rood/",
+    "/product/spa-plat-mineraalwater/",
+    "/product/springkussen-disco-huren/",
+    "/product/springkussen-jungle-huren/",
+    "/product/springkussen-met-glijbaan-jungle-huren/",
+    "/product/springkussen-met-glijbaan-unicorn-huren/",
+    "/product/springkussen-unicorn-huren/",
+    "/product/springkussen-voetbal-huren/",
+    "/product/sprite-regular/",
+    "/product/sprite-zero/",
+    "/product/stackchair-huren/",
+    "/product/standaard-zijwanden-huren/",
+    "/product/statafel-huren/",
+    "/product/statafel-rok-zwart-huren/",
+    "/product/statafelrok-champagne-huren/",
+    "/product/statafelrok-dark-grey/",
+    "/product/statafelrok-light-grey/",
+    "/product/statafelrok-los-navy-blue/",
+    "/product/statafelrok-los-red/",
+    "/product/statafelrok-los-wit/",
+    "/product/statafelrok-los-zwart/",
+    "/product/statafelrok-navy-blue/",
+    "/product/statafelrok-wine-red/",
+    "/product/statafelrok-wit-huren/",
+    "/product/stekkerdoos-3-voudig-huren/",
+    "/product/stekkerdoos-5-voudig/",
+    "/product/stekkerdoos-8-voudig/",
+    "/product/stretchtent-10x10m/",
+    "/product/stretchtent-4-5-x-7-5m-huren/",
+    "/product/stretchtent-6x15m/",
+    "/product/stretchtent-6x75m/",
+    "/product/stretchtent-7-5-x-20m-huren/",
+    "/product/stretchtent-7-5x10-huren/",
+    "/product/stretchtent-groen-10x12m/",
+    "/product/stretchtent-zand-10x12m/",
+    "/product/stretchtent-zand-10x20m/",
+    "/product/stretchtent-zand-10x24m/",
+    "/product/stretchtent-zand-10x27m/",
+    "/product/stretchtent-zand-10x30m/",
+    "/product/stretchtent-zand-10x35m/",
+    "/product/stretchtent-zand-10x40m/",
+    "/product/stretchtent-zand-20x20m/",
+    "/product/stroboscoop-huren-2/",
+    "/product/suikerspin-ingredienten-kopen/",
+    "/product/suikerspinmachine-huren/",
+    "/product/sumoworstelen-huren/",
+    "/product/taartplateau-porselein-32-5cm-huren/",
+    "/product/tafelkleed-wit-huren/",
+    "/product/tafelkleed-zwart-huren/",
+    "/product/tafellepel-goud/",
+    "/product/tafellepels-huren/",
+    "/product/tafelmes-goud/",
+    "/product/tafelmessen-huren/",
+    "/product/tafelvork-goud/",
+    "/product/tafelvorken-huren/",
+    "/product/target-vest-huren/",
+    "/product/teamlintjes-rood-blauw-huren/",
+    "/product/teamvlaggen-rood-blauw-huren/",
+    "/product/tentgewichten-huren/",
+    "/product/terrasverwarmer-round-excl-gas/",
+    "/product/terrasverwarmer-round-incl-gas/",
+    "/product/thermoskan-1-5l-huren/",
+    "/product/truss-totem-1m-huren/",
+    "/product/truss-totem-cover-1m-zwart/",
+    "/product/truss-totem-cover-wit-1m-huren/",
+    "/product/tumbler-glazen-huren/",
+    "/product/vaatwaskorf-bestek-huren/",
+    "/product/vaatwaskorf-borden-huren/",
+    "/product/vaatwaskorf-glazen-huren/",
+    "/product/valmatten-huren/",
+    "/product/verlengkabel-25m/",
+    "/product/verlengkabel-huren/",
+    "/product/verlichtingsset-huren/",
+    "/product/vier-op-een-rij-xxl-huren/",
+    "/product/vlondervloer-huren-per-m2/",
+    "/product/voetbal-dartbord-huren/",
+    "/product/walkie-talkies-huren/",
+    "/product/waterkoker-1-8l-huren/",
+    "/product/weddingchair-huren/",
+    "/product/weekemmer-gelblaster-huren/",
+    "/product/wijnglazen-huren/",
+    "/product/zaklopen-huren/",
+    "/product/zwarte-klapstoel-huren/",
+    "/shop/",
+    "/silent-disco-huren-assen/",
+    "/silent-disco-huren-drenthe/",
+    "/silent-disco-huren-emmen/",
+    "/silent-disco-huren-friesland/",
+    "/silent-disco-huren-groningen/",
+    "/silent-disco-huren-leeuwarden/",
+    "/silent-disco-verhuur/",
+    "/statafel-huren-drenthe/",
+    "/statafel-huren-friesland/",
+    "/statafel-huren-groningen/",
+    "/stretchtent-huren-drenthe/",
+    "/stretchtent-huren-friesland/",
+    "/stretchtent-huren-groningen/",
+    "/stretchtent-huren/",
+    "/terrasverwarmer-huren-drenthe/",
+    "/terrasverwarmer-huren-friesland/",
+    "/terrasverwarmer-huren-groningen/",
+    "/terrasverwarmer-huren/",
+    "/voordelen-van-lasergamen/",
+    "/wettelijk/",
+    "/winkelwagen/",
+    "/zakelijk/"
+   ]
+  },
+  "/product-category/bestek-huren/bestek-goud-huren/": {
+   "status": "301|https://dagpakketverhuur.nl/product-category/bestek-huren/",
+   "on": [
+    "/product-category/activiteiten-attracties-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-activiteiten-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-spellen-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-springkussens-huren/",
+    "/product-category/bar-koeling-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-barren-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-dranken-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-koeling-huren/",
+    "/product-category/bestek-huren/",
+    "/product-category/buffet-huren/",
+    "/product-category/buffet-huren/buffet-gastronormbakken-huren/",
+    "/product-category/buffet-huren/buffet-overig-huren/",
+    "/product-category/buffet-huren/buffet-warmhouden-huren/",
+    "/product-category/glaswerk-huren/",
+    "/product-category/inrichting-aankleding-huren/",
+    "/product-category/inrichting-aankleding-huren/feestextras-huren/",
+    "/product-category/keuken-huren/",
+    "/product-category/keuken-huren/keuken-funfood-huren/",
+    "/product-category/licht-geluid-huren/",
+    "/product-category/licht-geluid-huren/geluid-huren/",
+    "/product-category/licht-geluid-huren/licht-geluid-stroom-kabels-huren/",
+    "/product-category/licht-geluid-huren/presentatie-huren/",
+    "/product-category/licht-geluid-huren/verlichting-effecten-huren/",
+    "/product-category/linnen-huren/",
+    "/product-category/linnen-huren/linnen-buffettafelrokken-huren/",
+    "/product-category/linnen-huren/linnen-statafelrokken-huren/",
+    "/product-category/linnen-huren/linnen-tafelkleden-huren/",
+    "/product-category/meubilair-huren/",
+    "/product-category/meubilair-huren/meubilair-bierbanken-huren/",
+    "/product-category/meubilair-huren/meubilair-statafels-huren/",
+    "/product-category/meubilair-huren/meubilair-stoelen-huren/",
+    "/product-category/meubilair-huren/meubilair-tafels-huren/",
+    "/product-category/servies-huren/",
+    "/product-category/tenten-verwarming-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-easy-up-tenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-pagodetenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-stretchtenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-verwarming-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-zijwanden-vloeren-huren/",
+    "/product-category/uncategorized/",
+    "/shop/"
+   ]
+  },
+  "/product-category/bestek-huren/bestek-rvs-huren/": {
+   "status": "301|https://dagpakketverhuur.nl/product-category/bestek-huren/",
+   "on": [
+    "/product-category/activiteiten-attracties-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-activiteiten-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-spellen-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-springkussens-huren/",
+    "/product-category/bar-koeling-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-barren-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-dranken-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-koeling-huren/",
+    "/product-category/bestek-huren/",
+    "/product-category/buffet-huren/",
+    "/product-category/buffet-huren/buffet-gastronormbakken-huren/",
+    "/product-category/buffet-huren/buffet-overig-huren/",
+    "/product-category/buffet-huren/buffet-warmhouden-huren/",
+    "/product-category/glaswerk-huren/",
+    "/product-category/inrichting-aankleding-huren/",
+    "/product-category/inrichting-aankleding-huren/feestextras-huren/",
+    "/product-category/keuken-huren/",
+    "/product-category/keuken-huren/keuken-funfood-huren/",
+    "/product-category/licht-geluid-huren/",
+    "/product-category/licht-geluid-huren/geluid-huren/",
+    "/product-category/licht-geluid-huren/licht-geluid-stroom-kabels-huren/",
+    "/product-category/licht-geluid-huren/presentatie-huren/",
+    "/product-category/licht-geluid-huren/verlichting-effecten-huren/",
+    "/product-category/linnen-huren/",
+    "/product-category/linnen-huren/linnen-buffettafelrokken-huren/",
+    "/product-category/linnen-huren/linnen-statafelrokken-huren/",
+    "/product-category/linnen-huren/linnen-tafelkleden-huren/",
+    "/product-category/meubilair-huren/",
+    "/product-category/meubilair-huren/meubilair-bierbanken-huren/",
+    "/product-category/meubilair-huren/meubilair-statafels-huren/",
+    "/product-category/meubilair-huren/meubilair-stoelen-huren/",
+    "/product-category/meubilair-huren/meubilair-tafels-huren/",
+    "/product-category/servies-huren/",
+    "/product-category/tenten-verwarming-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-easy-up-tenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-pagodetenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-stretchtenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-verwarming-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-zijwanden-vloeren-huren/",
+    "/product-category/uncategorized/",
+    "/shop/"
+   ]
+  },
+  "/product-category/servies-huren/servies-lichtgroen-huren/": {
+   "status": "301|https://dagpakketverhuur.nl/product-category/servies-huren/",
+   "on": [
+    "/product-category/activiteiten-attracties-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-activiteiten-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-spellen-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-springkussens-huren/",
+    "/product-category/bar-koeling-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-barren-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-dranken-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-koeling-huren/",
+    "/product-category/bestek-huren/",
+    "/product-category/buffet-huren/",
+    "/product-category/buffet-huren/buffet-gastronormbakken-huren/",
+    "/product-category/buffet-huren/buffet-overig-huren/",
+    "/product-category/buffet-huren/buffet-warmhouden-huren/",
+    "/product-category/glaswerk-huren/",
+    "/product-category/inrichting-aankleding-huren/",
+    "/product-category/inrichting-aankleding-huren/feestextras-huren/",
+    "/product-category/keuken-huren/",
+    "/product-category/keuken-huren/keuken-funfood-huren/",
+    "/product-category/licht-geluid-huren/",
+    "/product-category/licht-geluid-huren/geluid-huren/",
+    "/product-category/licht-geluid-huren/licht-geluid-stroom-kabels-huren/",
+    "/product-category/licht-geluid-huren/presentatie-huren/",
+    "/product-category/licht-geluid-huren/verlichting-effecten-huren/",
+    "/product-category/linnen-huren/",
+    "/product-category/linnen-huren/linnen-buffettafelrokken-huren/",
+    "/product-category/linnen-huren/linnen-statafelrokken-huren/",
+    "/product-category/linnen-huren/linnen-tafelkleden-huren/",
+    "/product-category/meubilair-huren/",
+    "/product-category/meubilair-huren/meubilair-bierbanken-huren/",
+    "/product-category/meubilair-huren/meubilair-statafels-huren/",
+    "/product-category/meubilair-huren/meubilair-stoelen-huren/",
+    "/product-category/meubilair-huren/meubilair-tafels-huren/",
+    "/product-category/servies-huren/",
+    "/product-category/tenten-verwarming-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-easy-up-tenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-pagodetenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-stretchtenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-verwarming-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-zijwanden-vloeren-huren/",
+    "/product-category/uncategorized/",
+    "/shop/"
+   ]
+  },
+  "/product-category/servies-huren/servies-wit-huren/": {
+   "status": "301|https://dagpakketverhuur.nl/product-category/servies-huren/",
+   "on": [
+    "/product-category/activiteiten-attracties-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-activiteiten-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-spellen-huren/",
+    "/product-category/activiteiten-attracties-huren/attracties-springkussens-huren/",
+    "/product-category/bar-koeling-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-barren-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-dranken-huren/",
+    "/product-category/bar-koeling-huren/bar-koeling-koeling-huren/",
+    "/product-category/bestek-huren/",
+    "/product-category/buffet-huren/",
+    "/product-category/buffet-huren/buffet-gastronormbakken-huren/",
+    "/product-category/buffet-huren/buffet-overig-huren/",
+    "/product-category/buffet-huren/buffet-warmhouden-huren/",
+    "/product-category/glaswerk-huren/",
+    "/product-category/inrichting-aankleding-huren/",
+    "/product-category/inrichting-aankleding-huren/feestextras-huren/",
+    "/product-category/keuken-huren/",
+    "/product-category/keuken-huren/keuken-funfood-huren/",
+    "/product-category/licht-geluid-huren/",
+    "/product-category/licht-geluid-huren/geluid-huren/",
+    "/product-category/licht-geluid-huren/licht-geluid-stroom-kabels-huren/",
+    "/product-category/licht-geluid-huren/presentatie-huren/",
+    "/product-category/licht-geluid-huren/verlichting-effecten-huren/",
+    "/product-category/linnen-huren/",
+    "/product-category/linnen-huren/linnen-buffettafelrokken-huren/",
+    "/product-category/linnen-huren/linnen-statafelrokken-huren/",
+    "/product-category/linnen-huren/linnen-tafelkleden-huren/",
+    "/product-category/meubilair-huren/",
+    "/product-category/meubilair-huren/meubilair-bierbanken-huren/",
+    "/product-category/meubilair-huren/meubilair-statafels-huren/",
+    "/product-category/meubilair-huren/meubilair-stoelen-huren/",
+    "/product-category/meubilair-huren/meubilair-tafels-huren/",
+    "/product-category/servies-huren/",
+    "/product-category/tenten-verwarming-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-easy-up-tenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-pagodetenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-stretchtenten-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-verwarming-huren/",
+    "/product-category/tenten-verwarming-huren/tenten-verwarming-zijwanden-vloeren-huren/",
+    "/product-category/uncategorized/",
+    "/shop/"
+   ]
+  },
+  "/services/": {
+   "status": "404|",
+   "on": [
+    "/?elementskit_template=header"
+   ]
+  }
+ },
+ "n_links": 388
+}

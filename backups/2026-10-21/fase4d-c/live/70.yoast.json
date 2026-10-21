@@ -1,0 +1,17 @@
+{
+ "yoast_head_json": {
+  "title": "Over ons | Joris en Dagpakketverhuur uit Fochteloo",
+  "description": "Dagpakketverhuur is het verhuurbedrijf van Joris uit Fochteloo (Friesland). Begonnen met 12 laserguns, nu feest- en activiteitenverhuur in heel Noord-Nederland.",
+  "robots": {
+   "index": "index",
+   "follow": "follow",
+   "max-snippet": "max-snippet:-1",
+   "max-image-preview": "max-image-preview:large",
+   "max-video-preview": "max-video-preview:-1"
+  },
+  "canonical": "https://dagpakketverhuur.nl/over-ons/"
+ },
+ "status": "publish",
+ "slug": "over-ons",
+ "link": "https://dagpakketverhuur.nl/over-ons/"
+}

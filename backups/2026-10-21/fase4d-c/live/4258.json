@@ -1,0 +1,256 @@
+{
+ "id": 4258,
+ "date": "2025-08-16T21:24:33",
+ "date_gmt": "2025-08-16T19:24:33",
+ "guid": {
+  "rendered": "https://dagpakketverhuur.nl/?page_id=4258",
+  "raw": "https://dagpakketverhuur.nl/?page_id=4258"
+ },
+ "modified": "2026-08-05T13:23:26",
+ "modified_gmt": "2026-08-05T11:23:26",
+ "password": "",
+ "slug": "bedankt",
+ "status": "publish",
+ "type": "page",
+ "link": "https://dagpakketverhuur.nl/bedankt/",
+ "title": {
+  "raw": "Bedankt!",
+  "rendered": "Bedankt!"
+ },
+ "content": {
+  "raw": "<section>\n  <style>\n    .dpv-thankyou {\n      background: transparent;\n      padding: 20px 0;\n    }\n    .dpv-container {\n      max-width: 720px;\n      margin: 0 auto;\n      background: #ffffff;\n      border-radius: 10px;\n      padding: 30px;\n      box-shadow: 0 8px 25px rgba(0,0,0,0.06);\n      text-align: center;\n    }\n    .dpv-icon {\n      width: 64px;\n      height: 64px;\n      margin: 0 auto 15px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      background: #eef2f7;\n      border-radius: 50%;\n    }\n    .dpv-header h1 {\n      color: #0b1f3a;\n      font-size: 26px;\n      margin-bottom: 10px;\n    }\n    .dpv-header p {\n      color: #4a5568;\n      font-size: 16px;\n    }\n    .dpv-box {\n      background: #f8fafc;\n      border-left: 4px solid #0b1f3a;\n      padding: 18px;\n      border-radius: 6px;\n      margin: 25px 0;\n      font-size: 15px;\n      color: #2d3748;\n      text-align: left;\n    }\n    .dpv-steps {\n      margin-top: 20px;\n      text-align: left;\n    }\n    .dpv-step {\n      margin-bottom: 12px;\n      font-size: 15px;\n      color: #2d3748;\n    }\n    .dpv-step strong {\n      color: #0b1f3a;\n    }\n    .dpv-contact {\n      margin-top: 25px;\n      padding-top: 20px;\n      border-top: 1px solid #e2e8f0;\n      font-size: 14px;\n      color: #4a5568;\n    }\n    .dpv-contact a {\n      color: #0b1f3a;\n      text-decoration: none;\n      font-weight: 600;\n    }\n    .dpv-contact a:hover {\n      text-decoration: underline;\n    }\n    .dpv-order-summary {\n      background: #f0f4f8;\n      border-radius: 8px;\n      padding: 18px 20px;\n      margin: 20px 0;\n      text-align: left;\n    }\n    .dpv-order-summary-title {\n      font-size: 13px;\n      font-weight: 700;\n      text-transform: uppercase;\n      letter-spacing: 0.06em;\n      color: #0b1f3a;\n      margin-bottom: 12px;\n    }\n    .dpv-order-row {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      font-size: 14px;\n      color: #4a5568;\n      padding: 5px 0;\n      border-bottom: 1px solid #e2e8f0;\n    }\n    .dpv-order-row:last-child {\n      border-bottom: none;\n      padding-top: 10px;\n      margin-top: 4px;\n    }\n    .dpv-order-row .label {\n      color: #718096;\n    }\n    .dpv-order-row .value {\n      display: flex;\n      align-items: center;\n      gap: 4px;\n      font-weight: 600;\n      color: #2d3748;\n    }\n    .dpv-order-row .value-email {\n      font-weight: 600;\n      color: #2d3748;\n    }\n    .dpv-order-row .value-id {\n      font-weight: 600;\n      color: #2d3748;\n    }\n    .dpv-order-row .currency {\n      font-size: 13px;\n      color: #718096;\n    }\n    .dpv-order-row .amount {\n      font-size: 16px;\n      font-weight: 600;\n      color: #0b1f3a;\n    }\n    .dpv-order-row.total .label {\n      color: #0b1f3a;\n      font-weight: 600;\n    }\n    .dpv-loading {\n      font-size: 14px;\n      color: #a0aec0;\n      padding: 10px 0;\n      text-align: center;\n    }\n  </style>\n      <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0b1f3a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <rect x=\"3\" y=\"8\" width=\"18\" height=\"13\" rx=\"2\"></rect>\n        <path d=\"M12 8v13\"></path>\n        <path d=\"M3 8h18\"></path>\n        <path d=\"M7.5 8a2.5 2.5 0 1 1 0-5c1.5 0 4.5 5 4.5 5s-3 0-4.5 0z\"></path>\n        <path d=\"M16.5 8a2.5 2.5 0 1 0 0-5c-1.5 0-4.5 5-4.5 5s3 0 4.5 0z\"></path>\n      </svg>\n      <h1>Bedankt voor je boeking!</h1>\n      <p>Je reservering is goed ontvangen.</p>\n      Reserveringsgegevens worden geladen…\n      <strong>Wat gebeurt er nu?</strong><br>\n      We verwerken je reservering en controleren de beschikbaarheid en planning.<br>\n      Indien nodig nemen we contact met je op.\n        <strong>Stap 1:</strong> Je reservering is bij ons binnengekomen\n        <strong>Stap 2:</strong> Wij verwerken en controleren de planning\n        <strong>Stap 3:</strong> Alleen bij vragen of afwijkingen nemen we contact op\n      Vragen over je reservering?<br>\n      Bel gerust\n      <a href=\"tel:+31852129150\">085 212 91 50</a>\n</section>\t\t\t\t\n\t\t\t\t\t<!--\n  DPV Conversie Tracking — Elementor HTML-widget (definitieve versie)\n  =====================================================================\n-->",
+  "rendered": "\t\t<div data-elementor-type=\"wp-page\" data-elementor-id=\"4258\" class=\"elementor elementor-4258\" wpc-filter-elementor-widget=\"1\" data-elementor-post-type=\"page\">\n\t\t\t\t<div data-particle_enable=\"false\" data-particle-mobile-disabled=\"false\" class=\"elementor-element elementor-element-a2ed346 e-con-full e-flex e-con e-parent\" data-id=\"a2ed346\" data-element_type=\"container\" data-e-type=\"container\">\n\t\t\t\t<div class=\"elementor-element elementor-element-31b07bd elementor-widget elementor-widget-html\" data-id=\"31b07bd\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<section class=\"dpv-thankyou\">\n  <style>\n    .dpv-thankyou {\n      background: transparent;\n      padding: 20px 0;\n    }\n    .dpv-container {\n      max-width: 720px;\n      margin: 0 auto;\n      background: #ffffff;\n      border-radius: 10px;\n      padding: 30px;\n      box-shadow: 0 8px 25px rgba(0,0,0,0.06);\n      text-align: center;\n    }\n    .dpv-icon {\n      width: 64px;\n      height: 64px;\n      margin: 0 auto 15px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      background: #eef2f7;\n      border-radius: 50%;\n    }\n    .dpv-header h1 {\n      color: #0b1f3a;\n      font-size: 26px;\n      margin-bottom: 10px;\n    }\n    .dpv-header p {\n      color: #4a5568;\n      font-size: 16px;\n    }\n    .dpv-box {\n      background: #f8fafc;\n      border-left: 4px solid #0b1f3a;\n      padding: 18px;\n      border-radius: 6px;\n      margin: 25px 0;\n      font-size: 15px;\n      color: #2d3748;\n      text-align: left;\n    }\n    .dpv-steps {\n      margin-top: 20px;\n      text-align: left;\n    }\n    .dpv-step {\n      margin-bottom: 12px;\n      font-size: 15px;\n      color: #2d3748;\n    }\n    .dpv-step strong {\n      color: #0b1f3a;\n    }\n    .dpv-contact {\n      margin-top: 25px;\n      padding-top: 20px;\n      border-top: 1px solid #e2e8f0;\n      font-size: 14px;\n      color: #4a5568;\n    }\n    .dpv-contact a {\n      color: #0b1f3a;\n      text-decoration: none;\n      font-weight: 600;\n    }\n    .dpv-contact a:hover {\n      text-decoration: underline;\n    }\n    .dpv-order-summary {\n      background: #f0f4f8;\n      border-radius: 8px;\n      padding: 18px 20px;\n      margin: 20px 0;\n      text-align: left;\n    }\n    .dpv-order-summary-title {\n      font-size: 13px;\n      font-weight: 700;\n      text-transform: uppercase;\n      letter-spacing: 0.06em;\n      color: #0b1f3a;\n      margin-bottom: 12px;\n    }\n    .dpv-order-row {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      font-size: 14px;\n      color: #4a5568;\n      padding: 5px 0;\n      border-bottom: 1px solid #e2e8f0;\n    }\n    .dpv-order-row:last-child {\n      border-bottom: none;\n      padding-top: 10px;\n      margin-top: 4px;\n    }\n    .dpv-order-row .label {\n      color: #718096;\n    }\n    .dpv-order-row .value {\n      display: flex;\n      align-items: center;\n      gap: 4px;\n      font-weight: 600;\n      color: #2d3748;\n    }\n    .dpv-order-row .value-email {\n      font-weight: 600;\n      color: #2d3748;\n    }\n    .dpv-order-row .value-id {\n      font-weight: 600;\n      color: #2d3748;\n    }\n    .dpv-order-row .currency {\n      font-size: 13px;\n      color: #718096;\n    }\n    .dpv-order-row .amount {\n      font-size: 16px;\n      font-weight: 600;\n      color: #0b1f3a;\n    }\n    .dpv-order-row.total .label {\n      color: #0b1f3a;\n      font-weight: 600;\n    }\n    .dpv-loading {\n      font-size: 14px;\n      color: #a0aec0;\n      padding: 10px 0;\n      text-align: center;\n    }\n  </style>\n\n  <div class=\"dpv-container\">\n    <div class=\"dpv-icon\">\n      <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0b1f3a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <rect x=\"3\" y=\"8\" width=\"18\" height=\"13\" rx=\"2\"></rect>\n        <path d=\"M12 8v13\"></path>\n        <path d=\"M3 8h18\"></path>\n        <path d=\"M7.5 8a2.5 2.5 0 1 1 0-5c1.5 0 4.5 5 4.5 5s-3 0-4.5 0z\"></path>\n        <path d=\"M16.5 8a2.5 2.5 0 1 0 0-5c-1.5 0-4.5 5-4.5 5s3 0 4.5 0z\"></path>\n      </svg>\n    </div>\n    <div class=\"dpv-header\">\n      <h1>Bedankt voor je boeking!</h1>\n      <p>Je reservering is goed ontvangen.</p>\n    </div>\n    <div class=\"dpv-order-summary\" id=\"dpv-order-summary\">\n      <div class=\"dpv-loading\">Reserveringsgegevens worden geladen…</div>\n    </div>\n    <div class=\"dpv-box\">\n      <strong>Wat gebeurt er nu?</strong><br>\n      We verwerken je reservering en controleren de beschikbaarheid en planning.<br>\n      Indien nodig nemen we contact met je op.\n    </div>\n    <div class=\"dpv-steps\">\n      <div class=\"dpv-step\">\n        <strong>Stap 1:</strong> Je reservering is bij ons binnengekomen\n      </div>\n      <div class=\"dpv-step\">\n        <strong>Stap 2:</strong> Wij verwerken en controleren de planning\n      </div>\n      <div class=\"dpv-step\">\n        <strong>Stap 3:</strong> Alleen bij vragen of afwijkingen nemen we contact op\n      </div>\n    </div>\n    <div class=\"dpv-contact\">\n      Vragen over je reservering?<br>\n      Bel gerust\n      <a href=\"tel:+31852129150\">085 212 91 50</a>\n    </div>\n  </div>\n</section>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"elementor-element elementor-element-502322a elementor-widget elementor-widget-html\" data-id=\"502322a\" data-element_type=\"widget\" data-e-type=\"widget\" data-widget_type=\"html.default\">\n\t\t\t\t<div class=\"elementor-widget-container\">\n\t\t\t\t\t<!--\n  DPV Conversie Tracking — Elementor HTML-widget (definitieve versie)\n  =====================================================================\n-->\n<script>\n(function () {\n    var match = window.location.pathname.match(/order-received\\/(\\d+)/);\n    if (!match) return;\n\n    var orderId = match[1];\n    var key = new URLSearchParams(window.location.search).get('key') || '';\n    var summaryEl = document.getElementById('dpv-order-summary');\n\n    fetch('/wp-json/dpv/v1/order-tracking-data/' + orderId + '?key=' + encodeURIComponent(key))\n        .then(function (res) { return res.json(); })\n        .then(function (data) {\n\n            if (summaryEl) {\n                if (data.found) {\n                    var formatter = new Intl.NumberFormat('nl-NL', {\n                        minimumFractionDigits: 2,\n                        maximumFractionDigits: 2\n                    });\n\n                    var emailRow = data.email\n                        ? '<div class=\"dpv-order-row\">'\n                          + '<span class=\"label\">E-mailadres</span>'\n                          + '<span class=\"value-email\">' + escHtml(data.email) + '</span>'\n                          + '</div>'\n                        : '';\n\n                    var transactionRow = data.order_number\n                        ? '<div class=\"dpv-order-row\">'\n                          + '<span class=\"label\">Reserveringsnummer</span>'\n                          + '<span class=\"value-id\">' + escHtml(String(data.order_number)) + '</span>'\n                          + '</div>'\n                        : '';\n\n                    var totalRow = (data.total !== undefined && data.total !== null)\n                        ? '<div class=\"dpv-order-row total\">'\n                          + '<span class=\"label\">Totaalbedrag</span>'\n                          + '<span class=\"value\">'\n                          + '<span class=\"currency\">€</span>'\n                          + '<span class=\"amount\">' + formatter.format(data.total) + '</span>'\n                          + '</span>'\n                          + '</div>'\n                        : '';\n\n                    summaryEl.innerHTML =\n                        '<div class=\"dpv-order-summary-title\">Jouw reserveringsoverzicht</div>'\n                        + emailRow\n                        + transactionRow\n                        + totalRow;\n                } else {\n                    summaryEl.style.display = 'none';\n                }\n            }\n\n            if (!data.found || data.already_tracked) return;\n\n            var payload, eventName;\n            if (data.is_paid) {\n                eventName = 'purchase';\n                payload = {\n                    transaction_id: data.order_number,\n                    value:          data.total,\n                    currency:       data.currency,\n                    shipping:       data.shipping,\n                    tax:            data.tax,\n                    items:          data.items\n                };\n            } else if (data.is_quote) {\n                eventName = 'conversion';\n                payload = {\n                    'send_to':        'AW-17727220476/xJYcCPulrsgcEPzV_4RC',\n                    'value':          data.total,\n                    'currency':       data.currency,\n                    'transaction_id': data.order_number\n                };\n            } else {\n                return;\n            }\n\n            if (typeof gtag === 'function') {\n                gtag('event', eventName, payload);\n            } else {\n                window.dataLayer = window.dataLayer || [];\n                window.dataLayer.push(Object.assign({ event: eventName }, payload));\n            }\n        })\n        .catch(function () {\n            if (summaryEl) summaryEl.style.display = 'none';\n        });\n\n    function escHtml(str) {\n        return str\n            .replace(/&/g, '&amp;')\n            .replace(/</g, '&lt;')\n            .replace(/>/g, '&gt;')\n            .replace(/\"/g, '&quot;')\n            .replace(/'/g, '&#39;');\n    }\n})();\n</script>\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t",
+  "protected": false,
+  "block_version": 0
+ },
+ "excerpt": {
+  "raw": "",
+  "rendered": "<p>Bedankt voor je boeking! Je reservering is goed ontvangen. Reserveringsgegevens worden geladen… Wat gebeurt er nu? We verwerken je reservering en controleren de beschikbaarheid en planning. Indien nodig nemen we contact met je op. Stap 1: Je reservering is bij ons binnengekomen Stap 2: Wij verwerken en controleren de planning Stap 3: Alleen bij vragen [&hellip;]</p>\n",
+  "protected": false
+ },
+ "author": 2,
+ "featured_media": 0,
+ "parent": 0,
+ "menu_order": 0,
+ "comment_status": "closed",
+ "ping_status": "closed",
+ "template": "",
+ "meta": {
+  "_acf_changed": false,
+  "footnotes": "",
+  "_elementor_edit_mode": "builder",
+  "_elementor_template_type": "wp-page",
+  "_elementor_data": "[{\"id\":\"a2ed346\",\"elType\":\"container\",\"settings\":{\"content_width\":\"full\",\"width\":{\"unit\":\"%\",\"size\":85,\"sizes\":[]},\"flex_align_items\":\"center\",\"margin\":{\"unit\":\"px\",\"top\":\"20\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"120\",\"isLinked\":false},\"margin_mobile\":{\"unit\":\"px\",\"top\":\"0\",\"right\":\"0\",\"bottom\":\"0\",\"left\":\"0\",\"isLinked\":false},\"_flex_align_self\":\"center\",\"_flex_size\":\"grow\",\"eael_parallax_layers_list\":[],\"eael_ext_content_protection_password_placeholder\":\"Enter Password\",\"eael_ext_content_protection_password_submit_btn_txt\":\"Submit\",\"eael_ext_content_protection_password_incorrect_message\":\"Password does not match.\",\"eael_cl_logics\":[{\"_id\":\"8181af5\",\"dynamic_field_custom_separator\":\"|\"}],\"as_bs_lists\":[],\"as_bs_lists_h\":[],\"as_ts_lists\":[],\"as_ts_lists_h\":[],\"as_ds_lists\":[],\"as_ds_lists_h\":[]},\"elements\":[{\"id\":\"31b07bd\",\"elType\":\"widget\",\"settings\":{\"html\":\"<section class=\\\"dpv-thankyou\\\">\\n  <style>\\n    .dpv-thankyou {\\n      background: transparent;\\n      padding: 20px 0;\\n    }\\n    .dpv-container {\\n      max-width: 720px;\\n      margin: 0 auto;\\n      background: #ffffff;\\n      border-radius: 10px;\\n      padding: 30px;\\n      box-shadow: 0 8px 25px rgba(0,0,0,0.06);\\n      text-align: center;\\n    }\\n    .dpv-icon {\\n      width: 64px;\\n      height: 64px;\\n      margin: 0 auto 15px;\\n      display: flex;\\n      align-items: center;\\n      justify-content: center;\\n      background: #eef2f7;\\n      border-radius: 50%;\\n    }\\n    .dpv-header h1 {\\n      color: #0b1f3a;\\n      font-size: 26px;\\n      margin-bottom: 10px;\\n    }\\n    .dpv-header p {\\n      color: #4a5568;\\n      font-size: 16px;\\n    }\\n    .dpv-box {\\n      background: #f8fafc;\\n      border-left: 4px solid #0b1f3a;\\n      padding: 18px;\\n      border-radius: 6px;\\n      margin: 25px 0;\\n      font-size: 15px;\\n      color: #2d3748;\\n      text-align: left;\\n    }\\n    .dpv-steps {\\n      margin-top: 20px;\\n      text-align: left;\\n    }\\n    .dpv-step {\\n      margin-bottom: 12px;\\n      font-size: 15px;\\n      color: #2d3748;\\n    }\\n    .dpv-step strong {\\n      color: #0b1f3a;\\n    }\\n    .dpv-contact {\\n      margin-top: 25px;\\n      padding-top: 20px;\\n      border-top: 1px solid #e2e8f0;\\n      font-size: 14px;\\n      color: #4a5568;\\n    }\\n    .dpv-contact a {\\n      color: #0b1f3a;\\n      text-decoration: none;\\n      font-weight: 600;\\n    }\\n    .dpv-contact a:hover {\\n      text-decoration: underline;\\n    }\\n    .dpv-order-summary {\\n      background: #f0f4f8;\\n      border-radius: 8px;\\n      padding: 18px 20px;\\n      margin: 20px 0;\\n      text-align: left;\\n    }\\n    .dpv-order-summary-title {\\n      font-size: 13px;\\n      font-weight: 700;\\n      text-transform: uppercase;\\n      letter-spacing: 0.06em;\\n      color: #0b1f3a;\\n      margin-bottom: 12px;\\n    }\\n    .dpv-order-row {\\n      display: flex;\\n      justify-content: space-between;\\n      align-items: center;\\n      font-size: 14px;\\n      color: #4a5568;\\n      padding: 5px 0;\\n      border-bottom: 1px solid #e2e8f0;\\n    }\\n    .dpv-order-row:last-child {\\n      border-bottom: none;\\n      padding-top: 10px;\\n      margin-top: 4px;\\n    }\\n    .dpv-order-row .label {\\n      color: #718096;\\n    }\\n    .dpv-order-row .value {\\n      display: flex;\\n      align-items: center;\\n      gap: 4px;\\n      font-weight: 600;\\n      color: #2d3748;\\n    }\\n    .dpv-order-row .value-email {\\n      font-weight: 600;\\n      color: #2d3748;\\n    }\\n    .dpv-order-row .value-id {\\n      font-weight: 600;\\n      color: #2d3748;\\n    }\\n    .dpv-order-row .currency {\\n      font-size: 13px;\\n      color: #718096;\\n    }\\n    .dpv-order-row .amount {\\n      font-size: 16px;\\n      font-weight: 600;\\n      color: #0b1f3a;\\n    }\\n    .dpv-order-row.total .label {\\n      color: #0b1f3a;\\n      font-weight: 600;\\n    }\\n    .dpv-loading {\\n      font-size: 14px;\\n      color: #a0aec0;\\n      padding: 10px 0;\\n      text-align: center;\\n    }\\n  <\\/style>\\n\\n  <div class=\\\"dpv-container\\\">\\n    <div class=\\\"dpv-icon\\\">\\n      <svg width=\\\"28\\\" height=\\\"28\\\" viewBox=\\\"0 0 24 24\\\" fill=\\\"none\\\" stroke=\\\"#0b1f3a\\\" stroke-width=\\\"2\\\" stroke-linecap=\\\"round\\\" stroke-linejoin=\\\"round\\\">\\n        <rect x=\\\"3\\\" y=\\\"8\\\" width=\\\"18\\\" height=\\\"13\\\" rx=\\\"2\\\"><\\/rect>\\n        <path d=\\\"M12 8v13\\\"><\\/path>\\n        <path d=\\\"M3 8h18\\\"><\\/path>\\n        <path d=\\\"M7.5 8a2.5 2.5 0 1 1 0-5c1.5 0 4.5 5 4.5 5s-3 0-4.5 0z\\\"><\\/path>\\n        <path d=\\\"M16.5 8a2.5 2.5 0 1 0 0-5c-1.5 0-4.5 5-4.5 5s3 0 4.5 0z\\\"><\\/path>\\n      <\\/svg>\\n    <\\/div>\\n    <div class=\\\"dpv-header\\\">\\n      <h1>Bedankt voor je boeking!<\\/h1>\\n      <p>Je reservering is goed ontvangen.<\\/p>\\n    <\\/div>\\n    <div class=\\\"dpv-order-summary\\\" id=\\\"dpv-order-summary\\\">\\n      <div class=\\\"dpv-loading\\\">Reserveringsgegevens worden geladen\\u2026<\\/div>\\n    <\\/div>\\n    <div class=\\\"dpv-box\\\">\\n      <strong>Wat gebeurt er nu?<\\/strong><br>\\n      We verwerken je reservering en controleren de beschikbaarheid en planning.<br>\\n      Indien nodig nemen we contact met je op.\\n    <\\/div>\\n    <div class=\\\"dpv-steps\\\">\\n      <div class=\\\"dpv-step\\\">\\n        <strong>Stap 1:<\\/strong> Je reservering is bij ons binnengekomen\\n      <\\/div>\\n      <div class=\\\"dpv-step\\\">\\n        <strong>Stap 2:<\\/strong> Wij verwerken en controleren de planning\\n      <\\/div>\\n      <div class=\\\"dpv-step\\\">\\n        <strong>Stap 3:<\\/strong> Alleen bij vragen of afwijkingen nemen we contact op\\n      <\\/div>\\n    <\\/div>\\n    <div class=\\\"dpv-contact\\\">\\n      Vragen over je reservering?<br>\\n      Bel gerust\\n      <a href=\\\"tel:+31852129150\\\">085 212 91 50<\\/a>\\n    <\\/div>\\n  <\\/div>\\n<\\/section>\",\"eael_tooltip_section_content\":\"I am a tooltip\",\"eael_ext_content_protection_password_placeholder\":\"Enter Password\",\"eael_ext_content_protection_password_submit_btn_txt\":\"Submit\",\"eael_ext_content_protection_password_incorrect_message\":\"Password does not match.\",\"eael_cl_logics\":[{\"_id\":\"2f15845\",\"dynamic_field_custom_separator\":\"|\"}],\"as_bs_lists\":[],\"as_bs_lists_h\":[],\"as_ts_lists\":[],\"as_ts_lists_h\":[],\"as_ds_lists\":[],\"as_ds_lists_h\":[]},\"elements\":[],\"widgetType\":\"html\"},{\"id\":\"502322a\",\"elType\":\"widget\",\"settings\":{\"html\":\"<!--\\n  DPV Conversie Tracking \\u2014 Elementor HTML-widget (definitieve versie)\\n  =====================================================================\\n-->\\n<script>\\n(function () {\\n    var match = window.location.pathname.match(\\/order-received\\\\\\/(\\\\d+)\\/);\\n    if (!match) return;\\n\\n    var orderId = match[1];\\n    var key = new URLSearchParams(window.location.search).get('key') || '';\\n    var summaryEl = document.getElementById('dpv-order-summary');\\n\\n    fetch('\\/wp-json\\/dpv\\/v1\\/order-tracking-data\\/' + orderId + '?key=' + encodeURIComponent(key))\\n        .then(function (res) { return res.json(); })\\n        .then(function (data) {\\n\\n            if (summaryEl) {\\n                if (data.found) {\\n                    var formatter = new Intl.NumberFormat('nl-NL', {\\n                        minimumFractionDigits: 2,\\n                        maximumFractionDigits: 2\\n                    });\\n\\n                    var emailRow = data.email\\n                        ? '<div class=\\\"dpv-order-row\\\">'\\n                          + '<span class=\\\"label\\\">E-mailadres<\\/span>'\\n                          + '<span class=\\\"value-email\\\">' + escHtml(data.email) + '<\\/span>'\\n                          + '<\\/div>'\\n                        : '';\\n\\n                    var transactionRow = data.order_number\\n                        ? '<div class=\\\"dpv-order-row\\\">'\\n                          + '<span class=\\\"label\\\">Reserveringsnummer<\\/span>'\\n                          + '<span class=\\\"value-id\\\">' + escHtml(String(data.order_number)) + '<\\/span>'\\n                          + '<\\/div>'\\n                        : '';\\n\\n                    var totalRow = (data.total !== undefined && data.total !== null)\\n                        ? '<div class=\\\"dpv-order-row total\\\">'\\n                          + '<span class=\\\"label\\\">Totaalbedrag<\\/span>'\\n                          + '<span class=\\\"value\\\">'\\n                          + '<span class=\\\"currency\\\">\\u20ac<\\/span>'\\n                          + '<span class=\\\"amount\\\">' + formatter.format(data.total) + '<\\/span>'\\n                          + '<\\/span>'\\n                          + '<\\/div>'\\n                        : '';\\n\\n                    summaryEl.innerHTML =\\n                        '<div class=\\\"dpv-order-summary-title\\\">Jouw reserveringsoverzicht<\\/div>'\\n                        + emailRow\\n                        + transactionRow\\n                        + totalRow;\\n                } else {\\n                    summaryEl.style.display = 'none';\\n                }\\n            }\\n\\n            if (!data.found || data.already_tracked) return;\\n\\n            var payload, eventName;\\n            if (data.is_paid) {\\n                eventName = 'purchase';\\n                payload = {\\n                    transaction_id: data.order_number,\\n                    value:          data.total,\\n                    currency:       data.currency,\\n                    shipping:       data.shipping,\\n                    tax:            data.tax,\\n                    items:          data.items\\n                };\\n            } else if (data.is_quote) {\\n                eventName = 'conversion';\\n                payload = {\\n                    'send_to':        'AW-17727220476\\/xJYcCPulrsgcEPzV_4RC',\\n                    'value':          data.total,\\n                    'currency':       data.currency,\\n                    'transaction_id': data.order_number\\n                };\\n            } else {\\n                return;\\n            }\\n\\n            if (typeof gtag === 'function') {\\n                gtag('event', eventName, payload);\\n            } else {\\n                window.dataLayer = window.dataLayer || [];\\n                window.dataLayer.push(Object.assign({ event: eventName }, payload));\\n            }\\n        })\\n        .catch(function () {\\n            if (summaryEl) summaryEl.style.display = 'none';\\n        });\\n\\n    function escHtml(str) {\\n        return str\\n            .replace(\\/&\\/g, '&amp;')\\n            .replace(\\/<\\/g, '&lt;')\\n            .replace(\\/>\\/g, '&gt;')\\n            .replace(\\/\\\"\\/g, '&quot;')\\n            .replace(\\/'\\/g, '&#39;');\\n    }\\n})();\\n<\\/script>\",\"eael_tooltip_section_content\":\"I am a tooltip\",\"eael_ext_content_protection_password_placeholder\":\"Enter Password\",\"eael_ext_content_protection_password_submit_btn_txt\":\"Submit\",\"eael_ext_content_protection_password_incorrect_message\":\"Password does not match.\",\"eael_cl_logics\":[{\"_id\":\"ac930e7\",\"dynamic_field_custom_separator\":\"|\"}],\"as_bs_lists\":[],\"as_bs_lists_h\":[],\"as_ts_lists\":[],\"as_ts_lists_h\":[],\"as_ds_lists\":[],\"as_ds_lists_h\":[]},\"elements\":[],\"widgetType\":\"html\"}],\"isInner\":false}]",
+  "_elementor_page_settings": {
+   "hide_title": "yes",
+   "eael_ext_toc_title": "Inhoudsopgave"
+  },
+  "_elementor_conditions": []
+ },
+ "permalink_template": "https://dagpakketverhuur.nl/%pagename%/",
+ "generated_slug": "bedankt",
+ "class_list": [
+  "post-4258",
+  "page",
+  "type-page",
+  "status-publish",
+  "hentry"
+ ],
+ "acf": [],
+ "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.6 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Bedankt! - Dagpakketverhuur | Wij regelen, jij geniet.</title>\n<!-- Opmerking voor de beheerder: deze pagina toont geen meta description omdat het geen heeft. Dit kun je oplossen door er een voor deze pagina te schrijven of ga naar het [Yoast SEO - Instellingen] menu en stel een template in. -->\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://dagpakketverhuur.nl/bedankt/\" />\n<meta property=\"og:locale\" content=\"nl_NL\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Bedankt! - Dagpakketverhuur | Wij regelen, jij geniet.\" />\n<meta property=\"og:description\" content=\"Bedankt voor je boeking! Je reservering is goed ontvangen. Reserveringsgegevens worden geladen… Wat gebeurt er nu? We verwerken je reservering en controleren de beschikbaarheid en planning. Indien nodig nemen we contact met je op. Stap 1: Je reservering is bij ons binnengekomen Stap 2: Wij verwerken en controleren de planning Stap 3: Alleen bij vragen [&hellip;]\" />\n<meta property=\"og:url\" content=\"https://dagpakketverhuur.nl/bedankt/\" />\n<meta property=\"og:site_name\" content=\"Dagpakketverhuur | Wij regelen, jij geniet.\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/profile.php?id=61558751813345\" />\n<meta property=\"article:modified_time\" content=\"2026-08-05T11:23:26+00:00\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Geschatte leestijd\" />\n\t<meta name=\"twitter:data1\" content=\"1 minuut\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/bedankt\\/\",\"url\":\"https:\\/\\/dagpakketverhuur.nl\\/bedankt\\/\",\"name\":\"Bedankt! - Dagpakketverhuur | Wij regelen, jij geniet.\",\"isPartOf\":{\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#website\"},\"datePublished\":\"2025-08-16T19:24:33+00:00\",\"dateModified\":\"2026-08-05T11:23:26+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/bedankt\\/#breadcrumb\"},\"inLanguage\":\"nl-NL\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/dagpakketverhuur.nl\\/bedankt\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/bedankt\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/dagpakketverhuur.nl\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Bedankt!\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#website\",\"url\":\"https:\\/\\/dagpakketverhuur.nl\\/\",\"name\":\"Dagpakketverhuur | Wij regelen, jij geniet.\",\"description\":\"Alles wat je nodig hebt in één pakket - makkelijk, compleet en zorgeloos!\",\"publisher\":{\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/dagpakketverhuur.nl\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"nl-NL\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#organization\",\"name\":\"Dagpakketverhuur | Wij regelen, jij geniet.\",\"url\":\"https:\\/\\/dagpakketverhuur.nl\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"nl-NL\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/dagpakketverhuur.nl\\/wp-content\\/uploads\\/2025\\/03\\/cropped-8aadb3d7-a016-4ab2-a4d8-d4f11210fbda.png\",\"contentUrl\":\"https:\\/\\/dagpakketverhuur.nl\\/wp-content\\/uploads\\/2025\\/03\\/cropped-8aadb3d7-a016-4ab2-a4d8-d4f11210fbda.png\",\"width\":512,\"height\":512,\"caption\":\"Dagpakketverhuur | Wij regelen, jij geniet.\"},\"image\":{\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/profile.php?id=61558751813345\",\"https:\\/\\/www.tiktok.com\\/@dagpakketverhuur\",\"https:\\/\\/www.instagram.com\\/dagpakketverhuur\\/\",\"https:\\/\\/www.youtube.com\\/channel\\/UCbDzplfB99J3KIgm0V9l0Ag\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+ "yoast_head_json": {
+  "title": "Bedankt! - Dagpakketverhuur | Wij regelen, jij geniet.",
+  "robots": {
+   "index": "index",
+   "follow": "follow",
+   "max-snippet": "max-snippet:-1",
+   "max-image-preview": "max-image-preview:large",
+   "max-video-preview": "max-video-preview:-1"
+  },
+  "canonical": "https://dagpakketverhuur.nl/bedankt/",
+  "og_locale": "nl_NL",
+  "og_type": "article",
+  "og_title": "Bedankt! - Dagpakketverhuur | Wij regelen, jij geniet.",
+  "og_description": "Bedankt voor je boeking! Je reservering is goed ontvangen. Reserveringsgegevens worden geladen… Wat gebeurt er nu? We verwerken je reservering en controleren de beschikbaarheid en planning. Indien nodig nemen we contact met je op. Stap 1: Je reservering is bij ons binnengekomen Stap 2: Wij verwerken en controleren de planning Stap 3: Alleen bij vragen [&hellip;]",
+  "og_url": "https://dagpakketverhuur.nl/bedankt/",
+  "og_site_name": "Dagpakketverhuur | Wij regelen, jij geniet.",
+  "article_publisher": "https://www.facebook.com/profile.php?id=61558751813345",
+  "article_modified_time": "2026-08-05T11:23:26+00:00",
+  "twitter_card": "summary_large_image",
+  "twitter_misc": {
+   "Geschatte leestijd": "1 minuut"
+  },
+  "schema": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "WebPage",
+     "@id": "https://dagpakketverhuur.nl/bedankt/",
+     "url": "https://dagpakketverhuur.nl/bedankt/",
+     "name": "Bedankt! - Dagpakketverhuur | Wij regelen, jij geniet.",
+     "isPartOf": {
+      "@id": "https://dagpakketverhuur.nl/#website"
+     },
+     "datePublished": "2025-08-16T19:24:33+00:00",
+     "dateModified": "2026-08-05T11:23:26+00:00",
+     "breadcrumb": {
+      "@id": "https://dagpakketverhuur.nl/bedankt/#breadcrumb"
+     },
+     "inLanguage": "nl-NL",
+     "potentialAction": [
+      {
+       "@type": "ReadAction",
+       "target": [
+        "https://dagpakketverhuur.nl/bedankt/"
+       ]
+      }
+     ]
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://dagpakketverhuur.nl/bedankt/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Home",
+       "item": "https://dagpakketverhuur.nl/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Bedankt!"
+      }
+     ]
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://dagpakketverhuur.nl/#website",
+     "url": "https://dagpakketverhuur.nl/",
+     "name": "Dagpakketverhuur | Wij regelen, jij geniet.",
+     "description": "Alles wat je nodig hebt in één pakket - makkelijk, compleet en zorgeloos!",
+     "publisher": {
+      "@id": "https://dagpakketverhuur.nl/#organization"
+     },
+     "potentialAction": [
+      {
+       "@type": "SearchAction",
+       "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://dagpakketverhuur.nl/?s={search_term_string}"
+       },
+       "query-input": {
+        "@type": "PropertyValueSpecification",
+        "valueRequired": true,
+        "valueName": "search_term_string"
+       }
+      }
+     ],
+     "inLanguage": "nl-NL"
+    },
+    {
+     "@type": "Organization",
+     "@id": "https://dagpakketverhuur.nl/#organization",
+     "name": "Dagpakketverhuur | Wij regelen, jij geniet.",
+     "url": "https://dagpakketverhuur.nl/",
+     "logo": {
+      "@type": "ImageObject",
+      "inLanguage": "nl-NL",
+      "@id": "https://dagpakketverhuur.nl/#/schema/logo/image/",
+      "url": "https://dagpakketverhuur.nl/wp-content/uploads/2025/03/cropped-8aadb3d7-a016-4ab2-a4d8-d4f11210fbda.png",
+      "contentUrl": "https://dagpakketverhuur.nl/wp-content/uploads/2025/03/cropped-8aadb3d7-a016-4ab2-a4d8-d4f11210fbda.png",
+      "width": 512,
+      "height": 512,
+      "caption": "Dagpakketverhuur | Wij regelen, jij geniet."
+     },
+     "image": {
+      "@id": "https://dagpakketverhuur.nl/#/schema/logo/image/"
+     },
+     "sameAs": [
+      "https://www.facebook.com/profile.php?id=61558751813345",
+      "https://www.tiktok.com/@dagpakketverhuur",
+      "https://www.instagram.com/dagpakketverhuur/",
+      "https://www.youtube.com/channel/UCbDzplfB99J3KIgm0V9l0Ag"
+     ]
+    }
+   ]
+  }
+ },
+ "_links": {
+  "self": [
+   {
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/pages/4258",
+    "targetHints": {
+     "allow": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+     ]
+    }
+   }
+  ],
+  "collection": [
+   {
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/pages"
+   }
+  ],
+  "about": [
+   {
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/types/page"
+   }
+  ],
+  "author": [
+   {
+    "embeddable": true,
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/users/2"
+   }
+  ],
+  "replies": [
+   {
+    "embeddable": true,
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/comments?post=4258"
+   }
+  ],
+  "version-history": [
+   {
+    "count": 70,
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/pages/4258/revisions"
+   }
+  ],
+  "predecessor-version": [
+   {
+    "id": 50359,
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/pages/4258/revisions/50359"
+   }
+  ],
+  "wp:attachment": [
+   {
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/media?parent=4258"
+   }
+  ],
+  "wp:action-publish": [
+   {
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/pages/4258"
+   }
+  ],
+  "wp:action-unfiltered-html": [
+   {
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/pages/4258"
+   }
+  ],
+  "wp:action-assign-author": [
+   {
+    "href": "https://dagpakketverhuur.nl/wp-json/wp/v2/pages/4258"
+   }
+  ],
+  "curies": [
+   {
+    "name": "wp",
+    "href": "https://api.w.org/{rel}",
+    "templated": true
+   }
+  ]
+ }
+}

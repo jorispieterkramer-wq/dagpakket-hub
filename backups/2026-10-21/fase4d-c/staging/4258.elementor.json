@@ -1,0 +1,102 @@
+[
+ {
+  "id": "a2ed346",
+  "elType": "container",
+  "settings": {
+   "content_width": "full",
+   "width": {
+    "unit": "%",
+    "size": 85,
+    "sizes": []
+   },
+   "flex_align_items": "center",
+   "margin": {
+    "unit": "px",
+    "top": "20",
+    "right": "0",
+    "bottom": "0",
+    "left": "120",
+    "isLinked": false
+   },
+   "margin_mobile": {
+    "unit": "px",
+    "top": "0",
+    "right": "0",
+    "bottom": "0",
+    "left": "0",
+    "isLinked": false
+   },
+   "_flex_align_self": "center",
+   "_flex_size": "grow",
+   "eael_parallax_layers_list": [],
+   "eael_ext_content_protection_password_placeholder": "Enter Password",
+   "eael_ext_content_protection_password_submit_btn_txt": "Submit",
+   "eael_ext_content_protection_password_incorrect_message": "Password does not match.",
+   "eael_cl_logics": [
+    {
+     "_id": "8181af5",
+     "dynamic_field_custom_separator": "|"
+    }
+   ],
+   "as_bs_lists": [],
+   "as_bs_lists_h": [],
+   "as_ts_lists": [],
+   "as_ts_lists_h": [],
+   "as_ds_lists": [],
+   "as_ds_lists_h": []
+  },
+  "elements": [
+   {
+    "id": "31b07bd",
+    "elType": "widget",
+    "settings": {
+     "html": "<section class=\"dpv-thankyou\">\n  <style>\n    .dpv-thankyou {\n      background: transparent;\n      padding: 20px 0;\n    }\n    .dpv-container {\n      max-width: 720px;\n      margin: 0 auto;\n      background: #ffffff;\n      border-radius: 10px;\n      padding: 30px;\n      box-shadow: 0 8px 25px rgba(0,0,0,0.06);\n      text-align: center;\n    }\n    .dpv-icon {\n      width: 64px;\n      height: 64px;\n      margin: 0 auto 15px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      background: #eef2f7;\n      border-radius: 50%;\n    }\n    .dpv-header h1 {\n      color: #0b1f3a;\n      font-size: 26px;\n      margin-bottom: 10px;\n    }\n    .dpv-header p {\n      color: #4a5568;\n      font-size: 16px;\n    }\n    .dpv-box {\n      background: #f8fafc;\n      border-left: 4px solid #0b1f3a;\n      padding: 18px;\n      border-radius: 6px;\n      margin: 25px 0;\n      font-size: 15px;\n      color: #2d3748;\n      text-align: left;\n    }\n    .dpv-steps {\n      margin-top: 20px;\n      text-align: left;\n    }\n    .dpv-step {\n      margin-bottom: 12px;\n      font-size: 15px;\n      color: #2d3748;\n    }\n    .dpv-step strong {\n      color: #0b1f3a;\n    }\n    .dpv-contact {\n      margin-top: 25px;\n      padding-top: 20px;\n      border-top: 1px solid #e2e8f0;\n      font-size: 14px;\n      color: #4a5568;\n    }\n    .dpv-contact a {\n      color: #0b1f3a;\n      text-decoration: none;\n      font-weight: 600;\n    }\n    .dpv-contact a:hover {\n      text-decoration: underline;\n    }\n    .dpv-order-summary {\n      background: #f0f4f8;\n      border-radius: 8px;\n      padding: 18px 20px;\n      margin: 20px 0;\n      text-align: left;\n    }\n    .dpv-order-summary-title {\n      font-size: 13px;\n      font-weight: 700;\n      text-transform: uppercase;\n      letter-spacing: 0.06em;\n      color: #0b1f3a;\n      margin-bottom: 12px;\n    }\n    .dpv-order-row {\n      display: flex;\n      justify-content: space-between;\n      align-items: center;\n      font-size: 14px;\n      color: #4a5568;\n      padding: 5px 0;\n      border-bottom: 1px solid #e2e8f0;\n    }\n    .dpv-order-row:last-child {\n      border-bottom: none;\n      padding-top: 10px;\n      margin-top: 4px;\n    }\n    .dpv-order-row .label {\n      color: #718096;\n    }\n    .dpv-order-row .value {\n      display: flex;\n      align-items: center;\n      gap: 4px;\n      font-weight: 600;\n      color: #2d3748;\n    }\n    .dpv-order-row .value-email {\n      font-weight: 600;\n      color: #2d3748;\n    }\n    .dpv-order-row .value-id {\n      font-weight: 600;\n      color: #2d3748;\n    }\n    .dpv-order-row .currency {\n      font-size: 13px;\n      color: #718096;\n    }\n    .dpv-order-row .amount {\n      font-size: 16px;\n      font-weight: 600;\n      color: #0b1f3a;\n    }\n    .dpv-order-row.total .label {\n      color: #0b1f3a;\n      font-weight: 600;\n    }\n    .dpv-loading {\n      font-size: 14px;\n      color: #a0aec0;\n      padding: 10px 0;\n      text-align: center;\n    }\n  </style>\n\n  <div class=\"dpv-container\">\n    <div class=\"dpv-icon\">\n      <svg width=\"28\" height=\"28\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#0b1f3a\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n        <rect x=\"3\" y=\"8\" width=\"18\" height=\"13\" rx=\"2\"></rect>\n        <path d=\"M12 8v13\"></path>\n        <path d=\"M3 8h18\"></path>\n        <path d=\"M7.5 8a2.5 2.5 0 1 1 0-5c1.5 0 4.5 5 4.5 5s-3 0-4.5 0z\"></path>\n        <path d=\"M16.5 8a2.5 2.5 0 1 0 0-5c-1.5 0-4.5 5-4.5 5s3 0 4.5 0z\"></path>\n      </svg>\n    </div>\n    <div class=\"dpv-header\">\n      <h1>Bedankt voor je boeking!</h1>\n      <p>Je reservering is goed ontvangen.</p>\n    </div>\n    <div class=\"dpv-order-summary\" id=\"dpv-order-summary\">\n      <div class=\"dpv-loading\">Reserveringsgegevens worden geladen…</div>\n    </div>\n    <div class=\"dpv-box\">\n      <strong>Wat gebeurt er nu?</strong><br>\n      We verwerken je reservering en controleren de beschikbaarheid en planning.<br>\n      Indien nodig nemen we contact met je op.\n    </div>\n    <div class=\"dpv-steps\">\n      <div class=\"dpv-step\">\n        <strong>Stap 1:</strong> Je reservering is bij ons binnengekomen\n      </div>\n      <div class=\"dpv-step\">\n        <strong>Stap 2:</strong> Wij verwerken en controleren de planning\n      </div>\n      <div class=\"dpv-step\">\n        <strong>Stap 3:</strong> Alleen bij vragen of afwijkingen nemen we contact op\n      </div>\n    </div>\n    <div class=\"dpv-contact\">\n      Vragen over je reservering?<br>\n      Bel gerust\n      <a href=\"tel:+31852129150\">085 212 91 50</a>\n    </div>\n  </div>\n</section>",
+     "eael_tooltip_section_content": "I am a tooltip",
+     "eael_ext_content_protection_password_placeholder": "Enter Password",
+     "eael_ext_content_protection_password_submit_btn_txt": "Submit",
+     "eael_ext_content_protection_password_incorrect_message": "Password does not match.",
+     "eael_cl_logics": [
+      {
+       "_id": "2f15845",
+       "dynamic_field_custom_separator": "|"
+      }
+     ],
+     "as_bs_lists": [],
+     "as_bs_lists_h": [],
+     "as_ts_lists": [],
+     "as_ts_lists_h": [],
+     "as_ds_lists": [],
+     "as_ds_lists_h": []
+    },
+    "elements": [],
+    "widgetType": "html"
+   },
+   {
+    "id": "502322a",
+    "elType": "widget",
+    "settings": {
+     "html": "<!--\n  DPV Conversie Tracking — Elementor HTML-widget (definitieve versie)\n  =====================================================================\n-->\n<script>\n(function () {\n    var match = window.location.pathname.match(/order-received\\/(\\d+)/);\n    if (!match) return;\n\n    var orderId = match[1];\n    var key = new URLSearchParams(window.location.search).get('key') || '';\n    var summaryEl = document.getElementById('dpv-order-summary');\n\n    fetch('/wp-json/dpv/v1/order-tracking-data/' + orderId + '?key=' + encodeURIComponent(key))\n        .then(function (res) { return res.json(); })\n        .then(function (data) {\n\n            if (summaryEl) {\n                if (data.found) {\n                    var formatter = new Intl.NumberFormat('nl-NL', {\n                        minimumFractionDigits: 2,\n                        maximumFractionDigits: 2\n                    });\n\n                    var emailRow = data.email\n                        ? '<div class=\"dpv-order-row\">'\n                          + '<span class=\"label\">E-mailadres</span>'\n                          + '<span class=\"value-email\">' + escHtml(data.email) + '</span>'\n                          + '</div>'\n                        : '';\n\n                    var transactionRow = data.order_number\n                        ? '<div class=\"dpv-order-row\">'\n                          + '<span class=\"label\">Reserveringsnummer</span>'\n                          + '<span class=\"value-id\">' + escHtml(String(data.order_number)) + '</span>'\n                          + '</div>'\n                        : '';\n\n                    var totalRow = (data.total !== undefined && data.total !== null)\n                        ? '<div class=\"dpv-order-row total\">'\n                          + '<span class=\"label\">Totaalbedrag</span>'\n                          + '<span class=\"value\">'\n                          + '<span class=\"currency\">€</span>'\n                          + '<span class=\"amount\">' + formatter.format(data.total) + '</span>'\n                          + '</span>'\n                          + '</div>'\n                        : '';\n\n                    summaryEl.innerHTML =\n                        '<div class=\"dpv-order-summary-title\">Jouw reserveringsoverzicht</div>'\n                        + emailRow\n                        + transactionRow\n                        + totalRow;\n                } else {\n                    summaryEl.style.display = 'none';\n                }\n            }\n\n            if (!data.found || data.already_tracked) return;\n\n            var payload, eventName;\n            if (data.is_paid) {\n                eventName = 'purchase';\n                payload = {\n                    transaction_id: data.order_number,\n                    value:          data.total,\n                    currency:       data.currency,\n                    shipping:       data.shipping,\n                    tax:            data.tax,\n                    items:          data.items\n                };\n            } else if (data.is_quote) {\n                eventName = 'conversion';\n                payload = {\n                    'send_to':        'AW-17727220476/xJYcCPulrsgcEPzV_4RC',\n                    'value':          data.total,\n                    'currency':       data.currency,\n                    'transaction_id': data.order_number\n                };\n            } else {\n                return;\n            }\n\n            if (typeof gtag === 'function') {\n                gtag('event', eventName, payload);\n            } else {\n                window.dataLayer = window.dataLayer || [];\n                window.dataLayer.push(Object.assign({ event: eventName }, payload));\n            }\n        })\n        .catch(function () {\n            if (summaryEl) summaryEl.style.display = 'none';\n        });\n\n    function escHtml(str) {\n        return str\n            .replace(/&/g, '&amp;')\n            .replace(/</g, '&lt;')\n            .replace(/>/g, '&gt;')\n            .replace(/\"/g, '&quot;')\n            .replace(/'/g, '&#39;');\n    }\n})();\n</script>",
+     "eael_tooltip_section_content": "I am a tooltip",
+     "eael_ext_content_protection_password_placeholder": "Enter Password",
+     "eael_ext_content_protection_password_submit_btn_txt": "Submit",
+     "eael_ext_content_protection_password_incorrect_message": "Password does not match.",
+     "eael_cl_logics": [
+      {
+       "_id": "ac930e7",
+       "dynamic_field_custom_separator": "|"
+      }
+     ],
+     "as_bs_lists": [],
+     "as_bs_lists_h": [],
+     "as_ts_lists": [],
+     "as_ts_lists_h": [],
+     "as_ds_lists": [],
+     "as_ds_lists_h": []
+    },
+    "elements": [],
+    "widgetType": "html"
+   }
+  ],
+  "isInner": false
+ }
+]
