@@ -237,3 +237,22 @@ def qa(host, path, check_links=True, link_cache=None):
         res['links'] = len(links)
         res['bad_links'] = bad
     return res
+
+
+def deploy_generated(host, slug, phase, expect_single=True):
+    """Zet out/<host>/<slug>.html in de (enige) HTML-widget van de pagina. Back-up eerst."""
+    seo = json.load(open(os.path.join(ROOT, 'out', host, slug + '.seo.json')))
+    html = open(os.path.join(ROOT, 'out', host, slug + '.html'), encoding='utf-8').read()
+    if host == 'live':
+        assert 'staging' not in html, 'staging-URL in live-HTML'
+    pid = seo['id']
+    before, bpath = backup(host, pid, phase)
+    assert before['slug'] == slug, (before['slug'], slug)
+    data = json.loads(before['meta']['_elementor_data'])
+    ws = html_widgets(data)
+    if expect_single:
+        assert len(data) == 1 and len(ws) == 1, f'{slug}: onverwachte opbouw ({len(data)} root, {len(ws)} html)'
+    ws[0]['settings']['html'] = html
+    save_elementor(host, pid, before, data)
+    c = clear_cache(host, pid)
+    return bpath, c

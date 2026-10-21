@@ -16,7 +16,7 @@ de light DOM (slot), net als op de homepage, zodat dpv-shop ze kan bedienen.
 Gebruik:  python3 build.py            → schrijft out/<slug>.html
 De inhoud per pagina staat in content_*.py; de opbouw per template hieronder.
 """
-import html, json, os, re, importlib
+import html, json, os, re, sys, importlib
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 SITE = 'https://staging.dagpakketverhuur.nl'
@@ -279,6 +279,8 @@ LIGHT_CSS = """
 .elementor-element:has(#dpv-rg-host) > .elementor-widget-wrap,.elementor-element:has(#dpv-rg-host) > .elementor-container,.elementor-element:has(#dpv-rg-host) > .e-con-inner{max-width:none !important;width:100% !important}
 #dpv-rg-prods{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;align-items:stretch}
 #dpv-rg-prods [data-prod-card]{height:100%}
+/* toast van dpv-shop gebruikt var(--ink); die bestaat buiten de shop niet */
+.dpvs-toast{--ink:#14181f}
 """
 
 # ---------------------------------------------------------------- js
@@ -382,12 +384,27 @@ JS = r"""
       }).catch(function(){});
   }
 
-  /* Huren-knop: dpv-shop handelt hem af als het script op deze pagina laadt.
-     Laadt het niet, dan gaat de knop naar de productpagina (datum en aantal
-     kies je daar), zodat hij nooit dood is. */
+  /* DPV Shop laden als WordPress het op deze pagina niet meestuurt (de plugin
+     enqueuet alleen op shop-/product-/vaste pagina's). Dezelfde plugin-bestanden
+     als op de shop; add-to-cart werkt zonder nonce (gecachte pagina's). Pas na
+     'load', zodat er nooit een tweede kopie naast een normaal geladen script komt. */
+  var loadShop=function(){
+    if(document.getElementById('dpv-shop-js')||window.DPVS_API)return;
+    window.DPVS=window.DPVS||{ajax:'/wp-admin/admin-ajax.php',nonce:'',cart_url:'/winkelwagen/',checkout:'/afreken-pagina/'};
+    var base='/wp-content/plugins/dpv-shop/assets/';
+    var l=document.createElement('link');l.rel='stylesheet';l.id='dpv-shop-css';l.href=base+'css/dpv-shop.css';
+    document.head.appendChild(l);
+    [['dpv-shop-js','js/dpv-shop.js'],['dpv-shop-ga4-js','js/dpv-ga4.js']].forEach(function(f){
+      var s=document.createElement('script');s.id=f[0];s.src=base+f[1];s.async=false;document.body.appendChild(s);
+    });
+  };
+  if(document.readyState==='complete')loadShop();else window.addEventListener('load',loadShop);
+
+  /* Huren-knop: dpv-shop handelt hem af zodra het script draait. Draait het
+     (nog) niet, dan gaat de knop naar de productpagina, zodat hij nooit dood is. */
   grid.addEventListener('click',function(e){
     var b=e.target.closest&&e.target.closest('.js-dpvs-add');
-    if(!b||window.DPVS)return;
+    if(!b||window.DPVS_API)return;
     var card=b.closest('[data-prod-card]'),a=card&&card.querySelector('a[href]');
     if(a){e.preventDefault();e.stopPropagation();window.location.href=a.href;}
   },true);
@@ -568,7 +585,9 @@ def template_b(c):
     return [
         hero(c['hero']), trustbar(c['trust']), intro(c['intro']), products(c['products']),
         sec(head(c['toepassingen']['h2'], lead=c['toepassingen'].get('lead')) + cards(c['toepassingen']['items'], 'dpv-g4')),
-        sec(head(c['steden']['h2'], lead=c['steden']['lead']) + places(c['steden']['items'], 'dpv-g2')),
+        # Alleen bestaande stadspagina's; zonder steden (bv. Groningen) vervalt het blok.
+        *([sec(head(c['steden']['h2'], lead=c['steden']['lead']) + places(c['steden']['items'], 'dpv-g2'))]
+          if c.get('steden') and c['steden'].get('items') else []),
         sec(head(c['levering']['h2'], lead=c['levering'].get('lead')) + cards(c['levering']['items'], 'dpv-g3')),
         b2b(c['b2b'], compact=True),
         review(c['review']['h2'], c['review'].get('sub')),
@@ -650,25 +669,30 @@ def render(c, cards_html):
 '''
 
 
-def main():
-    import json
+def main(host='live', modules=('content_lasergame',)):
+    """Bouwt out/<host>/<slug>.html (+ .seo.json). DPV_HOST stuurt host-specifieke URL's."""
+    os.environ['DPV_HOST'] = host
     cards_dir = os.path.join(ROOT, 'cards')
-    out_dir = os.path.join(ROOT, 'out')
+    out_dir = os.path.join(ROOT, 'out', host)
     os.makedirs(out_dir, exist_ok=True)
-    for mod in ('content_lasergame',):
+    for mod in modules:
+        if mod in sys.modules:
+            del sys.modules[mod]
         m = importlib.import_module(mod)
         for c in m.PAGES:
             cards_html = [open(os.path.join(cards_dir, f'{pid}.html'), encoding='utf-8').read() for pid in c['product_ids']]
             out = render(c, cards_html)
-            path = os.path.join(out_dir, c['slug'] + '.html')
-            open(path, 'w', encoding='utf-8').write(out)
-            meta = {k: c[k] for k in ('id', 'slug', 'seo_title', 'meta')}
+            assert 'staging' not in out or host == 'staging', c['slug']
+            open(os.path.join(out_dir, c['slug'] + '.html'), 'w', encoding='utf-8').write(out)
+            meta = {k: c.get(k) for k in ('id', 'slug', 'seo_title', 'meta', 'template')}
             open(os.path.join(out_dir, c['slug'] + '.seo.json'), 'w', encoding='utf-8').write(
                 json.dumps(meta, ensure_ascii=False, indent=1))
-            print(f"{c['slug']}: {len(out)} bytes, meta {len(c['meta'])} tekens")
+            print(f"[{host}] {c['slug']}: {len(out)} bytes, meta {len(c['meta'])} tekens")
 
 
 if __name__ == '__main__':
-    import sys
     sys.path.insert(0, ROOT)
-    main()
+    args = sys.argv[1:]
+    host = args[0] if args else 'live'
+    mods = tuple(args[1:]) or ('content_lasergame',)
+    main(host, mods)
