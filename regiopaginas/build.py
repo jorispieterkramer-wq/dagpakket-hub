@@ -577,6 +577,7 @@ def template_a(c):
         sec(head(c['gelegenheden']['h2'], lead=c['gelegenheden'].get('lead')) + cards(c['gelegenheden']['items'], 'dpv-g4')),
         sec(head(c['stappen']['h2'], lead=c['stappen'].get('lead')) + steps(c['stappen']['items'])),
         sec(head(c['regio']['h2'], lead=c['regio']['lead']) + places(c['regio']['items'])),
+        *([sec(head(c['extra_places']['h2'], lead=c['extra_places'].get('lead')) + places(c['extra_places']['items'], c['extra_places'].get('cols', 'dpv-g3')))] if c.get('extra_places') else []),
         b2b(c['b2b']),
         review(c['review']['h2'], c['review'].get('sub'), c['review'].get('data')),
         faq(c['faq']['h2'], c['faq']['intro'], c['faq']['items']),
@@ -593,6 +594,7 @@ def template_b(c):
         *([sec(head(c['steden']['h2'], lead=c['steden']['lead']) + places(c['steden']['items'], 'dpv-g2'))]
           if c.get('steden') and c['steden'].get('items') else []),
         sec(head(c['levering']['h2'], lead=c['levering'].get('lead')) + cards(c['levering']['items'], 'dpv-g3')),
+        *([sec(head(c['extra_places']['h2'], lead=c['extra_places'].get('lead')) + places(c['extra_places']['items'], c['extra_places'].get('cols', 'dpv-g3')))] if c.get('extra_places') else []),
         b2b(c['b2b'], compact=True),
         review(c['review']['h2'], c['review'].get('sub'), c['review'].get('data')),
         faq(c['faq']['h2'], c['faq']['intro'], c['faq']['items']),
@@ -606,6 +608,7 @@ def template_c(c):
         hero(c['hero']), trustbar(c['trust']), intro(c['intro']), products(c['products']),
         sec(head(c['stappen']['h2'], lead=c['stappen'].get('lead')) + steps(c['stappen']['items'])),
         sec(head(c['gelegenheden']['h2'], lead=c['gelegenheden'].get('lead')) + cards(c['gelegenheden']['items'], 'dpv-g3')),
+        *([sec(head(c['extra_places']['h2'], lead=c['extra_places'].get('lead')) + places(c['extra_places']['items'], c['extra_places'].get('cols', 'dpv-g3')))] if c.get('extra_places') else []),
         b2b(c['b2b'], compact=True),
         sec(head(c['levering']['h2'], lead=c['levering']['lead'])
             + f'<ul class="dpv-chips" aria-label="Plaatsen rond {e(c["plaats"])}">'

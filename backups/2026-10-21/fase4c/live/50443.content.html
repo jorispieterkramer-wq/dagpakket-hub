@@ -1,0 +1,494 @@
+<style>
+/* ── ELEMENTOR RESET ── */
+.elementor-widget-html > .elementor-widget-container {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+.elementor-element:has(.elementor-widget-html > .elementor-widget-container > .kf-regio) {
+  max-width: none !important;
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/* ── SCOPED VARS ── */
+.kf-regio {
+  --navy: #2f4156;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --white: #ffffff;
+  --off: #f7f7f5;
+  --border: #e8e8e4;
+  --gold: #f5a623;
+  --sans: -apple-system, BlinkMacSystemFont, 'DM Sans', 'Segoe UI', sans-serif;
+  --ease: cubic-bezier(.4,0,.2,1);
+  font-family: var(--sans) !important;
+  color: var(--text) !important;
+  background: var(--white) !important;
+  -webkit-font-smoothing: antialiased !important;
+  width: 100% !important;
+  display: block !important;
+  overflow-x: hidden !important;
+}
+.kf-regio *, .kf-regio *::before, .kf-regio *::after {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.kf-regio a { text-decoration: none !important; color: inherit !important; }
+.kf-regio img { display: block !important; max-width: 100% !important; }
+/* ── SCROLL REVEAL ── */
+.kf-regio .sr {
+  opacity: 0 !important;
+  transform: translateY(24px) !important;
+  transition: opacity 0.6s var(--ease), transform 0.6s var(--ease) !important;
+}
+.kf-regio .sr.in { opacity: 1 !important; transform: none !important; }
+.kf-regio .sr-d1 { transition-delay: 0.08s !important; }
+.kf-regio .sr-d2 { transition-delay: 0.16s !important; }
+.kf-regio .sr-d3 { transition-delay: 0.24s !important; }
+/* ── HERO ── */
+.kf-regio .kr-hero {
+  position: relative !important;
+  height: 55vh !important;
+  min-height: 380px !important;
+  max-height: 560px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: flex-end !important;
+}
+.kf-regio .kr-hero-img {
+  position: absolute !important;
+  inset: 0 !important;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.65) 100%),
+    url('https://dagpakketverhuur.nl/wp-content/uploads/2025/12/Social-media-Kit-Dagpakketverhuur-4.png') center/cover no-repeat !important;
+}
+.kf-regio .kr-hero-content {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  max-width: 1160px !important;
+  margin: 0 auto !important;
+  padding: 0 32px 48px !important;
+}
+.kf-regio .kr-hero-tag {
+  display: inline-block !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: rgba(255,255,255,0.55) !important;
+  margin-bottom: 12px !important;
+}
+.kf-regio .kr-hero h1 {
+  font-size: clamp(28px, 4.5vw, 56px) !important;
+  font-weight: 800 !important;
+  color: #fff !important;
+  line-height: 1.05 !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 18px !important;
+  max-width: 680px !important;
+}
+.kf-regio .kr-hero h1 em {
+  font-style: italic !important;
+  font-weight: 400 !important;
+  color: rgba(255,255,255,0.75) !important;
+}
+.kf-regio .kr-hero-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+}
+.kf-regio .kr-hero-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 8px 14px !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,0.12) !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  color: rgba(255,255,255,0.9) !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+}
+.kf-regio .kr-hero-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px 24px !important;
+  background: #fff !important;
+  color: var(--navy) !important;
+  border-radius: 10px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  transition: background 0.2s !important;
+}
+.kf-regio .kr-hero-cta:hover { background: #f0f0ee !important; }
+/* ── LAYOUT ── */
+.kf-regio .kr-w {
+  max-width: 1160px !important;
+  margin: 0 auto !important;
+  padding: 0 32px !important;
+}
+.kf-regio .kr-sec {
+  padding: 64px 0 !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+.kf-regio .kr-eyebrow {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.13em !important;
+  text-transform: uppercase !important;
+  color: var(--navy) !important;
+  display: block !important;
+  margin-bottom: 10px !important;
+}
+.kf-regio .kr-h2 {
+  font-size: clamp(22px, 3vw, 34px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 12px !important;
+  color: var(--text) !important;
+  line-height: 1.1 !important;
+}
+.kf-regio .kr-lead {
+  font-size: 15px !important;
+  color: #444 !important;
+  line-height: 1.75 !important;
+  max-width: 600px !important;
+  margin-bottom: 32px !important;
+}
+/* ── INTRO GRID ── */
+.kf-regio .kr-intro-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 64px !important;
+  align-items: center !important;
+}
+.kf-regio .kr-intro-text p {
+  font-size: 15px !important;
+  color: #444 !important;
+  line-height: 1.75 !important;
+  margin-bottom: 16px !important;
+}
+.kf-regio .kr-intro-usps {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 12px !important;
+  margin-top: 24px !important;
+}
+.kf-regio .kr-usp {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
+}
+.kf-regio .kr-usp-icon {
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  background: var(--navy) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #fff !important;
+  font-size: 15px !important;
+  flex-shrink: 0 !important;
+}
+.kf-regio .kr-intro-img {
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  aspect-ratio: 4/3 !important;
+  background: #ddd !important;
+}
+.kf-regio .kr-intro-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+/* ── CATEGORIEEN ── */
+.kf-regio .kr-cats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 12px !important;
+}
+.kf-regio .kr-cat {
+  display: block !important;
+  position: relative !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  aspect-ratio: 1/1 !important;
+  transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease) !important;
+}
+.kf-regio .kr-cat:hover {
+  transform: translateY(-4px) !important;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.15) !important;
+}
+.kf-regio .kr-cat-img {
+  position: absolute !important;
+  inset: 0 !important;
+  background: #2a3a4a !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.kf-regio .kr-cat-img img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  transition: transform 0.5s var(--ease) !important;
+}
+.kf-regio .kr-cat:hover .kr-cat-img img { transform: scale(1.06) !important; }
+.kf-regio .kr-cat-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg, rgba(0,0,0,0.04) 20%, rgba(0,0,0,0.68) 100%) !important;
+}
+.kf-regio .kr-cat-body {
+  position: absolute !important;
+  bottom: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  padding: 16px 18px 20px !important;
+  z-index: 2 !important;
+}
+.kf-regio .kr-cat-name {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  line-height: 1.2 !important;
+}
+/* ── PLAATSEN ── */
+.kf-regio .kr-plaatsen-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-top: 24px !important;
+}
+.kf-regio .kr-plaats {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 8px 14px !important;
+  border: 1.5px solid var(--border) !important;
+  border-radius: 999px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  background: #fff !important;
+  transition: background 0.15s, border-color 0.15s !important;
+}
+.kf-regio .kr-plaats:hover {
+  background: #eef2f6 !important;
+  border-color: var(--navy) !important;
+}
+.kf-regio .kr-plaats-km {
+  font-size: 11px !important;
+  color: #999 !important;
+  font-weight: 400 !important;
+}
+/* ── BACK LINK ── */
+.kf-regio .kr-back {
+  padding: 48px 0 !important;
+  text-align: center !important;
+}
+.kf-regio .kr-back-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  border-bottom: 1.5px solid var(--navy) !important;
+  padding-bottom: 2px !important;
+  transition: gap 0.2s !important;
+}
+.kf-regio .kr-back-link:hover { gap: 12px !important; }
+/* ── PRODUCT LINKS ── */
+.kf-regio .kr-product-links {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 10px !important;
+  margin-top: 20px !important;
+}
+.kf-regio .kr-product-link {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  padding: 10px 18px !important;
+  border: 1.5px solid var(--border) !important;
+  border-radius: 10px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  background: #fff !important;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s !important;
+}
+.kf-regio .kr-product-link:hover {
+  background: #eef2f6 !important;
+  border-color: var(--navy) !important;
+  transform: translateY(-1px) !important;
+}
+/* ── FAQ ── */
+.kf-regio .kr-faq {
+  max-width: 720px !important;
+}
+.kf-regio .kr-faq-item {
+  border-bottom: 1px solid var(--border) !important;
+}
+.kf-regio .kr-faq-q {
+  width: 100% !important;
+  text-align: left !important;
+  padding: 16px 0 !important;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 16px !important;
+  font-family: var(--sans) !important;
+  transition: color 0.2s !important;
+}
+.kf-regio .kr-faq-q:hover { color: var(--navy) !important; }
+.kf-regio .kr-faq-icon {
+  width: 22px !important;
+  height: 22px !important;
+  border-radius: 50% !important;
+  background: var(--off) !important;
+  border: 1px solid var(--border) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-shrink: 0 !important;
+  font-size: 14px !important;
+  transition: background 0.2s, transform 0.3s var(--ease) !important;
+  color: var(--navy) !important;
+}
+.kf-regio .kr-faq-item.open .kr-faq-icon {
+  background: var(--navy) !important;
+  color: #fff !important;
+  border-color: var(--navy) !important;
+  transform: rotate(45deg) !important;
+}
+.kf-regio .kr-faq-a {
+  overflow: hidden !important;
+  max-height: 0 !important;
+  transition: max-height 0.4s var(--ease), padding 0.3s !important;
+  font-size: 14px !important;
+  color: #555 !important;
+  line-height: 1.7 !important;
+  padding: 0 !important;
+}
+.kf-regio .kr-faq-item.open .kr-faq-a {
+  max-height: 400px !important;
+  padding-bottom: 16px !important;
+}
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .kf-regio .kr-intro-grid { grid-template-columns: 1fr !important; gap: 36px !important; }
+  .kf-regio .kr-cats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+}
+@media (max-width: 600px) {
+  .kf-regio .kr-w { padding: 0 20px !important; }
+  .kf-regio .kr-hero-content { padding: 0 20px 36px !important; }
+  .kf-regio .kr-cats-grid { grid-template-columns: 1fr !important; }
+  .kf-regio .kr-sec { padding: 44px 0 !important; }
+}
+</style>
+<!-- ── HERO ── -->
+<section>
+    Kinderfeestje Drenthe
+    <h1>Kinderfeestje in Drenthe?<br><em>Wij regelen het.</em></h1>
+      <a href="/product-category/activiteiten-huren/">Bekijk activiteiten</a>
+      ✓ Persoonlijke bezorging
+      ✓ Geen borg
+      ✓ Gratis v.a. €150
+</section>
+<!-- ── INTRO ── -->
+<section>
+        Kinderfeestje Drenthe
+        <h2>Compleet kinderfeestje pakket, bezorgd in Drenthe</h2>
+        <p>Op zoek naar een leuke activiteit voor een kinderfeestje in Drenthe? Bij DagpakketVerhuur huur je lasergame, gelblaster, springkussen en meer — kant-en-klaar bezorgd aan huis.</p>
+        <p>Wij bezorgen persoonlijk door heel Drenthe. Van Assen tot Emmen en van Hoogeveen tot Meppel — wij komen bij jou thuis.</p>
+            ✓
+            Persoonlijke bezorging in Drenthe
+            ✓
+            Gratis bezorging vanaf €150
+            ✓
+            Geen borg vereist
+            ✓
+            Wij halen alles weer op
+        <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Ontwerp-zonder-titel-_1__11zon.webp" alt="Kinderfeestje activiteiten huren Friesland" loading="lazy">
+</section>
+<!-- ── CATEGORIEEEN ── -->
+<section style="background: #f8f8f7 !important;">
+    Ons aanbod
+    <h2>Wat past bij jouw kinderfeestje?</h2>
+      <a href="/product-category/activiteiten-huren/">
+          <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_uojpcsuojpcsuojp_11zon.webp" alt="Lasergame huren kinderfeestje Friesland" loading="lazy">
+        Activiteiten
+      </a>
+      <a href="/product-category/springkussens-huren/">
+          <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_xu14z0xu14z0xu14_11zon.webp" alt="Springkussen huren Friesland" loading="lazy">
+        Springkussens
+      </a>
+      <a href="/product-category/tenten-verwarming-huren/">
+          <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_afvuyfafvuyfafvu_11zon.webp" alt="Partytent huren Drenthe" loading="lazy">
+        Tenten
+      </a>
+      <a href="/product-category/funfood-huren/">
+          <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_mguaynmguaynmgua_11zon.webp" alt="Funfood huren kinderfeestje Friesland" loading="lazy">
+        Funfood
+      </a>
+</section>
+<!-- ── PRODUCT LINKS ── -->
+<section>
+    Specifiek zoeken?
+    <h2>Populaire activiteiten in Drenthe</h2>
+    <p>Zoek je een specifieke activiteit in Drenthe? Bekijk onze regiopagina's:</p>
+      <a href="/lasergame-huren-drenthe/">🎯 Lasergame huren Drenthe</a>
+      <a href="/partytent-huren-drenthe/">⛺ Partytent huren Drenthe</a>
+      <a href="/silent-disco-huren-drenthe/">🎧 Silent disco huren Drenthe</a>
+      <a href="/statafel-huren-drenthe/">🪑 Statafel huren Drenthe</a>
+</section>
+<!-- ── PLAATSEN ── -->
+<section style="background: #f8f8f7 !important;">
+    Bezorging
+    <h2>Wij bezorgen door heel Drenthe</h2>
+    <p>Van Assen tot Emmen en van Hoogeveen tot Meppel — wij komen bij jou thuis. Gratis bezorging vanaf €150.</p>
+      📍 Leeuwarden hoofdstad
+      📍 Drachten ±30 km
+      📍 Heerenveen ±35 km
+      📍 Sneek ±25 km
+      📍 Franeker ±25 km
+      📍 Harlingen ±30 km
+      📍 Joure ±40 km
+      📍 Dokkum ±40 km
+</section>
+<!-- ── FAQ ── -->
+<section>
+    Vragen?
+    <h2>Veelgestelde vragen over kinderfeestje huren in Drenthe</h2>
+        <button>Bezorgen jullie ook in kleine plaatsen in Drenthe?+</button>
+        Ja, wij bezorgen door heel Drenthe. Ook in kleinere plaatsen. Neem bij twijfel contact op via WhatsApp, dan kijken we het samen na.
+        <button>Wat kost bezorging in Drenthe?+</button>
+        Friesland valt in Zone 1 — bezorging kost €40. Gratis bezorging vanaf €150 besteding. Ophalen is altijd gratis.
+        <button>Welke activiteiten zijn het populairst voor een kinderfeestje in Drenthe?+</button>
+        Lasergame en gelblaster zijn veruit het populairst voor kinderfeestjes in Drenthe. Springkussens doen het ook heel goed in de zomermaanden. Je kunt activiteiten gewoon combineren in één bestelling.
+        <button>Hoe ver van tevoren moet ik reserveren in Drenthe?+</button>
+        We adviseren minimaal 3-5 dagen van tevoren te reserveren. In drukke periodes zoals zomervakantie eerder. Check de beschikbaarheid via de webshop.
+</section>
+<!-- ── TERUG NAAR HOOFDPAGINA ── -->
+  <a href="/kinderfeestje/">← Terug naar alle kinderfeestje activiteiten</a>
+<!-- /.kf-regio -->

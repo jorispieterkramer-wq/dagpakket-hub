@@ -1,0 +1,748 @@
+<style>
+/* ── ELEMENTOR RESET ── */
+.elementor-widget-html > .elementor-widget-container {
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: none !important;
+}
+.elementor-element:has(.elementor-widget-html > .elementor-widget-container > .kf-page) {
+  max-width: none !important;
+  width: 100vw !important;
+  margin-left: calc(50% - 50vw) !important;
+  margin-right: calc(50% - 50vw) !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.elementor-element:has(.kf-page) > .elementor-widget-wrap,
+.elementor-element:has(.kf-page) > .elementor-container,
+.elementor-element:has(.kf-page) > .e-con-inner {
+  max-width: none !important;
+  width: 100% !important;
+}
+/* ── SCOPED RESET ── */
+.kf-page {
+  --navy: #2f4156;
+  --navy2: #243347;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+  --faint: #a0a0a0;
+  --white: #ffffff;
+  --off: #f7f7f5;
+  --border: #e8e8e4;
+  --gold: #f5a623;
+  --sans: -apple-system, BlinkMacSystemFont, 'DM Sans', 'Segoe UI', sans-serif;
+  --ease: cubic-bezier(.4,0,.2,1);
+  font-family: var(--sans) !important;
+  font-size: 15px !important;
+  line-height: 1.6 !important;
+  color: var(--text) !important;
+  background: var(--white) !important;
+  -webkit-font-smoothing: antialiased !important;
+  width: 100% !important;
+  display: block !important;
+  position: relative !important;
+  overflow-x: hidden !important;
+}
+.kf-page *, .kf-page *::before, .kf-page *::after {
+  box-sizing: border-box !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  line-height: inherit !important;
+}
+.kf-page a { text-decoration: none !important; color: inherit !important; }
+.kf-page img { display: block !important; max-width: 100% !important; }
+.kf-page button { font-family: var(--sans) !important; }
+/* ── SCROLL REVEAL ── */
+.kf-page .sr {
+  opacity: 0 !important;
+  transform: translateY(28px) !important;
+  transition: opacity 0.65s var(--ease), transform 0.65s var(--ease) !important;
+}
+.kf-page .sr.sr-left { transform: translateX(-28px) !important; }
+.kf-page .sr.sr-right { transform: translateX(28px) !important; }
+.kf-page .sr.sr-scale { transform: scale(0.96) !important; }
+.kf-page .sr.in { opacity: 1 !important; transform: none !important; }
+.kf-page .sr-d1 { transition-delay: 0.08s !important; }
+.kf-page .sr-d2 { transition-delay: 0.16s !important; }
+.kf-page .sr-d3 { transition-delay: 0.24s !important; }
+.kf-page .sr-d4 { transition-delay: 0.32s !important; }
+/* ── HERO ── */
+.kf-page .kf-hero {
+  position: relative !important;
+  height: 92vh !important;
+  min-height: 560px !important;
+  max-height: 820px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: flex-end !important;
+}
+.kf-page .kf-hero-img {
+  position: absolute !important;
+  inset: 0 !important;
+  will-change: transform !important;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.55) 70%, rgba(0,0,0,0.78) 100%),
+    url('https://dagpakketverhuur.nl/wp-content/uploads/2025/12/Social-media-Kit-Dagpakketverhuur-4.png') center/cover no-repeat !important;
+  transform: scale(1.08) !important;
+}
+.kf-page .kf-hero-content {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  padding: 0 48px 60px !important;
+  max-width: 1160px !important;
+  margin: 0 auto !important;
+}
+.kf-page .kf-hero-tag {
+  display: inline-block !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  color: rgba(255,255,255,0.55) !important;
+  margin-bottom: 14px !important;
+}
+.kf-page .kf-hero h1 {
+  font-size: clamp(36px, 6vw, 72px) !important;
+  font-weight: 800 !important;
+  color: #fff !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.04em !important;
+  margin-bottom: 22px !important;
+  max-width: 760px !important;
+}
+.kf-page .kf-hero h1 em {
+  font-style: italic !important;
+  font-weight: 400 !important;
+  color: rgba(255,255,255,0.78) !important;
+}
+.kf-page .kf-hero-meta {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  flex-wrap: wrap !important;
+}
+.kf-page .kf-hero-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+  padding: 9px 16px !important;
+  border-radius: 999px !important;
+  background: rgba(255,255,255,0.12) !important;
+  border: 1px solid rgba(255,255,255,0.18) !important;
+  color: rgba(255,255,255,0.92) !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  backdrop-filter: blur(6px) !important;
+}
+.kf-page .kf-hero-cta {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 14px 28px !important;
+  background: #fff !important;
+  color: var(--navy) !important;
+  border-radius: 10px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  transition: background 0.2s, transform 0.2s !important;
+}
+.kf-page .kf-hero-cta:hover { background: #f0f0ee !important; transform: translateY(-1px) !important; }
+@keyframes kfFadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+/* ── LAYOUT ── */
+.kf-page .kf-w {
+  max-width: 1160px !important;
+  margin: 0 auto !important;
+  padding: 0 32px !important;
+}
+/* ── INTRO ── */
+.kf-page .kf-intro {
+  padding: 80px 0 72px !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+.kf-page .kf-intro-inner {
+  display: grid !important;
+  grid-template-columns: 1fr 400px !important;
+  gap: 80px !important;
+  align-items: start !important;
+}
+.kf-page .kf-eyebrow {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.13em !important;
+  text-transform: uppercase !important;
+  color: var(--navy) !important;
+  display: block !important;
+  margin-bottom: 10px !important;
+}
+.kf-page .kf-intro-left h2 {
+  font-size: clamp(26px, 3.5vw, 42px) !important;
+  font-weight: 800 !important;
+  line-height: 1.08 !important;
+  letter-spacing: -0.035em !important;
+  margin-bottom: 22px !important;
+  color: var(--text) !important;
+}
+.kf-page .kf-intro-left p {
+  font-size: 16px !important;
+  color: #444 !important;
+  line-height: 1.78 !important;
+  margin-bottom: 18px !important;
+  max-width: 520px !important;
+}
+.kf-page .kf-joris {
+  background: var(--off) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  position: sticky !important;
+  top: 100px !important;
+}
+.kf-page .kf-joris-img {
+  width: 100% !important;
+  aspect-ratio: 4/3 !important;
+  background: #cdd !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #999 !important;
+  font-size: 13px !important;
+}
+.kf-page .kf-joris-img img { width: 100% !important; height: 100% !important; object-fit: cover !important; }
+.kf-page .kf-joris-body { padding: 22px 24px 26px !important; }
+.kf-page .kf-joris-quote {
+  font-size: 15px !important;
+  line-height: 1.68 !important;
+  color: var(--text) !important;
+  font-style: italic !important;
+  margin-bottom: 18px !important;
+  position: relative !important;
+  padding-left: 16px !important;
+}
+.kf-page .kf-joris-quote::before {
+  content: '' !important;
+  position: absolute !important;
+  left: 0 !important; top: 4px !important; bottom: 4px !important;
+  width: 3px !important;
+  background: var(--navy) !important;
+  border-radius: 2px !important;
+}
+.kf-page .kf-joris-name {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+}
+.kf-page .kf-joris-avatar {
+  width: 38px !important; height: 38px !important;
+  border-radius: 50% !important;
+  background: var(--navy) !important;
+  display: flex !important; align-items: center !important; justify-content: center !important;
+  color: #fff !important; font-size: 15px !important; font-weight: 700 !important;
+  flex-shrink: 0 !important;
+}
+.kf-page .kf-joris-info strong { display: block !important; font-size: 13px !important; font-weight: 700 !important; color: var(--text) !important; }
+.kf-page .kf-joris-info span { font-size: 12px !important; color: var(--muted) !important; }
+.kf-page .kf-joris-wa {
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  margin-top: 18px !important;
+  padding: 12px 16px !important;
+  background: #25d366 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  transition: background 0.2s, transform 0.2s !important;
+}
+.kf-page .kf-joris-wa:hover { background: #1dba57 !important; transform: translateY(-1px) !important; }
+/* ── CATEGORIEEN ── */
+.kf-page .kf-cats {
+  padding: 80px 0 !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+.kf-page .kf-cats-header { margin-bottom: 40px !important; }
+.kf-page .kf-cats-header h2 {
+  font-size: clamp(24px, 3vw, 38px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 10px !important;
+  color: var(--text) !important;
+}
+.kf-page .kf-cats-header p {
+  font-size: 15px !important;
+  color: var(--muted) !important;
+  max-width: 480px !important;
+}
+.kf-page .kf-cats-grid {
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+  gap: 14px !important;
+}
+.kf-page .kf-cat {
+  display: block !important;
+  position: relative !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  text-decoration: none !important;
+  aspect-ratio: 1/1 !important;
+  transition: transform 0.28s var(--ease), box-shadow 0.28s var(--ease) !important;
+}
+.kf-page .kf-cat:hover {
+  transform: translateY(-5px) scale(1.01) !important;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.18) !important;
+}
+.kf-page .kf-cat-img {
+  position: absolute !important;
+  inset: 0 !important;
+  background: #2a3a4a !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+.kf-page .kf-cat-img img {
+  width: 100% !important; height: 100% !important;
+  object-fit: cover !important;
+  display: block !important;
+  transition: transform 0.55s var(--ease) !important;
+}
+.kf-page .kf-cat:hover .kf-cat-img img { transform: scale(1.07) !important; }
+.kf-page .kf-cat-overlay {
+  position: absolute !important;
+  inset: 0 !important;
+  background: linear-gradient(180deg, rgba(0,0,0,0.04) 20%, rgba(0,0,0,0.70) 100%) !important;
+  transition: opacity 0.3s !important;
+}
+.kf-page .kf-cat:hover .kf-cat-overlay { opacity: 0.88 !important; }
+.kf-page .kf-cat-body {
+  position: absolute !important;
+  bottom: 0 !important; left: 0 !important; right: 0 !important;
+  padding: 18px 20px 22px !important;
+  z-index: 2 !important;
+}
+.kf-page .kf-cat-name {
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  line-height: 1.2 !important;
+}
+/* ── REVIEW ── */
+.kf-page .kf-review-big {
+  padding: 80px 0 !important;
+  border-bottom: 1px solid var(--border) !important;
+  background: var(--off) !important;
+}
+.kf-page .kf-review-big-inner {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 80px !important;
+  align-items: center !important;
+}
+.kf-page .kf-stars { display: flex !important; gap: 4px !important; margin-bottom: 22px !important; }
+.kf-page .kf-star { color: var(--gold) !important; font-size: 20px !important; }
+.kf-page .kf-review-big-quote {
+  font-size: clamp(17px, 2vw, 23px) !important;
+  font-weight: 500 !important;
+  line-height: 1.52 !important;
+  color: var(--text) !important;
+  margin-bottom: 26px !important;
+  letter-spacing: -0.01em !important;
+}
+.kf-page .kf-review-big-author {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+}
+.kf-page .kf-review-big-avatar {
+  width: 44px !important; height: 44px !important;
+  border-radius: 50% !important;
+  background: var(--navy) !important;
+  display: flex !important; align-items: center !important; justify-content: center !important;
+  color: #fff !important; font-size: 16px !important; font-weight: 700 !important;
+  flex-shrink: 0 !important;
+}
+.kf-page .kf-review-big-author strong { display: block !important; font-size: 14px !important; font-weight: 700 !important; color: var(--text) !important; }
+.kf-page .kf-review-big-author span { font-size: 13px !important; color: var(--muted) !important; }
+.kf-page .kf-review-big-photo {
+  border-radius: 18px !important;
+  overflow: hidden !important;
+  aspect-ratio: 4/3 !important;
+  background: #ccc !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #999 !important;
+  font-size: 13px !important;
+}
+.kf-page .kf-review-big-photo img { width: 100% !important; height: 100% !important; object-fit: cover !important; }
+.kf-page .kf-more-reviews {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  margin-top: 22px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  border-bottom: 1.5px solid var(--navy) !important;
+  padding-bottom: 1px !important;
+  transition: gap 0.2s !important;
+}
+.kf-page .kf-more-reviews:hover { gap: 10px !important; }
+/* ── REGIO'S ── */
+.kf-page .kf-regio-sec {
+  padding: 80px 0 !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+.kf-page .kf-regio-blok {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 64px !important;
+  align-items: start !important;
+}
+.kf-page .kf-regio-blok-left h2 {
+  font-size: clamp(20px, 2.2vw, 28px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 10px !important;
+  margin-top: 8px !important;
+  color: var(--text) !important;
+}
+.kf-page .kf-regio-blok-left p {
+  font-size: 14px !important;
+  color: var(--muted) !important;
+  line-height: 1.65 !important;
+  max-width: 360px !important;
+}
+.kf-page .kf-regio-pills {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  padding-top: 4px !important;
+}
+.kf-page .kf-regio-pill {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 5px !important;
+  padding: 8px 14px !important;
+  border: 1.5px solid var(--border) !important;
+  border-radius: 999px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  color: var(--navy) !important;
+  background: #fff !important;
+  transition: background 0.18s, border-color 0.18s, transform 0.18s !important;
+}
+.kf-page .kf-regio-pill:hover {
+  background: #eef2f6 !important;
+  border-color: var(--navy) !important;
+  transform: translateY(-1px) !important;
+}
+/* ── FAQ ── */
+.kf-page .kf-faq-sec {
+  padding: 80px 0 !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+.kf-page .kf-faq-inner {
+  display: grid !important;
+  grid-template-columns: 300px 1fr !important;
+  gap: 80px !important;
+  align-items: start !important;
+}
+.kf-page .kf-faq-left h2 {
+  font-size: clamp(22px, 2.5vw, 32px) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 12px !important;
+  color: var(--text) !important;
+}
+.kf-page .kf-faq-left p {
+  font-size: 14px !important;
+  color: var(--muted) !important;
+  line-height: 1.65 !important;
+  margin-bottom: 24px !important;
+}
+.kf-page .kf-faq-wa {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+  padding: 12px 20px !important;
+  background: #25d366 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  transition: background 0.2s, transform 0.2s !important;
+}
+.kf-page .kf-faq-wa:hover { background: #1dba57 !important; transform: translateY(-1px) !important; }
+.kf-page .kf-faq-item { border-bottom: 1px solid var(--border) !important; }
+.kf-page .kf-faq-q {
+  width: 100% !important;
+  text-align: left !important;
+  padding: 18px 0 !important;
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: var(--text) !important;
+  background: none !important;
+  border: none !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  gap: 16px !important;
+  transition: color 0.2s !important;
+}
+.kf-page .kf-faq-q:hover { color: var(--navy) !important; }
+.kf-page .kf-faq-icon {
+  width: 24px !important; height: 24px !important;
+  border-radius: 50% !important;
+  background: var(--off) !important;
+  border: 1px solid var(--border) !important;
+  display: flex !important; align-items: center !important; justify-content: center !important;
+  flex-shrink: 0 !important;
+  font-size: 15px !important;
+  transition: background 0.22s, transform 0.3s var(--ease), border-color 0.22s !important;
+  color: var(--navy) !important;
+}
+.kf-page .kf-faq-item.open .kf-faq-icon {
+  background: var(--navy) !important;
+  color: #fff !important;
+  border-color: var(--navy) !important;
+  transform: rotate(45deg) !important;
+}
+.kf-page .kf-faq-a {
+  overflow: hidden !important;
+  max-height: 0 !important;
+  transition: max-height 0.45s var(--ease), padding 0.3s !important;
+  font-size: 14px !important;
+  color: #555 !important;
+  line-height: 1.7 !important;
+  padding: 0 36px 0 0 !important;
+}
+.kf-page .kf-faq-item.open .kf-faq-a {
+  max-height: 600px !important;
+  padding-bottom: 18px !important;
+}
+.kf-page .kf-steps-anim {
+  display: flex !important;
+  flex-direction: column !important;
+  padding-top: 8px !important;
+}
+.kf-page .kf-step-anim {
+  display: flex !important;
+  align-items: flex-start !important;
+  gap: 14px !important;
+  opacity: 0 !important;
+  transform: translateY(10px) !important;
+  transition: opacity 0.4s var(--ease), transform 0.4s var(--ease) !important;
+}
+.kf-page .kf-step-anim:nth-child(1) { transition-delay: 0.05s !important; }
+.kf-page .kf-step-anim:nth-child(3) { transition-delay: 0.13s !important; }
+.kf-page .kf-step-anim:nth-child(5) { transition-delay: 0.21s !important; }
+.kf-page .kf-step-anim:nth-child(7) { transition-delay: 0.29s !important; }
+.kf-page .kf-faq-item.open .kf-step-anim {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.kf-page .kf-step-anim-num {
+  width: 34px !important; height: 34px !important;
+  border-radius: 50% !important;
+  background: var(--navy) !important;
+  color: #fff !important;
+  font-size: 13px !important; font-weight: 800 !important;
+  display: flex !important; align-items: center !important; justify-content: center !important;
+  flex-shrink: 0 !important;
+  margin-top: 2px !important;
+}
+.kf-page .kf-step-anim-content { padding-bottom: 4px !important; }
+.kf-page .kf-step-anim-content strong { display: block !important; font-size: 14px !important; font-weight: 700 !important; margin-bottom: 2px !important; color: var(--text) !important; }
+.kf-page .kf-step-anim-content span { font-size: 13.5px !important; color: var(--muted) !important; line-height: 1.6 !important; }
+.kf-page .kf-step-anim-line {
+  width: 2px !important; height: 18px !important;
+  background: var(--border) !important;
+  margin-left: 16px !important;
+  border-radius: 2px !important;
+}
+/* ── CTA ── */
+.kf-page .kf-cta { padding: 80px 0 !important; }
+.kf-page .kf-cta-inner {
+  display: grid !important;
+  grid-template-columns: 1fr auto !important;
+  gap: 40px !important;
+  align-items: center !important;
+  background: var(--navy) !important;
+  border-radius: 22px !important;
+  padding: 56px 60px !important;
+}
+.kf-page .kf-cta-inner h2 {
+  font-size: clamp(22px, 2.5vw, 34px) !important;
+  font-weight: 800 !important;
+  color: #fff !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 8px !important;
+}
+.kf-page .kf-cta-inner p { font-size: 15px !important; color: rgba(255,255,255,0.6) !important; }
+.kf-page .kf-cta-btns {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 10px !important;
+  flex-shrink: 0 !important;
+}
+.kf-page .kf-btn-white {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 14px 26px !important;
+  background: #fff !important;
+  color: var(--navy) !important;
+  border-radius: 10px !important;
+  font-size: 14px !important; font-weight: 700 !important;
+  white-space: nowrap !important;
+  transition: background 0.2s, transform 0.2s !important;
+}
+.kf-page .kf-btn-white:hover { background: #f0f0ee !important; transform: translateY(-1px) !important; }
+.kf-page .kf-btn-wa {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  padding: 14px 26px !important;
+  background: #25d366 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  font-size: 14px !important; font-weight: 700 !important;
+  white-space: nowrap !important;
+  transition: background 0.2s, transform 0.2s !important;
+}
+.kf-page .kf-btn-wa:hover { background: #1dba57 !important; transform: translateY(-1px) !important; }
+/* ── RESPONSIVE ── */
+@media (max-width: 960px) {
+  .kf-page .kf-intro-inner { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .kf-page .kf-joris { position: static !important; }
+  .kf-page .kf-cats-grid { grid-template-columns: repeat(2, 1fr) !important; }
+  .kf-page .kf-review-big-inner { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .kf-page .kf-regio-blok { grid-template-columns: 1fr !important; gap: 24px !important; }
+  .kf-page .kf-faq-inner { grid-template-columns: 1fr !important; gap: 36px !important; }
+  .kf-page .kf-cta-inner { grid-template-columns: 1fr !important; }
+  .kf-page .kf-cta-btns { flex-direction: row !important; }
+}
+@media (max-width: 600px) {
+  .kf-page .kf-w { padding: 0 20px !important; }
+  .kf-page .kf-hero-content { padding: 0 20px 44px !important; }
+  .kf-page .kf-cats-grid { grid-template-columns: 1fr !important; gap: 10px !important; }
+  .kf-page .kf-cta-inner { padding: 36px 24px !important; }
+  .kf-page .kf-cta-btns { flex-direction: column !important; }
+  .kf-page .kf-hero-meta { gap: 8px !important; }
+}
+</style>
+<!-- ── HERO ── -->
+<section>
+    Kinderfeestje
+    <h1>Het feestje dat ze<br><em>nooit vergeten.</em></h1>
+      <a href="/product-category/activiteiten-huren/">Bekijk activiteiten</a>
+      ✓ Bezorgd aan huis
+      ✓ Geen borg
+      ✓ Noord-Nederland
+</section>
+<!-- ── INTRO + JORIS ── -->
+<section>
+        Waarom DagpakketVerhuur
+        <h2>Alles voor een onvergetelijk kinderfeestje thuis</h2>
+        <p>Een kinderfeestje organiseren is leuk, maar ook best een uitdaging. Wat doe je met 15 enthousiaste kinderen? Hoe zorg je dat iedereen het naar zijn zin heeft?</p>
+        <p>Bij DagpakketVerhuur huur je complete activiteitenpakketten die kant-en-klaar worden bezorgd. Van de opbouw tot de afbraak, wij regelen het. Jij hoeft alleen maar te genieten van de blije gezichtjes.</p>
+        <p>Of je nu een feestje organiseert voor 5 of 25 kids, voor 6-jarigen of tieners: wij hebben altijd iets passends in ons assortiment.</p>
+          <img src="https://dagpakketverhuur.nl/wp-content/uploads/2025/03/IMG_1962-1-scaled.jpg" alt="Joris van DagpakketVerhuur - oprichter" loading="lazy">
+          <p>"Ik ben begonnen met 12 laserguns op mijn 16e. Nu help ik ouders door heel Nederland om het perfecte feestje te regelen, persoonlijk, snel en zonder gedoe."</p>
+            J
+              <strong>Joris</strong>
+              Oprichter DagpakketVerhuur
+          <a href="https://wa.me/31852129150">💬 WhatsApp Joris direct</a>
+</section>
+<!-- ── CATEGORIEEN ── -->
+<section>
+      Ons aanbod
+      <h2>Wat past bij jouw feestje?</h2>
+      <p>Van spannende buitenactiviteiten tot sfeervolle feestopstellingen, wij hebben het allemaal.</p>
+      <a href="/product-category/activiteiten-huren/">
+          <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_uojpcsuojpcsuojp_11zon.webp" alt="Lasergame huren kinderfeestje Noord-Nederland" loading="lazy">
+          Activiteiten
+      </a>
+      <a href="/product-category/springkussens-huren/">
+          <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_xu14z0xu14z0xu14_11zon.webp" alt="Springkussen huren kinderfeestje Noord-Nederland" loading="lazy">
+          Springkussens
+      </a>
+      <a href="/product-category/tenten-verwarming-huren/">
+          <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_afvuyfafvuyfafvu_11zon.webp" alt="Partytent huren kinderfeestje buiten" loading="lazy">
+          Tenten
+      </a>
+      <a href="/product-category/funfood-huren/">
+          <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/08/Gemini_Generated_Image_mguaynmguaynmgua_11zon.webp" alt="Funfood huren kinderfeestje" loading="lazy">
+          Funfood
+      </a>
+</section>
+<!-- ── GROTE REVIEW ── -->
+<section>
+          ★★★★★
+        <p>"Absoluut de hit van het verjaardagsfeestje. De kinderen én de volwassenen hebben urenlang gespeeld. Alles werd op tijd bezorgd, werkte perfect en werd daarna keurig opgehaald. Nooit meer anders."</p>
+          K
+            <strong>Kevin D.</strong>
+            Geverifieerde huurder · 18-06-2026
+        <a href="https://g.page/r/dagpakketverhuur/review">Bekijk alle 25+ reviews →</a>
+        <img src="https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Ontwerp-zonder-titel-_1__11zon.webp" alt="Kinderfeestje met lasergame - DagpakketVerhuur" loading="lazy">
+</section>
+<!-- ── REGIO'S ── -->
+<section>
+        Bezorging
+        <h2>Wij bezorgen in heel Noord-Nederland</h2>
+        <p>Van Friesland tot Drenthe en Groningen. Wij bezorgen alles kant-en-klaar aan huis en halen het daarna weer op. Gratis bezorging vanaf €150. Sommige producten zoals lasergame en gelblaster versturen we ook via DHL door heel Nederland.</p>
+          <a href="/kinderfeestje-friesland/">📍 Friesland</a>
+          <a href="/kinderfeestje-drenthe/">📍 Drenthe</a>
+          <a href="/kinderfeestje-groningen/">📍 Groningen</a>
+          <a href="/kinderfeestje-leeuwarden/">📍 Leeuwarden</a>
+          <a href="/kinderfeestje-assen/">📍 Assen</a>
+          <a href="/kinderfeestje-emmen/">📍 Emmen</a>
+          <a href="/kinderfeestje-drachten/">📍 Drachten</a>
+          <a href="/kinderfeestje-heerenveen/">📍 Heerenveen</a>
+</section>
+<!-- ── FAQ ── -->
+<section>
+        Vragen?
+        <h2>Veelgestelde vragen</h2>
+        <p>Staat jouw vraag er niet bij? App Joris direct via WhatsApp, hij reageert snel.</p>
+        <a href="https://wa.me/31852129150">💬 WhatsApp Joris</a>
+          <button>Hoe werkt huren bij DagpakketVerhuur?+</button>
+                1
+                  <strong>Kies je pakket</strong>
+                  Selecteer de activiteit die past bij de leeftijd en groepsgrootte. Voeg toe aan de winkelwagen en kies je datum.
+                2
+                  <strong>Wij bezorgen</strong>
+                  Alles wordt kant-en-klaar aan huis bezorgd, inclusief uitleg hoe je het opzet en speelt.
+                3
+                  <strong>Feest vieren!</strong>
+                  De kinderen gaan los. Jij geniet zonder omkijken. Geen montage, geen gedoe.
+                4
+                  <strong>Wij halen op</strong>
+                  Na afloop halen wij alles weer op. Geen retourneren, geen borg. Klaar.
+          <button>Wat heb ik nodig voor een kinderfeestje thuis?+</button>
+          Dat hangt af van de leeftijd en het aantal kinderen. Voor jonge kinderen (4-7 jaar) is een springkussen of buitenbioscoop ideaal. Voor oudere kinderen (8+) is lasergame, gelblaster of archery tag een grote hit. Je kunt alles los of gecombineerd huren, inclusief bezorging aan huis.
+          <button>Vanaf welke leeftijd is lasergame geschikt?+</button>
+          Lasergame is geschikt vanaf ongeveer 7-8 jaar. De geweren zijn licht en veilig, zonder pijnlijke kogels. Jonge kinderen van 4-6 jaar kunnen beter kiezen voor een springkussen of buitenbioscoop.
+          <button>Kan ik meerdere activiteiten combineren?+</button>
+          Ja, absoluut! Veel ouders combineren bijvoorbeeld lasergame met een springkussen, of gelblaster met archery tag. Je kunt alles gewoon tegelijk bestellen via de webshop.
+          <button>Wordt alles bezorgd en weer opgehaald?+</button>
+          Ja! Wij bezorgen alles kant-en-klaar aan huis en halen het na afloop weer op. Geen gedoe met retourneren. Je betaalt geen borg, alleen de huurprijs.
+          <button>Hoe ver van tevoren moet ik reserveren?+</button>
+          We adviseren minimaal 3-5 dagen van tevoren. In drukke periodes zoals zomervakantie en weekenden eerder. Vandaag besteld kan soms morgen al in huis zijn. Check de beschikbaarheid in de webshop.
+          <button>Bezorgen jullie ook buiten Noord-Nederland?+</button>
+          Ja! Veel producten zoals lasergame, gelblaster en archery tag versturen we via DHL door heel Nederland. Grote items zoals springkussens bezorgen we regionaal in Friesland, Drenthe en Groningen.
+          <button>Wat kost een kinderfeestje pakket?+</button>
+          Dat verschilt per activiteit. Een lasergame geweer huur je al vanaf €7 per stuk per dag. Een springkussen kost €90 per dag. Gratis bezorging geldt vanaf €150 besteding.
+          <button>Hoeveel spelers heb ik nodig voor lasergame?+</button>
+          Lasergame is het leukst met minimaal 6 spelers. Je huurt per stuk, dus je kiest zelf hoeveel geweren je wilt. Voor een kinderfeestje adviseren we minimaal 8 stuks zodat iedereen goed kan meedoen.
+</section>
+<!-- /.kf-page -->
