@@ -1,0 +1,950 @@
+{
+ "id": 47241,
+ "name": "Silent disco koptelefoons huren",
+ "slug": "silent-disco-huren",
+ "permalink": "https://dagpakketverhuur.nl/product/silent-disco-huren/",
+ "date_created": "2026-02-27T16:52:45",
+ "date_created_gmt": "2026-02-27T15:52:45",
+ "date_modified": "2026-10-17T20:03:57",
+ "date_modified_gmt": "2026-10-17T18:03:57",
+ "type": "simple",
+ "status": "publish",
+ "featured": false,
+ "catalog_visibility": "visible",
+ "description": "",
+ "short_description": "<p>Silent disco huren voor een feestje, bruiloft of evenement? Met draadloze silent disco koptelefoons geniet iedereen van zijn eigen muziek zonder geluidsoverlast en met maximaal 3 verschillende muziekkanalen tegelijk.</p>\n<p><!-- notionvc: 5e5b4205-e5f3-4fc0-b63d-5ed27fb38b9a --></p>\n",
+ "sku": "",
+ "price": "4",
+ "regular_price": "4",
+ "sale_price": "",
+ "date_on_sale_from": null,
+ "date_on_sale_from_gmt": null,
+ "date_on_sale_to": null,
+ "date_on_sale_to_gmt": null,
+ "on_sale": false,
+ "purchasable": true,
+ "total_sales": 31,
+ "virtual": false,
+ "downloadable": false,
+ "downloads": [],
+ "download_limit": -1,
+ "download_expiry": -1,
+ "external_url": "",
+ "button_text": "",
+ "tax_status": "taxable",
+ "tax_class": "",
+ "manage_stock": false,
+ "stock_quantity": null,
+ "backorders": "no",
+ "backorders_allowed": false,
+ "backordered": false,
+ "low_stock_amount": null,
+ "sold_individually": false,
+ "weight": "",
+ "dimensions": {
+  "length": "",
+  "width": "",
+  "height": ""
+ },
+ "shipping_required": true,
+ "shipping_taxable": true,
+ "shipping_class": "",
+ "shipping_class_id": 0,
+ "reviews_allowed": true,
+ "average_rating": "0.00",
+ "rating_count": 0,
+ "upsell_ids": [
+  47307,
+  47304,
+  47265,
+  47208
+ ],
+ "cross_sell_ids": [],
+ "parent_id": 0,
+ "purchase_note": "",
+ "categories": [
+  {
+   "id": 193,
+   "name": "Geluid",
+   "slug": "geluid-huren"
+  },
+  {
+   "id": 188,
+   "name": "Licht &amp; Geluid",
+   "slug": "licht-geluid-huren"
+  }
+ ],
+ "brands": [],
+ "tags": [],
+ "images": [
+  {
+   "id": 49556,
+   "date_created": "2026-06-12T12:13:01",
+   "date_created_gmt": "2026-06-12T08:13:01",
+   "date_modified": "2026-06-12T12:13:07",
+   "date_modified_gmt": "2026-06-12T08:13:07",
+   "src": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon.webp",
+   "name": "Silent Disco hoofdtelefoon huren met 3 muziekkanalen en LED-verlichting",
+   "alt": "Silent Disco hoofdtelefoon huren met 3 muziekkanalen en LED-verlichting",
+   "srcset": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon.webp 1024w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon-300x300.webp 300w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon-150x150.webp 150w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon-768x768.webp 768w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon-700x700.webp 700w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon-600x600.webp 600w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon-100x100.webp 100w",
+   "sizes": "(max-width: 1024px) 100vw, 1024px",
+   "thumbnail": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon-300x300.webp"
+  },
+  {
+   "id": 49549,
+   "date_created": "2026-06-12T11:49:14",
+   "date_created_gmt": "2026-06-12T07:49:14",
+   "date_modified": "2026-06-12T11:50:08",
+   "date_modified_gmt": "2026-06-12T07:50:08",
+   "src": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_ai07liai07liai07_11zon.webp",
+   "name": "Detailfoto van Silent Disco hoofdtelefoon met kanaalkeuze en volumeregeling",
+   "alt": "Detailfoto van Silent Disco hoofdtelefoon met kanaalkeuze en volumeregeling",
+   "srcset": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_ai07liai07liai07_11zon.webp 1024w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_ai07liai07liai07_11zon-300x300.webp 300w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_ai07liai07liai07_11zon-150x150.webp 150w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_ai07liai07liai07_11zon-768x768.webp 768w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_ai07liai07liai07_11zon-700x700.webp 700w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_ai07liai07liai07_11zon-600x600.webp 600w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_ai07liai07liai07_11zon-100x100.webp 100w",
+   "sizes": "(max-width: 1024px) 100vw, 1024px",
+   "thumbnail": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_ai07liai07liai07_11zon-300x300.webp"
+  },
+  {
+   "id": 49551,
+   "date_created": "2026-06-12T11:49:18",
+   "date_created_gmt": "2026-06-12T07:49:18",
+   "date_modified": "2026-06-12T11:50:17",
+   "date_modified_gmt": "2026-06-12T07:50:17",
+   "src": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_goawawgoawawgoaw_11zon.webp",
+   "name": "Complete Silent Disco set met hoofdtelefoons, zender, opladers en handleiding",
+   "alt": "Complete Silent Disco set met hoofdtelefoons, zender, opladers en handleiding",
+   "srcset": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_goawawgoawawgoaw_11zon.webp 1024w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_goawawgoawawgoaw_11zon-300x300.webp 300w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_goawawgoawawgoaw_11zon-150x150.webp 150w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_goawawgoawawgoaw_11zon-768x768.webp 768w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_goawawgoawawgoaw_11zon-700x700.webp 700w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_goawawgoawawgoaw_11zon-600x600.webp 600w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_goawawgoawawgoaw_11zon-100x100.webp 100w",
+   "sizes": "(max-width: 1024px) 100vw, 1024px",
+   "thumbnail": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_goawawgoawawgoaw_11zon-300x300.webp"
+  },
+  {
+   "id": 49589,
+   "date_created": "2026-06-16T13:10:49",
+   "date_created_gmt": "2026-06-16T09:10:49",
+   "date_modified": "2026-06-16T13:11:03",
+   "date_modified_gmt": "2026-06-16T09:11:03",
+   "src": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/unnamed-1_11zon.webp",
+   "name": "Silent disco huren kinderfeest",
+   "alt": "Silent disco huren kinderfeest",
+   "srcset": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/unnamed-1_11zon.webp 765w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/unnamed-1_11zon-225x300.webp 225w, https://dagpakketverhuur.nl/wp-content/uploads/2026/02/unnamed-1_11zon-600x800.webp 600w",
+   "sizes": "(max-width: 765px) 100vw, 765px",
+   "thumbnail": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/unnamed-1_11zon-300x300.webp"
+  }
+ ],
+ "attributes": [],
+ "default_attributes": [],
+ "variations": [],
+ "grouped_products": [],
+ "menu_order": 0,
+ "price_html": "<span class=\"woocommerce-Price-amount amount\"><bdi><span class=\"woocommerce-Price-currencySymbol\" translate=\"no\">&euro;</span>&nbsp;4.00</bdi></span> / Per stuk",
+ "related_ids": [
+  47125,
+  48506,
+  47120,
+  48470,
+  47114
+ ],
+ "meta_data": [
+  {
+   "id": 1404596,
+   "key": "_woocommerce_custom_price_labels_version",
+   "value": "2.5.15"
+  },
+  {
+   "id": 1404604,
+   "key": "_simple_is_custom_pricing_label_text",
+   "value": ""
+  },
+  {
+   "id": 1404605,
+   "key": "_simple_is_custom_pricing_label",
+   "value": "off"
+  },
+  {
+   "id": 1404606,
+   "key": "_simple_is_custom_pricing_label_hide_on",
+   "value": ""
+  },
+  {
+   "id": 1404607,
+   "key": "_simple_is_custom_pricing_label_show_on",
+   "value": ""
+  },
+  {
+   "id": 1404608,
+   "key": "_simple_is_custom_pricing_label_roles_to_hide",
+   "value": ""
+  },
+  {
+   "id": 1404609,
+   "key": "_simple_is_custom_pricing_label_roles_to_show",
+   "value": ""
+  },
+  {
+   "id": 1404610,
+   "key": "_simple_is_custom_pricing_label_before_text",
+   "value": ""
+  },
+  {
+   "id": 1404611,
+   "key": "_simple_is_custom_pricing_label_before",
+   "value": "off"
+  },
+  {
+   "id": 1404612,
+   "key": "_simple_is_custom_pricing_label_before_hide_on",
+   "value": ""
+  },
+  {
+   "id": 1404613,
+   "key": "_simple_is_custom_pricing_label_before_show_on",
+   "value": ""
+  },
+  {
+   "id": 1404614,
+   "key": "_simple_is_custom_pricing_label_before_roles_to_hide",
+   "value": ""
+  },
+  {
+   "id": 1404615,
+   "key": "_simple_is_custom_pricing_label_before_roles_to_show",
+   "value": ""
+  },
+  {
+   "id": 1404616,
+   "key": "_simple_is_custom_pricing_label_between_text",
+   "value": ""
+  },
+  {
+   "id": 1404617,
+   "key": "_simple_is_custom_pricing_label_between",
+   "value": "off"
+  },
+  {
+   "id": 1404618,
+   "key": "_simple_is_custom_pricing_label_between_hide_on",
+   "value": ""
+  },
+  {
+   "id": 1404619,
+   "key": "_simple_is_custom_pricing_label_between_show_on",
+   "value": ""
+  },
+  {
+   "id": 1404620,
+   "key": "_simple_is_custom_pricing_label_between_roles_to_hide",
+   "value": ""
+  },
+  {
+   "id": 1404621,
+   "key": "_simple_is_custom_pricing_label_between_roles_to_show",
+   "value": ""
+  },
+  {
+   "id": 1404622,
+   "key": "_simple_is_custom_pricing_label_after_text",
+   "value": ""
+  },
+  {
+   "id": 1404623,
+   "key": "_simple_is_custom_pricing_label_after",
+   "value": "off"
+  },
+  {
+   "id": 1404624,
+   "key": "_simple_is_custom_pricing_label_after_hide_on",
+   "value": ""
+  },
+  {
+   "id": 1404625,
+   "key": "_simple_is_custom_pricing_label_after_show_on",
+   "value": ""
+  },
+  {
+   "id": 1404626,
+   "key": "_simple_is_custom_pricing_label_after_roles_to_hide",
+   "value": ""
+  },
+  {
+   "id": 1404627,
+   "key": "_simple_is_custom_pricing_label_after_roles_to_show",
+   "value": ""
+  },
+  {
+   "id": 1404630,
+   "key": "_wcmmq_step",
+   "value": "0"
+  },
+  {
+   "id": 1404631,
+   "key": "_wcmmq_disable",
+   "value": "no"
+  },
+  {
+   "id": 1404632,
+   "key": "_wcmmq_enable",
+   "value": "yes"
+  },
+  {
+   "id": 1404651,
+   "key": "cmplz_hide_cookiebanner",
+   "value": ""
+  },
+  {
+   "id": 1404652,
+   "key": "_yoast_wpseo_primary_product_brand",
+   "value": ""
+  },
+  {
+   "id": 1404653,
+   "key": "_yoast_wpseo_primary_product_cat",
+   "value": ""
+  },
+  {
+   "id": 1404654,
+   "key": "_yoast_wpseo_focuskw",
+   "value": "silent disco huren"
+  },
+  {
+   "id": 1404655,
+   "key": "_yoast_wpseo_title",
+   "value": "Silent disco koptelefoons huren | Dagpakketverhuur"
+  },
+  {
+   "id": 1404656,
+   "key": "_yoast_wpseo_metadesc",
+   "value": "Huur precies het aantal silent disco koptelefoons dat je nodig hebt. Inclusief zender, opladers en handleiding. Tot 3 muziekkanalen mogelijk."
+  },
+  {
+   "id": 1404657,
+   "key": "_yoast_wpseo_linkdex",
+   "value": "57"
+  },
+  {
+   "id": 1404658,
+   "key": "_yoast_wpseo_content_score",
+   "value": "90"
+  },
+  {
+   "id": 1404659,
+   "key": "_yoast_wpseo_estimated-reading-time-minutes",
+   "value": "5"
+  },
+  {
+   "id": 1407571,
+   "key": "dpv_dhl_allowed",
+   "value": "yes"
+  },
+  {
+   "id": 1407572,
+   "key": "dpv_dhl_units",
+   "value": "0.5"
+  },
+  {
+   "id": 1407619,
+   "key": "_wc_facebook_sync_enabled_v2",
+   "value": "yes"
+  },
+  {
+   "id": 1407620,
+   "key": "fb_visibility",
+   "value": "yes"
+  },
+  {
+   "id": 1407621,
+   "key": "fb_product_description",
+   "value": ""
+  },
+  {
+   "id": 1407622,
+   "key": "fb_rich_text_description",
+   "value": ""
+  },
+  {
+   "id": 1407623,
+   "key": "_wc_facebook_product_image_source",
+   "value": "product"
+  },
+  {
+   "id": 1407624,
+   "key": "fb_product_video",
+   "value": []
+  },
+  {
+   "id": 1407625,
+   "key": "fb_brand",
+   "value": ""
+  },
+  {
+   "id": 1407626,
+   "key": "fb_mpn",
+   "value": ""
+  },
+  {
+   "id": 1407627,
+   "key": "fb_size",
+   "value": ""
+  },
+  {
+   "id": 1407628,
+   "key": "fb_color",
+   "value": ""
+  },
+  {
+   "id": 1407629,
+   "key": "fb_material",
+   "value": ""
+  },
+  {
+   "id": 1407630,
+   "key": "fb_pattern",
+   "value": ""
+  },
+  {
+   "id": 1407631,
+   "key": "fb_age_group",
+   "value": ""
+  },
+  {
+   "id": 1407632,
+   "key": "fb_gender",
+   "value": ""
+  },
+  {
+   "id": 1407633,
+   "key": "fb_product_condition",
+   "value": ""
+  },
+  {
+   "id": 1409485,
+   "key": "_wp_old_date",
+   "value": "2026-02-26"
+  },
+  {
+   "id": 1410094,
+   "key": "_eael_post_view_count",
+   "value": "639"
+  },
+  {
+   "id": 1410479,
+   "key": "ekit_post_views_count",
+   "value": "580"
+  },
+  {
+   "id": 1410480,
+   "key": "tp_widgets",
+   "value": {
+    "widgets": [],
+    "update_at": "1792176745"
+   }
+  },
+  {
+   "id": 1411162,
+   "key": "_dpv_foto_badge",
+   "value": ""
+  },
+  {
+   "id": 1411163,
+   "key": "_dpv_bezorgtype",
+   "value": "DHL verzending"
+  },
+  {
+   "id": 1411164,
+   "key": "_dpv_afhalen",
+   "value": "Afhalen 24/7"
+  },
+  {
+   "id": 1411165,
+   "key": "_dpv_beschikbaarheid",
+   "value": "beschikbaar"
+  },
+  {
+   "id": 1411166,
+   "key": "_dpv_prijs_note",
+   "value": "Exclusief bezorgkosten · Exact bedrag in checkout"
+  },
+  {
+   "id": 1411167,
+   "key": "_dpv_review_score",
+   "value": "4.9"
+  },
+  {
+   "id": 1411168,
+   "key": "_dpv_review_aantal",
+   "value": "55+"
+  },
+  {
+   "id": 1411169,
+   "key": "_dpv_specs",
+   "value": []
+  },
+  {
+   "id": 1411170,
+   "key": "_dpv_included",
+   "value": [
+    "Silent disco koptelefoons",
+    "1× bedrade zender",
+    "Oplaadkabels + Aansluitkabels",
+    "Handleiding (Online / Fysiek)"
+   ]
+  },
+  {
+   "id": 1411171,
+   "key": "_dpv_faq",
+   "value": [
+    {
+     "v": "Hoe werkt een silent disco?",
+     "a": "Iedereen krijgt een koptelefoon en kiest zelf een kanaal"
+    },
+    {
+     "v": "Hoeveel mensen kunnen meedoen?",
+     "a": "Zoveel koptelefoons als je huurt"
+    },
+    {
+     "v": "Kan ik meerdere muziekkanalen gebruiken?",
+     "a": "Ja, tot 3 zenders tegelijk mogelijk"
+    },
+    {
+     "v": "Hoe sluit ik muziek aan?",
+     "a": "Via telefoon, laptop of DJ-set met kabel"
+    },
+    {
+     "v": "Is het moeilijk om op te zetten?",
+     "a": "Nee, binnen enkele minuten klaar"
+    },
+    {
+     "v": "Hoe lang gaan de koptelefoons mee?",
+     "a": "Een volle avond gebruik zonder opladen"
+    }
+   ]
+  },
+  {
+   "id": 1411172,
+   "key": "_dpv_reviews",
+   "value": [
+    {
+     "tekst": "Echt een top ervaring, iedereen kon zijn eigen muziek kiezen. Groot succes op ons feest",
+     "naam": "Kevin, verjaardag"
+    },
+    {
+     "tekst": "Super leuk concept, geen geluidsoverlast en toch volle sfeer",
+     "naam": "Sanne, tuinfeest"
+    },
+    {
+     "tekst": "Makkelijk aan te sluiten en werkte meteen. Ideaal voor onze groep",
+     "naam": "Jeroen, bedrijfsfeest"
+    }
+   ]
+  },
+  {
+   "id": 1411173,
+   "key": "_dpv_upsells",
+   "value": [
+    {
+     "product_id": 47307,
+     "sub": "Meerdere kanalen gebruiken"
+    },
+    {
+     "product_id": 47304,
+     "sub": "Stream vanaf telefoon"
+    },
+    {
+     "product_id": 47856,
+     "sub": "Beschut feest buiten"
+    },
+    {
+     "product_id": 47190,
+     "sub": "Handig voor apparatuur"
+    }
+   ]
+  },
+  {
+   "id": 1411174,
+   "key": "_dpv_heeft_bundels",
+   "value": ""
+  },
+  {
+   "id": 1411175,
+   "key": "_dpv_bundels",
+   "value": []
+  },
+  {
+   "id": 1411176,
+   "key": "_is_rental",
+   "value": "yes"
+  },
+  {
+   "id": 1427520,
+   "key": "dpv_dhl_max_per_parcel",
+   "value": "0.5"
+  },
+  {
+   "id": 1452794,
+   "key": "_last_change_time",
+   "value": "1781250625"
+  },
+  {
+   "id": 1452795,
+   "key": "_dpv_large_description",
+   "value": ""
+  },
+  {
+   "id": 1452796,
+   "key": "_dpv_faq_items",
+   "value": [
+    {
+     "q": "Wat is een silent disco precies?",
+     "a": "Een silent disco is een feest waarbij muziek wordt afgespeeld via draadloze koptelefoons in plaats van speakers. Hierdoor kunnen gasten muziek luisteren zonder geluidsoverlast voor de omgeving."
+    },
+    {
+     "q": "Hoe werkt een silent disco?",
+     "a": "De muziek wordt draadloos verzonden via een zender naar de koptelefoons. Gasten zetten de koptelefoon op en kiezen zelf welk muziek kanaal ze willen luisteren."
+    },
+    {
+     "q": "Hoeveel muziekkanalen?",
+     "a": "De koptelefoons ondersteunen maximaal 3 verschillende muziekkanalen tegelijk. Hierdoor kunnen meerdere muziekstijlen tegelijk afgespeeld worden."
+    },
+    {
+     "q": "Wat zit er bij de silent disco inbegrepen?",
+     "a": "Standaard wordt er een bedrade zender meegeleverd die werkt via een AUX aansluiting. Daarnaast boek je het gewenste aantal koptelefoons per persoon."
+    },
+    {
+     "q": "Kan ik een bluetooth zender gebruiken?",
+     "a": "Ja, je kunt een bluetooth zender toevoegen om draadloos muziek te streamen naar de silent disco koptelefoons."
+    },
+    {
+     "q": "Waarom silent disco huren dan speakers?",
+     "a": "Een silent disco voorkomt geluidsoverlast en biedt gasten de mogelijkheid om zelf tussen muziekkanalen te wisselen. Hierdoor ontstaat een unieke feestervaring."
+    },
+    {
+     "q": "Voor welke feestjes is silent disco geschikt?",
+     "a": "Een silent disco is perfect voor verjaardagen, bruiloften, festivals, tuinfeesten, bedrijfsuitjes en andere evenementen waarbij muziek centraal staat."
+    },
+    {
+     "q": "Is een silent disco geschikt voor thuis?",
+     "a": "Ja, een silent disco is juist ideaal voor thuisfeestjes omdat je muziek kunt afspelen zonder harde speakers of klachten van buren."
+    },
+    {
+     "q": "Hoeveel koptelefoons kan ik huren?",
+     "a": "Je kunt per persoon een koptelefoon boeken waardoor de silent disco geschikt is voor zowel kleine als grote groepen."
+    },
+    {
+     "q": "Is silent disco makkelijk te gebruiken?",
+     "a": "Ja, de koptelefoons werken eenvoudig en gasten kunnen met één knop wisselen tussen de beschikbare muziekkanalen."
+    },
+    {
+     "q": "Kan ik meerdere zenders tegelijk gebruiken?",
+     "a": "Ja, je kunt maximaal 3 zenders tegelijk gebruiken omdat de koptelefoons beschikken over 3 verschillende kanalen."
+    },
+    {
+     "q": "Kan ik de silent disco combineren?",
+     "a": "Ja, de silent disco werkt perfect samen met een JBL Partybox, discolampen, rookmachines of een karaoke set voor een complete feestervaring."
+    }
+   ]
+  },
+  {
+   "id": 1455294,
+   "key": "_dpv_manual_link",
+   "value": ""
+  },
+  {
+   "id": 1455295,
+   "key": "_dpv_manual_label",
+   "value": ""
+  },
+  {
+   "id": 1455296,
+   "key": "_dpv_usps",
+   "value": [
+    "Geen geluidsoverlast",
+    "Tot 3 muziekkanalen",
+    "DHL-verzendbaar",
+    "Inclusief zender"
+   ]
+  },
+  {
+   "id": 1455297,
+   "key": "_dpv_included_items",
+   "value": []
+  },
+  {
+   "id": 1455298,
+   "key": "_dpv_bundles",
+   "value": []
+  },
+  {
+   "id": 1455299,
+   "key": "_dpv_upsell",
+   "value": {
+    "title": "",
+    "desc": "",
+    "price": "",
+    "product_id": 0
+   }
+  },
+  {
+   "id": 1455300,
+   "key": "_dpv_review_media",
+   "value": []
+  },
+  {
+   "id": 1471992,
+   "key": "_dpvt_price_note",
+   "value": ""
+  },
+  {
+   "id": 1471993,
+   "key": "_dpvt_facts",
+   "value": []
+  },
+  {
+   "id": 1471994,
+   "key": "_dpvt_features",
+   "value": []
+  },
+  {
+   "id": 1471995,
+   "key": "_dpvt_specs",
+   "value": "Array"
+  },
+  {
+   "id": 1471996,
+   "key": "_dpvt_faq_items",
+   "value": "Array"
+  },
+  {
+   "id": 1471997,
+   "key": "_dpvt_rating",
+   "value": ""
+  },
+  {
+   "id": 1471998,
+   "key": "_dpvt_review_count",
+   "value": ""
+  },
+  {
+   "id": 1471999,
+   "key": "_dpvt_badge",
+   "value": "bestseller"
+  },
+  {
+   "id": 1472000,
+   "key": "_dpvt_pack_size",
+   "value": "0"
+  },
+  {
+   "id": 1472001,
+   "key": "_dpvt_on_request",
+   "value": ""
+  },
+  {
+   "id": 1503032,
+   "key": "litespeed_vpi_list",
+   "value": [
+    "Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon-600x600.webp",
+    "IMG_1962-1-scaled.jpg"
+   ]
+  },
+  {
+   "id": 1515939,
+   "key": "min_quantity",
+   "value": ""
+  },
+  {
+   "id": 1515940,
+   "key": "max_quantity",
+   "value": ""
+  },
+  {
+   "id": 1515941,
+   "key": "product_step",
+   "value": ""
+  },
+  {
+   "id": 1515942,
+   "key": "_yoast_wpseo_seo_title_score",
+   "value": "83"
+  },
+  {
+   "id": 1515943,
+   "key": "_yoast_wpseo_meta_description_score",
+   "value": "67"
+  }
+ ],
+ "stock_status": "instock",
+ "has_options": false,
+ "post_password": "",
+ "global_unique_id": "",
+ "yoast_head": "<!-- This site is optimized with the Yoast SEO plugin v28.6 - https://yoast.com/product/yoast-seo-wordpress/ -->\n<title>Silent disco koptelefoons huren | Dagpakketverhuur</title>\n<meta name=\"description\" content=\"Huur precies het aantal silent disco koptelefoons dat je nodig hebt. Inclusief zender, opladers en handleiding. Tot 3 muziekkanalen mogelijk.\" />\n<meta name=\"robots\" content=\"index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1\" />\n<link rel=\"canonical\" href=\"https://dagpakketverhuur.nl/product/silent-disco-huren/\" />\n<meta property=\"og:locale\" content=\"nl_NL\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"og:title\" content=\"Silent disco koptelefoons huren | Dagpakketverhuur\" />\n<meta property=\"og:description\" content=\"Huur precies het aantal silent disco koptelefoons dat je nodig hebt. Inclusief zender, opladers en handleiding. Tot 3 muziekkanalen mogelijk.\" />\n<meta property=\"og:url\" content=\"https://dagpakketverhuur.nl/product/silent-disco-huren/\" />\n<meta property=\"og:site_name\" content=\"Dagpakketverhuur | Wij regelen, jij geniet.\" />\n<meta property=\"article:publisher\" content=\"https://www.facebook.com/profile.php?id=61558751813345\" />\n<meta property=\"article:modified_time\" content=\"2026-10-17T18:03:57+00:00\" />\n<meta property=\"og:image\" content=\"https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon.webp\" />\n\t<meta property=\"og:image:width\" content=\"1024\" />\n\t<meta property=\"og:image:height\" content=\"1024\" />\n\t<meta property=\"og:image:type\" content=\"image/webp\" />\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:label1\" content=\"Geschatte leestijd\" />\n\t<meta name=\"twitter:data1\" content=\"5 minuten\" />\n<script type=\"application/ld+json\" class=\"yoast-schema-graph\">{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/product\\/silent-disco-huren\\/\",\"url\":\"https:\\/\\/dagpakketverhuur.nl\\/product\\/silent-disco-huren\\/\",\"name\":\"Silent disco koptelefoons huren | Dagpakketverhuur\",\"isPartOf\":{\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/product\\/silent-disco-huren\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/product\\/silent-disco-huren\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/dagpakketverhuur.nl\\/wp-content\\/uploads\\/2026\\/02\\/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon.webp\",\"datePublished\":\"2026-02-27T15:52:45+00:00\",\"dateModified\":\"2026-10-17T18:03:57+00:00\",\"description\":\"Huur precies het aantal silent disco koptelefoons dat je nodig hebt. Inclusief zender, opladers en handleiding. Tot 3 muziekkanalen mogelijk.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/product\\/silent-disco-huren\\/#breadcrumb\"},\"inLanguage\":\"nl-NL\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/dagpakketverhuur.nl\\/product\\/silent-disco-huren\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"nl-NL\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/product\\/silent-disco-huren\\/#primaryimage\",\"url\":\"https:\\/\\/dagpakketverhuur.nl\\/wp-content\\/uploads\\/2026\\/02\\/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon.webp\",\"contentUrl\":\"https:\\/\\/dagpakketverhuur.nl\\/wp-content\\/uploads\\/2026\\/02\\/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon.webp\",\"width\":1024,\"height\":1024,\"caption\":\"Silent Disco hoofdtelefoon huren met 3 muziekkanalen en LED-verlichting\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/product\\/silent-disco-huren\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/dagpakketverhuur.nl\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Products\",\"item\":\"https:\\/\\/dagpakketverhuur.nl\\/shop__trashed\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Silent disco koptelefoons huren\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#website\",\"url\":\"https:\\/\\/dagpakketverhuur.nl\\/\",\"name\":\"Dagpakketverhuur | Wij regelen, jij geniet.\",\"description\":\"Alles wat je nodig hebt in één pakket - makkelijk, compleet en zorgeloos!\",\"publisher\":{\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/dagpakketverhuur.nl\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"nl-NL\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#organization\",\"name\":\"Dagpakketverhuur | Wij regelen, jij geniet.\",\"url\":\"https:\\/\\/dagpakketverhuur.nl\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"nl-NL\",\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/dagpakketverhuur.nl\\/wp-content\\/uploads\\/2025\\/03\\/cropped-8aadb3d7-a016-4ab2-a4d8-d4f11210fbda.png\",\"contentUrl\":\"https:\\/\\/dagpakketverhuur.nl\\/wp-content\\/uploads\\/2025\\/03\\/cropped-8aadb3d7-a016-4ab2-a4d8-d4f11210fbda.png\",\"width\":512,\"height\":512,\"caption\":\"Dagpakketverhuur | Wij regelen, jij geniet.\"},\"image\":{\"@id\":\"https:\\/\\/dagpakketverhuur.nl\\/#\\/schema\\/logo\\/image\\/\"},\"sameAs\":[\"https:\\/\\/www.facebook.com\\/profile.php?id=61558751813345\",\"https:\\/\\/www.tiktok.com\\/@dagpakketverhuur\",\"https:\\/\\/www.instagram.com\\/dagpakketverhuur\\/\",\"https:\\/\\/www.youtube.com\\/channel\\/UCbDzplfB99J3KIgm0V9l0Ag\"]}]}</script>\n<!-- / Yoast SEO plugin. -->",
+ "yoast_head_json": {
+  "title": "Silent disco koptelefoons huren | Dagpakketverhuur",
+  "description": "Huur precies het aantal silent disco koptelefoons dat je nodig hebt. Inclusief zender, opladers en handleiding. Tot 3 muziekkanalen mogelijk.",
+  "robots": {
+   "index": "index",
+   "follow": "follow",
+   "max-snippet": "max-snippet:-1",
+   "max-image-preview": "max-image-preview:large",
+   "max-video-preview": "max-video-preview:-1"
+  },
+  "canonical": "https://dagpakketverhuur.nl/product/silent-disco-huren/",
+  "og_locale": "nl_NL",
+  "og_type": "article",
+  "og_title": "Silent disco koptelefoons huren | Dagpakketverhuur",
+  "og_description": "Huur precies het aantal silent disco koptelefoons dat je nodig hebt. Inclusief zender, opladers en handleiding. Tot 3 muziekkanalen mogelijk.",
+  "og_url": "https://dagpakketverhuur.nl/product/silent-disco-huren/",
+  "og_site_name": "Dagpakketverhuur | Wij regelen, jij geniet.",
+  "article_publisher": "https://www.facebook.com/profile.php?id=61558751813345",
+  "article_modified_time": "2026-10-17T18:03:57+00:00",
+  "og_image": [
+   {
+    "width": 1024,
+    "height": 1024,
+    "url": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon.webp",
+    "type": "image/webp"
+   }
+  ],
+  "twitter_card": "summary_large_image",
+  "twitter_misc": {
+   "Geschatte leestijd": "5 minuten"
+  },
+  "schema": {
+   "@context": "https://schema.org",
+   "@graph": [
+    {
+     "@type": "WebPage",
+     "@id": "https://dagpakketverhuur.nl/product/silent-disco-huren/",
+     "url": "https://dagpakketverhuur.nl/product/silent-disco-huren/",
+     "name": "Silent disco koptelefoons huren | Dagpakketverhuur",
+     "isPartOf": {
+      "@id": "https://dagpakketverhuur.nl/#website"
+     },
+     "primaryImageOfPage": {
+      "@id": "https://dagpakketverhuur.nl/product/silent-disco-huren/#primaryimage"
+     },
+     "image": {
+      "@id": "https://dagpakketverhuur.nl/product/silent-disco-huren/#primaryimage"
+     },
+     "thumbnailUrl": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon.webp",
+     "datePublished": "2026-02-27T15:52:45+00:00",
+     "dateModified": "2026-10-17T18:03:57+00:00",
+     "description": "Huur precies het aantal silent disco koptelefoons dat je nodig hebt. Inclusief zender, opladers en handleiding. Tot 3 muziekkanalen mogelijk.",
+     "breadcrumb": {
+      "@id": "https://dagpakketverhuur.nl/product/silent-disco-huren/#breadcrumb"
+     },
+     "inLanguage": "nl-NL",
+     "potentialAction": [
+      {
+       "@type": "ReadAction",
+       "target": [
+        "https://dagpakketverhuur.nl/product/silent-disco-huren/"
+       ]
+      }
+     ]
+    },
+    {
+     "@type": "ImageObject",
+     "inLanguage": "nl-NL",
+     "@id": "https://dagpakketverhuur.nl/product/silent-disco-huren/#primaryimage",
+     "url": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon.webp",
+     "contentUrl": "https://dagpakketverhuur.nl/wp-content/uploads/2026/02/Gemini_Generated_Image_hxsvv8hxsvv8hxsv_11zon.webp",
+     "width": 1024,
+     "height": 1024,
+     "caption": "Silent Disco hoofdtelefoon huren met 3 muziekkanalen en LED-verlichting"
+    },
+    {
+     "@type": "BreadcrumbList",
+     "@id": "https://dagpakketverhuur.nl/product/silent-disco-huren/#breadcrumb",
+     "itemListElement": [
+      {
+       "@type": "ListItem",
+       "position": 1,
+       "name": "Home",
+       "item": "https://dagpakketverhuur.nl/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 2,
+       "name": "Products",
+       "item": "https://dagpakketverhuur.nl/shop__trashed/"
+      },
+      {
+       "@type": "ListItem",
+       "position": 3,
+       "name": "Silent disco koptelefoons huren"
+      }
+     ]
+    },
+    {
+     "@type": "WebSite",
+     "@id": "https://dagpakketverhuur.nl/#website",
+     "url": "https://dagpakketverhuur.nl/",
+     "name": "Dagpakketverhuur | Wij regelen, jij geniet.",
+     "description": "Alles wat je nodig hebt in één pakket - makkelijk, compleet en zorgeloos!",
+     "publisher": {
+      "@id": "https://dagpakketverhuur.nl/#organization"
+     },
+     "potentialAction": [
+      {
+       "@type": "SearchAction",
+       "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://dagpakketverhuur.nl/?s={search_term_string}"
+       },
+       "query-input": {
+        "@type": "PropertyValueSpecification",
+        "valueRequired": true,
+        "valueName": "search_term_string"
+       }
+      }
+     ],
+     "inLanguage": "nl-NL"
+    },
+    {
+     "@type": "Organization",
+     "@id": "https://dagpakketverhuur.nl/#organization",
+     "name": "Dagpakketverhuur | Wij regelen, jij geniet.",
+     "url": "https://dagpakketverhuur.nl/",
+     "logo": {
+      "@type": "ImageObject",
+      "inLanguage": "nl-NL",
+      "@id": "https://dagpakketverhuur.nl/#/schema/logo/image/",
+      "url": "https://dagpakketverhuur.nl/wp-content/uploads/2025/03/cropped-8aadb3d7-a016-4ab2-a4d8-d4f11210fbda.png",
+      "contentUrl": "https://dagpakketverhuur.nl/wp-content/uploads/2025/03/cropped-8aadb3d7-a016-4ab2-a4d8-d4f11210fbda.png",
+      "width": 512,
+      "height": 512,
+      "caption": "Dagpakketverhuur | Wij regelen, jij geniet."
+     },
+     "image": {
+      "@id": "https://dagpakketverhuur.nl/#/schema/logo/image/"
+     },
+     "sameAs": [
+      "https://www.facebook.com/profile.php?id=61558751813345",
+      "https://www.tiktok.com/@dagpakketverhuur",
+      "https://www.instagram.com/dagpakketverhuur/",
+      "https://www.youtube.com/channel/UCbDzplfB99J3KIgm0V9l0Ag"
+     ]
+    }
+   ]
+  }
+ },
+ "_links": {
+  "self": [
+   {
+    "href": "https://dagpakketverhuur.nl/wp-json/wc/v3/products/47241",
+    "targetHints": {
+     "allow": [
+      "GET",
+      "POST",
+      "PUT",
+      "PATCH",
+      "DELETE"
+     ]
+    }
+   }
+  ],
+  "collection": [
+   {
+    "href": "https://dagpakketverhuur.nl/wp-json/wc/v3/products"
+   }
+  ]
+ }
+}

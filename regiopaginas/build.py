@@ -439,7 +439,7 @@ def hero(d):
     <h1>{d['h1']}</h1>
     <p class="dpv-hero-sub">{d['sub']}</p>
     <div class="dpv-cta-row">
-      <a class="dpv-btn" href="#lasergames" data-scroll="lasergames">{d.get('cta','Bekijk lasergames')}</a>
+      {f'<a class="dpv-btn" href="{e(d["cta_href"])}">' if d.get('cta_href') else '<a class="dpv-btn" href="#lasergames" data-scroll="lasergames">'}{d.get('cta','Bekijk lasergames')}</a>
       {d.get('cta2','')}
     </div>
   </div></div></div>
@@ -561,7 +561,7 @@ def final(d):
   <div class="dpv-hero-scrim"></div>
   <div class="dpv-final-body">
     <h2>{d['h2']}</h2><p>{d['p']}</p>
-    <div class="dpv-cta-row"><a class="dpv-btn" href="#lasergames" data-scroll="lasergames">{d.get('cta', 'Bekijk lasergames')}</a>
+    <div class="dpv-cta-row">{f'<a class="dpv-btn" href="{e(d["cta_href"])}">' if d.get('cta_href') else '<a class="dpv-btn" href="#lasergames" data-scroll="lasergames">'}{d.get('cta', 'Bekijk lasergames')}</a>
       <a class="dpv-link-ul" href="{TEL}">Of bel 085 212 9150</a></div>
     {lk}
   </div>
@@ -572,7 +572,7 @@ def final(d):
 def template_a(c):
     """A — hub"""
     return [
-        hero(c['hero']), trustbar(c['trust']), products(c['products']),
+        hero(c['hero']), trustbar(c['trust']), *([intro(c['intro'])] if c.get('intro') else []), products(c['products']),
         sec(head(c['keuze']['h2'], lead=c['keuze'].get('lead')) + cards(c['keuze']['items'], c['keuze'].get('cols', 'dpv-g3'))),
         sec(head(c['gelegenheden']['h2'], lead=c['gelegenheden'].get('lead')) + cards(c['gelegenheden']['items'], 'dpv-g4')),
         sec(head(c['stappen']['h2'], lead=c['stappen'].get('lead')) + steps(c['stappen']['items'])),
